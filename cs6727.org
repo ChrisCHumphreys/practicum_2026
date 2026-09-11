@@ -148,3 +148,5 @@ Sep 1 at 10:32am
 - Will need a github page.  First gonna double check if we were told we have to use a GATech github or soemthing
   - Nothing saying it has to be private or anything, gonna just make a repo and go
   - Actually, just realized, Im gonna have this project be in the folder as well.
+  - New Git Repo set up and working
+    - [[https://github.com/ChrisCHumphreys/practicum_2026]]
