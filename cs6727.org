@@ -152,3 +152,5 @@ Sep 1 at 10:32am
     - [[https://github.com/ChrisCHumphreys/practicum_2026]]
   - Well, everythign is set up, I guess Ill start with a simple python scritp that just grabs a single google result for now, then once Im getting good results, I can pivot to using the SERP
 - [[https://robbmann.io/posts/2022-09-04-emacs-python/][Python Emacs Blog]] :: Really useful site with emacs tips for python.  Have a feelign I will use this a lot
+- requests library working. Got my first pull back from google.  Saved in the output directory
+  - gonna expirement a bit and see when I hit the limit

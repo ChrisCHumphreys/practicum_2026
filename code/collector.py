@@ -4,13 +4,19 @@ test_URL = """https://www.google.com/search?q=Free Streaming&sca_esv=6a464870af6
 
 def get_raw_url_content(URL):
     """This is a first function to just pull in a single URL"""
+
     content = requests.get(URL)
 
     return content
 
-content = get_raw_url_content(test_URL)
+def output_requests_response(URL):
+    """Prings out the Headers, response code, and text of a website"""
 
-print(f"Headers: {content.headers}")
-print(f"Response Code: {content.status_code}")
-print(f"Website Text: {content.text}")
-    
+    content = get_raw_url_content(URL)
+
+    print(f"Headers: {content.headers}")
+    print(f"Response Code: {content.status_code}")
+    print(f"Website Text: {content.text}")
+
+# for i in range(10):
+#     output_requests_response(test_URL)
