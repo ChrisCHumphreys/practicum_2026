@@ -173,3 +173,7 @@ Sep 1 at 10:32am
 - Github repo is made and first few runs of just grabbing google pages seems to have been successful
 - This whole week is making sure that this is complete, so gonna do that today
 - Decided to go with OxyLabs, they have a free trail, so I will do that first and then decide if I want to keep them or not later.
+- Found a cool gitignore file for python at [[https://www.gitignore.org/Python][gitignore.org]]
+- Got pip and pip-venv installed
+  - Had to move off of NAS for venv to work
+- 
