@@ -9,6 +9,8 @@ class Collector:
     """Class to contain collecter functions"""
     def __init__(self):
         self.creds = dotenv_values(".env")
+        self.username = self.creds[OXY_USERNAME]
+        self.password = self.creds[OXY_PASS]
     
     def get_raw_url_content(self, URL):
         """This is a first function to just pull in a single URL"""

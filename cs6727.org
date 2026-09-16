@@ -176,4 +176,7 @@ Sep 1 at 10:32am
 - Found a cool gitignore file for python at [[https://www.gitignore.org/Python][gitignore.org]]
 - Got pip and pip-venv installed
   - Had to move off of NAS for venv to work
-- 
+- dotenv working now, gitingore stopping creds from uploading
+**** Week 4 Day 2
+***** More collector work, got most all the environment i need set up, mostly jsut coding now
+- Main goal tonight is to pull in the SERP's and then return just the ad URL's
