@@ -180,3 +180,8 @@ Sep 1 at 10:32am
 **** Week 4 Day 2
 ***** More collector work, got most all the environment i need set up, mostly jsut coding now
 - Main goal tonight is to pull in the SERP's and then return just the ad URL's
+- [[https://developers.oxylabs.io/api-targets/search-engines/google/ads][OxyLabs Ad Max]] Documentation page
+  - Pulls the max amount of ads
+- Found how to pull the ads from the JSON, took forever
+  - response.json()['results'][0]['content']['results']['paid']
+  
