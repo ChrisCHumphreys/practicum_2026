@@ -3,10 +3,16 @@ from pprint import pprint
 from dotenv import dotenv_values
 import json
 import threading
+from concurrent.futures import ThreadPoolExecutor
 
 # Note that much of the threading code was borrowed/inspried from the
 # tutorials at
 # https://reintech.io/blog/how-to-create-a-multi-threaded-application-with-python
+# Much of the info on stopping threads from 
+# https://www.stratascratch.com/blog/python-threading-like-a-pro
+# Thread pool executor docs
+# https://docs.python.org/3/library/concurrent.futures.html
+# https://superfastpython.com/threadpoolexecutor-in-python/
 
 
 # Saving this for reference while I work, but its just a copy and paste of a search URL I ran manually
@@ -21,6 +27,8 @@ class Collector:
         self.password = self.creds['OXY_PASS']
         self.ads_list = []
         self.max_thread_count = max_thread_count
+        self.failed_queries = 0
+        self._stop_event = threading.Event()
     
     def get_raw_url_content(self, URL):
         """This is a first function to just pull in a single URL"""
@@ -44,7 +52,7 @@ class Collector:
         payload = {
             'source' : 'google_ads',
             'query' : query,
-            'geo_location' : 'Chicago,United States',
+            'geo_location' : 'Boston,United States',
             'parse' : True,
             'user_agent_type' : 'desktop'
         }
@@ -52,8 +60,6 @@ class Collector:
         response = requests.request(
             'POST', 'https://realtime.oxylabs.io/v1/queries',
             auth=(self.username, self.password), json=payload)
-        # ads_list = json.dumps(
-        #     response.json()['results'][0]['content']['results']['paid'])
         return response
 
     def extract_ads_from_json_response(self, serp_response):
@@ -69,36 +75,29 @@ class Collector:
         except:
             return "Query Failed"
 
-        
-
-    def get_adds_from_query(self, query):
+    def get_ads_from_query(self, query):
         """Funciton that wraps together smaller functions to take in a
         query and return just the ad section of the url"""
 
+        
         response = self.get_normalized_google_serp(query)
         ads = self.extract_ads_from_json_response(response)
-
-        self.ads_list.append(ads)
+        if (ads != "Query Failed"):
+            self.ads_list.append(ads)
+        else:
+            self.failed_queries += 1
 
     def pull_ads_in_bulk(self, query, count):
         """This is to allow for multiple threads to run at once
            Code here was adapted and borrowed from
            https://reintech.io/blog/how-to-create-a-multi-threaded-application-with-python
            and https://docs.python.org/3/library/threading.html
-        """
-
-        # Max number of threads set as class constructor
-        threading.Semaphore(self.max_thread_count)
-
+        """ 
+        
         threads = []
-        for i in range(count):
-            thread = threading.Thread(
-                target=self.get_adds_from_query,
-                args=(query,)
-            )
-            threads.append(thread)
-            thread.start()
-
-        for thread in threads:
-            thread.join()
     
+        with ThreadPoolExecutor(self.max_thread_count) as executor:
+            _ = [executor.submit(self.get_ads_from_query, query) for i in range(count)]
+       
+
+            
