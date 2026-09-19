@@ -13,12 +13,14 @@ import threading
 test_URL = """https://www.google.com/search?q=Free Streaming&sca_esv=6a464870af6be845&sxsrf=APpeQntsmLYZR-H8-LTAO5HVJjzhOz7sTg:1789164589470&ei=LXykauiwHKvKp84PzZS3oQ8&biw=2493&bih=623&ved=2ahUKEwio-7K-xeeWAxUr5ckDHU3KLfQQ4dUDegQIBhAM&oq=Free Streaming&gs_lp=Egxnd3Mtd2l6LXNlcnAiDkZyZWUgU3RyZWFtaW5nMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBATIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBATIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAUjnFFAAWABwAXgBkAEAmAEAoAEAqgEAuAEMyAEAmAIBoAIKmAMAiAYBkAYTugYGCAEQARgZkgcBMaAHALIHALgHAMIHAzItMcgHB4AIAQ&sclient=gws-wiz-serp"""
 
 class Collector:
-    """Class to contain collecter functions"""
-    def __init__(self):
+    """Class to contain collecter functions, Oxylabs has a max concurrent pull
+       of 10 items so leaving that here for now"""
+    def __init__(self, max_thread_count=10):
         self.creds = dotenv_values('.env')
         self.username = self.creds['OXY_USERNAME']
         self.password = self.creds['OXY_PASS']
         self.ads_list = []
+        self.max_thread_count = max_thread_count
     
     def get_raw_url_content(self, URL):
         """This is a first function to just pull in a single URL"""
@@ -58,7 +60,16 @@ class Collector:
         """This function will return just the ads from a raw
         JSON return from the SERP"""
 
-        return serp_response.json()['results'][0]['content']['results']['paid']
+        try:
+            ads = serp_response.json()['results'][0]['content']['results']['paid']
+            if (ads == []):
+                return "No Ads Returned"
+            else:
+                return ads
+        except:
+            return "Query Failed"
+
+        
 
     def get_adds_from_query(self, query):
         """Funciton that wraps together smaller functions to take in a
@@ -68,18 +79,16 @@ class Collector:
         ads = self.extract_ads_from_json_response(response)
 
         self.ads_list.append(ads)
-        
-        return ads
 
-    def pull_ads_with_threading(self, query, count):
+    def pull_ads_in_bulk(self, query, count):
         """This is to allow for multiple threads to run at once
            Code here was adapted and borrowed from
            https://reintech.io/blog/how-to-create-a-multi-threaded-application-with-python
            and https://docs.python.org/3/library/threading.html
         """
 
-        # For testing putting this at 3, but likely will go to 10 for real use
-        threading.Semaphore(3)
+        # Max number of threads set as class constructor
+        threading.Semaphore(self.max_thread_count)
 
         threads = []
         for i in range(count):
@@ -92,14 +101,4 @@ class Collector:
 
         for thread in threads:
             thread.join()
-
-        print("Testing Ran executed!")
-
-        
-
-    
-    
-    # for i in range(10):
-    #     output_requests_response(test_URL)def get_raw_url_content(URL):
-
     
