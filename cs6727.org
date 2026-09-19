@@ -188,4 +188,10 @@ Sep 1 at 10:32am
 ***** Hoping to finish up collector today
 - Got the ads to pull correctly!
   [[file:assets/ads_working.png]]
-  
+- OK, now I am pulling ads successfully so I am good for this part but I need to think about the large number I want to bring in eventually.
+- I think what I will do is try to run 10 threads at a time in parallel, that means I need to set up a threaded app though which may be tricky.
+  - [[https://docs.python.org/3/library/threading.html][Python Threading Doca]]
+  - [[https://www.dataquest.io/blog/multithreading-in-python/][DataQuest Tutorial on Threading]]
+  - [[https://reintech.io/blog/how-to-create-a-multi-threaded-application-with-python][ReinTech Tutorial]]
+    - This article is very good, lots of examples and has lots of patterns
+    - Advanced Synchronization: Semaphores for Resource Pooling :: this section has just what I need
