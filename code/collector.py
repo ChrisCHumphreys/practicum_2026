@@ -41,6 +41,20 @@ class Collector:
         response = requests.request('POST', 'https://realtime.oxylabs.io/v1/queries', auth=(self.username, self.password), json=payload)
         # ads_list = json.dumps(response.json()['results'][0]['content']['results']['paid'])
         return response
+
+    def extract_ads_from_json_response(self, serp_response):
+        """This function will return just the ads from a raw JSON return from the SERP"""
+
+        return serp_response.json()['results'][0]['content']['results']['paid']
+
+    def get_adds_from_query(self, query):
+        """Funciton that wraps together smaller functions to take in a query and return just the ad section of the url"""
+
+        response = self.get_normalized_google_serp(query)
+        ads = self.extract_ads_from_json_response(response)
+
+        return ads
+        
     
     # for i in range(10):
     #     output_requests_response(test_URL)def get_raw_url_content(URL):
