@@ -184,7 +184,7 @@ Sep 1 at 10:32am
   - Pulls the max amount of ads
 - Found how to pull the ads from the JSON, took forever
   - response.json()['results'][0]['content']['results']['paid']
-**** Week 4 Day 5
+**** Week 4 Day 6
 ***** Hoping to finish up collector today
 - Got the ads to pull correctly!
   [[file:assets/ads_working.png]]
@@ -195,3 +195,6 @@ Sep 1 at 10:32am
   - [[https://reintech.io/blog/how-to-create-a-multi-threaded-application-with-python][ReinTech Tutorial]]
     - This article is very good, lots of examples and has lots of patterns
     - Advanced Synchronization: Semaphores for Resource Pooling :: this section has just what I need
+**** Week 4 Day 7
+***** Well, the collector is kind of finished, the only featrue Im missing is I wish I could get it to run until I have 30 results, but its tricky to get that pulled off.
+***** Gonna give myself a couple hours hereto see if I can get it, but then moving on

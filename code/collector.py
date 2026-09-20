@@ -13,6 +13,8 @@ from concurrent.futures import ThreadPoolExecutor
 # Thread pool executor docs
 # https://docs.python.org/3/library/concurrent.futures.html
 # https://superfastpython.com/threadpoolexecutor-in-python/
+# Locking Links
+# https://www.pythontutorial.net/python-concurrency/python-threading-lock/
 
 
 # Saving this for reference while I work, but its just a copy and paste of a search URL I ran manually
@@ -28,7 +30,7 @@ class Collector:
         self.ads_list = []
         self.max_thread_count = max_thread_count
         self.failed_queries = 0
-        self._stop_event = threading.Event()
+        self.lock = threading.Lock()
     
     def get_raw_url_content(self, URL):
         """This is a first function to just pull in a single URL"""
@@ -39,7 +41,7 @@ class Collector:
     def output_requests_response(self, URL):
         """Prings out the Headers, response code, and text of a website"""
     
-        content = get_raw_url_content(URL)
+        content = self.get_raw_url_content(URL)
     
         print(f"Headers: {content.headers}")
         print(f"Response Code: {content.status_code}")
@@ -79,13 +81,13 @@ class Collector:
         """Funciton that wraps together smaller functions to take in a
         query and return just the ad section of the url"""
 
-        
         response = self.get_normalized_google_serp(query)
         ads = self.extract_ads_from_json_response(response)
-        if (ads != "Query Failed"):
-            self.ads_list.append(ads)
-        else:
-            self.failed_queries += 1
+        with self.lock:
+            if (ads != "Query Failed"):
+                self.ads_list.append(ads)
+            else:
+                self.failed_queries += 1
 
     def pull_ads_in_bulk(self, query, count):
         """This is to allow for multiple threads to run at once
@@ -94,10 +96,28 @@ class Collector:
            and https://docs.python.org/3/library/threading.html
         """ 
         
-        threads = []
-    
         with ThreadPoolExecutor(self.max_thread_count) as executor:
-            _ = [executor.submit(self.get_ads_from_query, query) for i in range(count)]
-       
-
             
+            while len(self.ads_list) < count:
+                futures = []
+
+                # I found it!  I need to only send off as many tasks as will
+                # get me where I want. I think this library just kicks of as
+                # many threads as it can if I dont have the loop here.  Im gonna
+                # have to use the futures library I think.
+                threads_needed = count - len(self.ads_list)
+
+                for counter in range(threads_needed):
+                    futures.append(executor.submit(self.get_ads_from_query, query))
+
+                for thread in futures:
+                    thread.result()
+                # while len(futures) < count and len(futures) < self.max_thread_count:
+                # thread = executor.submit(self.get_ads_from_query, query)
+                # futures.append(thread)
+
+            # here is another key I was missing, I need to wait till I get
+            # the data back
+            # for thread in futures:
+            #     thread.result()
+
