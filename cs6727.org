@@ -198,3 +198,18 @@ Sep 1 at 10:32am
 **** Week 4 Day 7
 ***** Well, the collector is kind of finished, the only featrue Im missing is I wish I could get it to run until I have 30 results, but its tricky to get that pulled off.
 ***** Gonna give myself a couple hours hereto see if I can get it, but then moving on
+***** I got it!  Took a few hours, but I am not running where 10 is the max threads, and it keeps going until I get a number of responses set by the user
+***** Next up is I need to find a domain blacklist I can use to evaluate the ads I get against.  This will also be good prep for getting ready for my detector code.
+- Well, [[https://github.com/romainmarcoux/malicious-domains][malicious-domians github repo]] looks very promising.
+  - Pulls once an hour from alienvault, malwarebytes, and more
+- This site [[https://tweetfeed.live/malicious-domains/][tweetfeed.live]] has a bunch that are sourced from security people on twitter every 15 minutes.
+- [[https://zeltser.com/malicious-ip-blocklists][Zeltser Blocklists]] :: List of lists, has some good ones
+- [[https://netapi.com/compromised-urls/][NetAPI.com]] :: Has one giant option which is nice and seems to be free and kept up to date
+- Ok, not sure which of these I will use, likely download multiple and combine?
+***** Ok, thats basically done, i also need to find a working alternative for wepawet oracle.
+- [[https://urlscan.io/][UrlScan.io]] :: could be a good option, they have an api, and there are existing python libraries
+- [[https://sitecheck.sucuri.net/][Sucuri]] :: Never heard of this one, just gives back a rating of potential maliciousness between 1 and 5
+- [[https://radar.cloudflare.com/scan/0cb1512a-62f3-4aa0-9b62-cbbefec6d947/summary][cloudflare Radar]] :: enter a url, it returns a security verdict 
+****** Just realized as Im wokrin on these that these accept urls, I need them to accept the html I think. No, I need it to just accept the url, I am pretty sure its at teh point I call the ad url where i would then see the redirect, so as long as it get redirected to teh malicious site, it should stay malicious.
+- [[https://hybrid-analysis.com/][Hybrid-Analyses]] :: this one looks real good, also owned by CS so could be useful
+- Forgot to grab the link, but joe sandbox is good as well.  Also this iwll do double duty as an oracle for both files and hashes
