@@ -213,3 +213,7 @@ Sep 1 at 10:32am
 ****** Just realized as Im wokrin on these that these accept urls, I need them to accept the html I think. No, I need it to just accept the url, I am pretty sure its at teh point I call the ad url where i would then see the redirect, so as long as it get redirected to teh malicious site, it should stay malicious.
 - [[https://hybrid-analysis.com/][Hybrid-Analyses]] :: this one looks real good, also owned by CS so could be useful
 - Forgot to grab the link, but joe sandbox is good as well.  Also this iwll do double duty as an oracle for both files and hashes
+*** Week 5 Tracking
+**** Week 5 Day 1
+***** Back from my work offsite so I haven't gotten anything done. Today is gonna be my start to the detector code
+***** Actually, before I get that set up, I need to read the article sent by Dr. Ahmad which I will base mine off of.
