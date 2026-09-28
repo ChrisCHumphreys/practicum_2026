@@ -214,6 +214,12 @@ Sep 1 at 10:32am
 - [[https://hybrid-analysis.com/][Hybrid-Analyses]] :: this one looks real good, also owned by CS so could be useful
 - Forgot to grab the link, but joe sandbox is good as well.  Also this iwll do double duty as an oracle for both files and hashes
 *** Week 5 Tracking
-**** Week 5 Day 1
+**** Week 5 Day 6
 ***** Back from my work offsite so I haven't gotten anything done. Today is gonna be my start to the detector code
 ***** Actually, before I get that set up, I need to read the article sent by Dr. Ahmad which I will base mine off of.
+**** Week 5 Day 7
+***** Spent a ton of time today just parsing output and looking for any indicators of any malicious ads. Did not find any which was disheartening, but I think I just need to build it out and see what happens.
+*** Week 6 Tracking
+**** Week 6 Day 1
+***** Before work I have an hour, gonna try to make some progress against the DNS blocklist oracle.
+***** 

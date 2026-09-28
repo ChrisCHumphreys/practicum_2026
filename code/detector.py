@@ -7,7 +7,14 @@ class Detector:
         self.ads_list = []
 
     def get_ads_list(self, query, results_count):
-        """This will create a list"""
+        """This will create a Collector object and pull grab the returned ads"""
         c = Collector()
-        print(f"c.ads_list: {c.ads_list}")
+        c.pull_ads_in_bulk(query, results_count)
+        self.ads_list = c.ads_list
+        print(f"self.ads_list: {self.ads_list}")
+
+    def request_ad_link_via_proxy(self, URL):
+        """This will sumbit an ad url via proxy and return the resulting page"""
+        
+        
     
