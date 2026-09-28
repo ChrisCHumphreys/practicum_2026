@@ -16,5 +16,4 @@ class Detector:
     def request_ad_link_via_proxy(self, URL):
         """This will sumbit an ad url via proxy and return the resulting page"""
         
-        
-    
+            
