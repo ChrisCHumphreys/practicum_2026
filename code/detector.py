@@ -12,13 +12,22 @@ class Detector:
         self.creds = dotenv_values('.env')
         self.proxy_username = self.creds['OXY_PROXY_USERNAME']
         self.proxy_pass = self.creds['OXY_PROXY_PASS']
+        self.final_ad_pages = []
         
     def get_ads_list(self, query, results_count):
         """This will create a Collector object and pull grab the returned ads"""
         c = Collector()
         c.pull_ads_in_bulk(query, results_count)
-        self.ads_list = c.ads_list
-        print(f"self.ads_list: {self.ads_list}")
+
+        print(c.ads_list)
+        
+        for item in c.ads_list:
+            if item != "No Ads Returned":
+                for ad in item:
+                    self.ads_list.append(ad["data_rw"])
+        
+        # self.ads_list = c.ads_list
+        # print(f"self.ads_list: {self.ads_list}")
 
     def create_proxy_request_items(self):
         """Function to create the pieces of the URL that will be used for the
@@ -50,6 +59,16 @@ class Detector:
 
         return response
 
+    def grab_content_from_ads_list(self):
+        """Loops through the ads_list and pulls the resulting webpage from
+        each"""
+        
+        for ad in self.ads_list:
+            if (ad != "No Ads Returned"):
+                self.final_ad_pages.append(
+                    self.get_data_from_url_response(ad)
+                )
+
     def get_data_from_url_response(self, URL):
         """Returns a dict with useful items from the proxy response"""
         # For reference if I need to add fields later
@@ -62,7 +81,7 @@ class Detector:
         ad_response_info["OriginalURL"] = URL
         ad_response_info["ResponseHeaders"] = response.headers
         ad_response_info["RequestHeaders"] = response.request.headers
-        ad_response_info["RedirectList"] = response.history
+        ad_response_info["RedirectURL"] = response.history[-1].url
         ad_response_info["FinalURL"] = response.url
         ad_response_info["Text"] = response.text
 
@@ -71,11 +90,18 @@ class Detector:
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
-        URL1 = "https://ip.oxylabs.io/location"
-        URL2 = "https://www.showmyip.com"
+        # URL1 = "https://ip.oxylabs.io/location"
+        # URL2 = "https://www.showmyip.com"
         
-        ad_page = self.get_data_from_url_response(URL2)
+        # ad_page = self.get_data_from_url_response(URL2)
 
-        for key, value in ad_page.items():
-            print(f"Key: {key}\t\t\tValue: {value}")
-        
+        # for key, value in ad_page.items():
+        #     print(f"Key: {key}\t\t\tValue: {value}")
+
+        # first I need to build the list
+        self.get_ads_list("Consumer Reports best Flatscreen TV", 10)
+        # then I need to pull a response from each item
+        self.grab_content_from_ads_list()
+        # then print the results
+        # for item in self.final_ad_pages:
+             # print(item)        
