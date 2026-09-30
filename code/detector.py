@@ -1,6 +1,9 @@
 from collector import Collector
 from dotenv import dotenv_values
 
+# Used the requests library docs a lot for this
+# https://docs.python-requests.org/en/latest/user/advanced/
+
 class Detector:
     """Detector Class is used to determine if Found URLS are malicious"""
     def __init__(self):
@@ -21,7 +24,7 @@ class Detector:
         """Function to create the pieces of the URL that will be used for the
         proxy request"""
 
-        proxy_entry_base = f"http://customer-{self.proxy_username}:{self.proxy_pass}@pr.oxylabs.io:7777"
+        proxy_entry_base = f"http://customer-{self.proxy_username}-cc-US-city-miami:{self.proxy_pass}@pr.oxylabs.io:7777"
         proxies = {'http' :  proxy_entry_base,
                    'https' : proxy_entry_base}
 
@@ -32,7 +35,7 @@ class Detector:
         proxy"""
 
         proxy_urls = self.create_proxy_request_items()
-        response = requests.get(URL, proxies=proxy_urls)
+        response = requests.get(URL, proxies=proxy_urls, timeout=5)
 
         return response
         
