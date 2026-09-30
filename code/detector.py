@@ -34,12 +34,48 @@ class Detector:
         """Takes in a URL and sends an http request to the URL via residential
         proxy"""
 
+        # I am trying here to match the headers of a normal browser
+        # these were mostly just copy and pasted from my firefox browser
+        # I got the user-agent from https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome
+        headers = {
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Connection': 'keep-alive',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
+        }
+
         proxy_urls = self.create_proxy_request_items()
-        response = requests.get(URL, proxies=proxy_urls, timeout=5)
+        response = requests.get(URL, headers=headers, proxies=proxy_urls, timeout=5)
 
         return response
+
+    def get_data_from_url_response(self, URL):
+        """Returns a dict with useful items from the proxy response"""
+        # For reference if I need to add fields later
+        # https://docs.python-requests.org/en/latest/api/#requests.Response
+
+        response = self.send_request_via_proxy(URL)
+
+        ad_response_info = {}
+
+        ad_response_info["OriginalURL"] = URL
+        ad_response_info["ResponseHeaders"] = response.headers
+        ad_response_info["RequestHeaders"] = response.request.headers
+        ad_response_info["RedirectList"] = response.history
+        ad_response_info["FinalURL"] = response.url
+        ad_response_info["Text"] = response.text
+
+        return ad_response_info
+
+    def test_function(self):
+        """Just a function to save time for myself in testing"""
+
+        URL1 = "https://ip.oxylabs.io/location"
+        URL2 = "https://www.showmyip.com"
         
-    
+        ad_page = self.get_data_from_url_response(URL2)
+
+        for key, value in ad_page.items():
+            print(f"Key: {key}\t\t\tValue: {value}")
         
-        
-            
