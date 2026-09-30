@@ -3,6 +3,8 @@ from dotenv import dotenv_values
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
+# Learned aobut the url requests unqute option on stack overflow
+# https://stackoverflow.com/questions/16566069/url-decode-utf-8-in-python
 
 class Detector:
     """Detector Class is used to determine if Found URLS are malicious"""
@@ -19,7 +21,7 @@ class Detector:
         c = Collector()
         c.pull_ads_in_bulk(query, results_count)
 
-        print(c.ads_list)
+        # print(c.ads_list)
         
         for item in c.ads_list:
             if item != "No Ads Returned":
@@ -61,7 +63,7 @@ class Detector:
 
     def grab_content_from_ads_list(self):
         """Loops through the ads_list and pulls the resulting webpage from
-        each"""
+        each, then updates the final_ad_pages list"""
         
         for ad in self.ads_list:
             if (ad != "No Ads Returned"):
@@ -85,8 +87,14 @@ class Detector:
         ad_response_info["FinalURL"] = response.url
         ad_response_info["Text"] = response.text
 
-        return ad_response_info
+        # note if the urls match - Need to URL decode the original
+        if ad_response_info["FinalURL"] not in requests.utils.unquote(ad_response_info["OriginalURL"]):
+            ad_response_info["URLSMatch"] = False
+        else:
+            ad_response_info["URLSMatch"] = True        
 
+        return ad_response_info
+   
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
@@ -99,9 +107,11 @@ class Detector:
         #     print(f"Key: {key}\t\t\tValue: {value}")
 
         # first I need to build the list
-        self.get_ads_list("Consumer Reports best Flatscreen TV", 10)
+        self.get_ads_list("Samsung Galaxy S24 specs", 10)
         # then I need to pull a response from each item
         self.grab_content_from_ads_list()
         # then print the results
-        # for item in self.final_ad_pages:
-             # print(item)        
+        for item in self.final_ad_pages:
+            print(f"Match: {item['URLSMatch']}")
+            print(f"\tOriginal: {item['OriginalURL']}")
+            print(f"\tFinal: {item['FinalURL']}")
