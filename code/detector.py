@@ -17,9 +17,26 @@ class Detector:
         self.ads_list = c.ads_list
         print(f"self.ads_list: {self.ads_list}")
 
-    def create_proxy_request_base(self, URL):
-        """Function to create the URL that will be used for the proxy request"""
+    def create_proxy_request_items(self):
+        """Function to create the pieces of the URL that will be used for the
+        proxy request"""
+
+        proxy_entry_base = f"http://customer-{self.proxy_username}:{self.proxy_pass}@pr.oxylabs.io:7777"
+        proxies = {'http' :  proxy_entry_base,
+                   'https' : proxy_entry_base}
+
+        return proxies
+
+    def send_request_via_proxy(self, URL):
+        """Takes in a URL and sends an http request to the URL via residential
+        proxy"""
+
+        proxy_urls = self.create_proxy_request_items()
+        response = requests.get(URL, proxies=proxy_urls)
+
+        return response
         
+    
         
         
             
