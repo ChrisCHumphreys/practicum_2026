@@ -7,6 +7,9 @@ resources/
 # removing the indicators folder for now as I have functions to build this
 indicators/
 
+# no need to keep my pickle file cause it is easily generated
+sample_final_ad_list.pickle
+
 # Created by https://gitignore.org
 # Python.gitignore
 

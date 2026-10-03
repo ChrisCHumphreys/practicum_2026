@@ -4,6 +4,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 import requests
 import re
+import pickle
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
@@ -144,7 +145,7 @@ class Detector:
         #     print(f"Key: {key}\t\t\tValue: {value}")
 
         # first I need to build the list
-        self.get_ads_list("Laptop Wirecutter Best Deal", 10)
+        self.get_ads_list("2026 Best SUV", 10)
         # then I need to pull a response from each item
         self.grab_content_from_ads_list()
         # then print the results
@@ -152,10 +153,28 @@ class Detector:
             print(f"\tOriginal: {item['FinalURL']}")
             print(f"\tDomain: {item['Domain']}")
 
+        # Creating a file so I can test the Classifier wihtout using up all my
+        # api calls, since I am saving objects, looks like I need to 'pickle'.
+        # Going to use that, got info from python docs
+        # https://docs.python.org/3/library/pickle.html#examples
+        with open("./output/sample_final_ad_list.pickle", "wb") as sample_file:
+            pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
+
 
 class Classifier:
     """Takes over the attempted classification of ads once they have been
     detected by the Detector class"""
+
+    def __init__(self):
+        self.final_ad_pages = []
+
+    def build_final_page_list_from_pickle(self):
+        """For testing I am pickling the ad list so I dont have to re-run it
+        each time. This is how I rebuild the list from that pickle"""
+
+        with open("./output/sample_final_ad_list.pickle", "rb") as pickle_file:
+            self.final_ad_pages = pickle.load(pickle_file)
+        
 
     def build_malicious_domain_list(self):
         """Makes a copy of the malicious domain list from github so that I don't
@@ -170,7 +189,15 @@ class Classifier:
             domain_file.write(requests.get(url1).text)
             domain_file.write(requests.get(url2).text)
             domain_file.write(requests.get(url3).text)
-            
+
+    def find_malicious_domains_in_ads_list(self, detector_ad_list):
+        """Accepts a 'final_ad_pages' list from a detector object and searches
+        the known malicious domains list to identify any matches"""
+
+        # open the domain list - Remember to create it!
+        with open("./indicators/domains.txt", "r") as domain_file:
+            malicious_domains = domain_file.readall()
         
-    
-    
+        # for ad in detector_ad_list:
+        #     if ad 
+        
