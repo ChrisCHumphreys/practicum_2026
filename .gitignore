@@ -4,6 +4,9 @@
 # going to exclude the resources folder as that just holds pdfs and stuff
 resources/
 
+# removing the indicators folder for now as I have functions to build this
+indicators/
+
 # Created by https://gitignore.org
 # Python.gitignore
 

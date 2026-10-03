@@ -3,6 +3,7 @@ from dotenv import dotenv_values
 import threading
 from concurrent.futures import ThreadPoolExecutor
 import requests
+import re
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
@@ -10,9 +11,13 @@ import requests
 # https://stackoverflow.com/questions/16566069/url-decode-utf-8-in-python
 # Most of the threading stuff I am copying from the work I did in the
 # collector modules, so most of that research and sources applies here as well
+# used the python3 docs to help with writing the regular expression to pull
+# the domains
+# https://docs.python.org/3/library/re.html
 
 class Detector:
-    """Detector Class is used to determine if Found URLS are malicious"""
+    """Detector Class is used to detect the actual ad pages after the collector
+    collects the ads"""
     def __init__(self):
         """Sets up class vars"""
         self.ads_list = []
@@ -115,6 +120,7 @@ class Detector:
         ad_response_info["RedirectURL"] = response.history[-1].url
         ad_response_info["FinalURL"] = response.url
         ad_response_info["Text"] = response.text
+        ad_response_info["Domain"] = re.findall(r'^http[s]?://([^/\s]*)', response.url)[0]
 
         # note if the urls match - Need to URL decode the original
         if ad_response_info["FinalURL"] not in requests.utils.unquote(ad_response_info["OriginalURL"]):
@@ -138,11 +144,33 @@ class Detector:
         #     print(f"Key: {key}\t\t\tValue: {value}")
 
         # first I need to build the list
-        self.get_ads_list("Best Laptop for Work 2026", 10)
+        self.get_ads_list("Laptop Wirecutter Best Deal", 10)
         # then I need to pull a response from each item
         self.grab_content_from_ads_list()
         # then print the results
         for item in self.final_ad_pages:
-            print(f"Match: {item['URLSMatch']}")
-            print(f"\tOriginal: {item['OriginalURL']}")
-            print(f"\tFinal: {item['FinalURL']}")
+            print(f"\tOriginal: {item['FinalURL']}")
+            print(f"\tDomain: {item['Domain']}")
+
+
+class Classifier:
+    """Takes over the attempted classification of ads once they have been
+    detected by the Detector class"""
+
+    def build_malicious_domain_list(self):
+        """Makes a copy of the malicious domain list from github so that I don't
+        have to re-pull all the time. This writes a file to disk that I can
+        compare against and then only occassionally update"""
+
+        # Malicious Domains below from https://github.com/romainmarcoux/malicious-domains
+        url1 = "https://raw.githubusercontent.com/romainmarcoux/malicious-domains/refs/heads/main/full-domains-aa.txt"
+        url2 = "https://raw.githubusercontent.com/romainmarcoux/malicious-domains/refs/heads/main/full-domains-ab.txt"
+        url3 = "https://raw.githubusercontent.com/romainmarcoux/malicious-domains/refs/heads/main/full-domains-ac.txt"
+        with open("./indicators/domains.txt", 'w') as domain_file:
+            domain_file.write(requests.get(url1).text)
+            domain_file.write(requests.get(url2).text)
+            domain_file.write(requests.get(url3).text)
+            
+        
+    
+    

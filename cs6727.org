@@ -229,7 +229,11 @@ Sep 1 at 10:32am
 ****** Potential Idea if time permits -> only pull in the "body" section of the code, or maybe even only the Head, or just those two?
 **** Week 5 day 6
 ***** I think I want to get everything multi-threaded today, at least for the proxy pulls
+****** Pretty early still in the day and I got this done!  Gonna move on to the blacklist oracle now
+****** Also, probably worth considering saving some results so I dont have to run this against the API every time.
 ***** Tomorrow if I can get it set up to match against the domain blacklsits and potentially another oracle could be useful as well.
+****** Well, I think Im gonna have time to start on this part today. 
+****** Step 1 is just gonna be to pull the domains out of the list.
 ***** I need to remember that I have to start drafting my paper for deliverable 3 as well.  
 ***** Really starting to feel some pressure now, cant let up.
 ****** Another Idea, I could check to see if I have already downloaded a page and if so not re-download it
