@@ -80,11 +80,16 @@ class Detector:
             futures = []
             for ad in self.ads_list:
                 futures.append(executor.submit(
-                    self.get_data_from_url_response(ad)))
+                    self.get_data_from_url_response, ad))
 
+            # below taken largely from python docs
+            # https://docs.python.org/3/library/concurrent.futures.html
             for thread in futures:
-                thread.result()
-
+                try:
+                    thread.result()
+                except Exception as e:
+                    print(f"Exception {e}")
+                          
         # Everything Below here was working before making multi threaded
         # for ad in self.ads_list: 
         #     if (ad != "No Ads Returned"):
