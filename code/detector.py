@@ -122,6 +122,7 @@ class Detector:
         ad_response_info["FinalURL"] = response.url
         ad_response_info["Text"] = response.text
         ad_response_info["Domain"] = re.findall(r'^http[s]?://([^/\s]*)', response.url)[0]
+        ad_response_info["DomainIsMalicious"] = False
 
         # note if the urls match - Need to URL decode the original
         if ad_response_info["FinalURL"] not in requests.utils.unquote(ad_response_info["OriginalURL"]):
@@ -166,14 +167,14 @@ class Classifier:
     detected by the Detector class"""
 
     def __init__(self):
-        self.final_ad_pages = []
+        self.sample_final_ad_pages = []
 
     def build_final_page_list_from_pickle(self):
         """For testing I am pickling the ad list so I dont have to re-run it
         each time. This is how I rebuild the list from that pickle"""
 
         with open("./output/sample_final_ad_list.pickle", "rb") as pickle_file:
-            self.final_ad_pages = pickle.load(pickle_file)
+            self.sample_final_ad_pages = pickle.load(pickle_file)
         
 
     def build_malicious_domain_list(self):
@@ -190,14 +191,21 @@ class Classifier:
             domain_file.write(requests.get(url2).text)
             domain_file.write(requests.get(url3).text)
 
-    def find_malicious_domains_in_ads_list(self, detector_ad_list):
+    def mark_malicious_domains_in_ads_list(self, detector_ad_list):
         """Accepts a 'final_ad_pages' list from a detector object and searches
         the known malicious domains list to identify any matches"""
 
         # open the domain list - Remember to create it!
         with open("./indicators/domains.txt", "r") as domain_file:
-            malicious_domains = domain_file.readall()
+            malicious_domains = domain_file.read()
         
-        # for ad in detector_ad_list:
-        #     if ad 
+        for ad in detector_ad_list:
+            if ad["Domain"] in malicious_domains:
+                ad["DomainIsMalicious"] = True
+
+        # for testing gonna just print them out
+        for ad in detector_ad_list:
+            print(f"ad['Domain']: {ad['Domain']}")
+            print(f"ad['DomainIsMalicious']: {ad['DomainIsMalicious']}")
+                
         
