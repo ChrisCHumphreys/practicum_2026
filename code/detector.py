@@ -1,10 +1,15 @@
 from collector import Collector
 from dotenv import dotenv_values
+import threading
+from concurrent.futures import ThreadPoolExecutor
+import requests
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
 # Learned aobut the url requests unqute option on stack overflow
 # https://stackoverflow.com/questions/16566069/url-decode-utf-8-in-python
+# Most of the threading stuff I am copying from the work I did in the
+# collector modules, so most of that research and sources applies here as well
 
 class Detector:
     """Detector Class is used to determine if Found URLS are malicious"""
@@ -15,6 +20,8 @@ class Detector:
         self.proxy_username = self.creds['OXY_PROXY_USERNAME']
         self.proxy_pass = self.creds['OXY_PROXY_PASS']
         self.final_ad_pages = []
+        self.lock = threading.Lock()
+        self.max_thread_count = 50
         
     def get_ads_list(self, query, results_count):
         """This will create a Collector object and pull grab the returned ads"""
@@ -64,15 +71,32 @@ class Detector:
     def grab_content_from_ads_list(self):
         """Loops through the ads_list and pulls the resulting webpage from
         each, then updates the final_ad_pages list"""
-        
-        for ad in self.ads_list:
-            if (ad != "No Ads Returned"):
-                self.final_ad_pages.append(
-                    self.get_data_from_url_response(ad)
-                )
+
+        with ThreadPoolExecutor(self.max_thread_count) as executor:
+            # Ok, so the real only limit is gonna be what my computer can handle
+            # so I think Im gonna leave max_thread_count at 50 and use that
+            # as the number of threads to fire.
+
+            futures = []
+            for ad in self.ads_list:
+                futures.append(executor.submit(
+                    self.get_data_from_url_response(ad)))
+
+            for thread in futures:
+                thread.result()
+
+        # Everything Below here was working before making multi threaded
+        # for ad in self.ads_list: 
+        #     if (ad != "No Ads Returned"):
+        #         response = self.get_data_from_url_response(ad)
+        #         with self.lock:
+        #             self.final_ad_pages.append(
+        #                 response
+        #            )
 
     def get_data_from_url_response(self, URL):
-        """Returns a dict with useful items from the proxy response"""
+        """Appends a dict with useful items from the proxy response to the
+           final_ad_pages list"""
         # For reference if I need to add fields later
         # https://docs.python-requests.org/en/latest/api/#requests.Response
 
@@ -93,7 +117,9 @@ class Detector:
         else:
             ad_response_info["URLSMatch"] = True        
 
-        return ad_response_info
+        with self.lock:
+            self.final_ad_pages.append(ad_response_info)
+        # return ad_response_info
    
     def test_function(self):
         """Just a function to save time for myself in testing"""
@@ -107,7 +133,7 @@ class Detector:
         #     print(f"Key: {key}\t\t\tValue: {value}")
 
         # first I need to build the list
-        self.get_ads_list("Samsung Galaxy S24 specs", 10)
+        self.get_ads_list("Best Laptop for Work 2026", 10)
         # then I need to pull a response from each item
         self.grab_content_from_ads_list()
         # then print the results

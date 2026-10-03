@@ -232,3 +232,5 @@ Sep 1 at 10:32am
 ***** Tomorrow if I can get it set up to match against the domain blacklsits and potentially another oracle could be useful as well.
 ***** I need to remember that I have to start drafting my paper for deliverable 3 as well.  
 ***** Really starting to feel some pressure now, cant let up.
+****** Another Idea, I could check to see if I have already downloaded a page and if so not re-download it
+***** Ok, just verified on the website they have no limit on the number of concurrent connections for the residential proxies.
