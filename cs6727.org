@@ -238,3 +238,8 @@ Sep 1 at 10:32am
 ***** Really starting to feel some pressure now, cant let up.
 ****** Another Idea, I could check to see if I have already downloaded a page and if so not re-download it
 ***** Ok, just verified on the website they have no limit on the number of concurrent connections for the residential proxies.
+***** Wrapping up now.  Tons of progress today.
+****** Got the multi threading done
+****** Got the comparison to the malicious domains done, thats one oracle taken care of
+****** Am writign to disk and pickling so that I can reuse results for testing
+****** Tomorrow need to put in a known bad domain to ensure my code works, but I think its pretty good.
