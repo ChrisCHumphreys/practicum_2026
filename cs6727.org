@@ -222,12 +222,12 @@ Sep 1 at 10:32am
 *** Week 6 Tracking
 **** Week 6 Day 1
 ***** Before work I have an hour, gonna try to make some progress against the DNS blocklist oracle.
-**** Week 5 Day 3
+**** Week 6 Day 3
 ***** got a ton done on my detector code, unfortunatley didn't take many notes, in fact I am writing this after the fact.  
 ***** Got detector code running, including via the proxy which I also researched and got all set up.
 ***** I am pulling the fields that I think I will need, big concern here is if I really need to bring in all of the text of the websites.  Some of these are massive.  
 ****** Potential Idea if time permits -> only pull in the "body" section of the code, or maybe even only the Head, or just those two?
-**** Week 5 day 6
+**** Week 6 day 6
 ***** I think I want to get everything multi-threaded today, at least for the proxy pulls
 ****** Pretty early still in the day and I got this done!  Gonna move on to the blacklist oracle now
 ****** Also, probably worth considering saving some results so I dont have to run this against the API every time.
@@ -243,3 +243,5 @@ Sep 1 at 10:32am
 ****** Got the comparison to the malicious domains done, thats one oracle taken care of
 ****** Am writign to disk and pickling so that I can reuse results for testing
 ****** Tomorrow need to put in a known bad domain to ensure my code works, but I think its pretty good.
+**** Week 6 Day 7
+***** Today working on progress reprot 3.  This one needs to have my intial paper draft
