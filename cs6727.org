@@ -245,3 +245,12 @@ Sep 1 at 10:32am
 ****** Tomorrow need to put in a known bad domain to ensure my code works, but I think its pretty good.
 **** Week 6 Day 7
 ***** Today working on progress reprot 3.  This one needs to have my intial paper draft
+*** Week 7 Tracking
+**** Super busy week so had to wait till today to start. Confident I can take care of what I need to this weekend though.
+**** Today is gonna be trying to get a few more of these oracle hooked up.
+**** Gonna start with VT which is really for using for file downloads, but I am thinking that might be somewhat rare.
+**** One thing I need to do as well, and I think I will do first is check for and remove duplicate URL's from the list
+- [[https://pythonguides.com/find-duplicates-in-a-python-list/][PythonGuides.com - List Duplicates]]
+**** Singed up for API key at VirusTotal for use in classifier. 
+- So I only get 4 requests per minute with this api key, but if I use the corporate account from work I can get up to 100k lookups per minute.  Gonna inquire about that on Monday.
+**** 

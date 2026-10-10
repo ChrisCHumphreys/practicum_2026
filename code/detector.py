@@ -165,9 +165,13 @@ class Detector:
 class Classifier:
     """Takes over the attempted classification of ads once they have been
     detected by the Detector class"""
-
+    # https://pythonguides.com/find-duplicates-in-a-python-list/
+    # Above is a good link for removing duplicates from a list which I will be
+    # doing to remove duplicate ad entries.
+    
     def __init__(self):
         self.sample_final_ad_pages = []
+        self.vt_api_key = self.creds["VT_API_KEY"]
 
     def build_final_page_list_from_pickle(self):
         """For testing I am pickling the ad list so I dont have to re-run it
@@ -175,7 +179,6 @@ class Classifier:
 
         with open("./output/sample_final_ad_list.pickle", "rb") as pickle_file:
             self.sample_final_ad_pages = pickle.load(pickle_file)
-        
 
     def build_malicious_domain_list(self):
         """Makes a copy of the malicious domain list from github so that I don't
@@ -207,5 +210,11 @@ class Classifier:
         for ad in detector_ad_list:
             print(f"ad['Domain']: {ad['Domain']}")
             print(f"ad['DomainIsMalicious']: {ad['DomainIsMalicious']}")
+
+    def virus_total_assesment(self):
+        """This will define how I submit URLS to the VT Oracle"""
+        # Holding here pending approval to use the work VT API for this. I think
+        # it will be fine but want to get permission first.
+        
                 
         
