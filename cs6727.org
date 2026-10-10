@@ -262,3 +262,6 @@ Sep 1 at 10:32am
   - This may work, but I am limited to 5000 scans per month, and only 1 scan per 10 seconds, so Im gonna have to be targeted with these things.
 **** Ok, I was brainstorming with the AI about wether I was missing a bunch by using only the requests library and not using a library with a real browser like playwright. Although it is going to be a pain I think Im gonna go that route after all.
 - Gonna set this up today ideally, that leaves me all day tomorrow and all of next week to finish the oracles.
+  - [[https://playwright.dev/python/docs/intro][Playwright Docs]]
+  - [[https://oxylabs.io/blog/playwright-web-scraping][OxyLabs Playwright Documentation]] :: This is great! Im using oxylabs so this should help immensly.
+  - [[https://oxylabs.io/resources/integrations/playwright][OxyLabs Proxy Playwrigth information]]

@@ -5,6 +5,9 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 import re
 import pickle
+import asyncio
+from playwright.async_api import async_playwright
+
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
@@ -15,6 +18,8 @@ import pickle
 # used the python3 docs to help with writing the regular expression to pull
 # the domains
 # https://docs.python.org/3/library/re.html
+# Playwright tutorail from oxylabs
+# https://oxylabs.io/blog/playwright-web-scraping
 
 class Detector:
     """Detector Class is used to detect the actual ad pages after the collector
@@ -54,30 +59,57 @@ class Detector:
 
         return proxies
 
-    def send_request_via_proxy(self, URL):
+    async def send_request_via_proxy(self, URL):
         """Takes in a URL and sends an http request to the URL via residential
         proxy"""
 
         # I am trying here to match the headers of a normal browser
         # these were mostly just copy and pasted from my firefox browser
         # I got the user-agent from https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome
-        headers = {
-            'Accept': '*/*',
-            'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Connection': 'keep-alive',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
-        }
 
-        proxy_urls = self.create_proxy_request_items()
-        response = requests.get(URL, headers=headers, proxies=proxy_urls, timeout=5)
+        # Everything between here and the END was working up until I switched it
+        # with playwright
+        # headers = {
+        #     'Accept': '*/*',
+        #     'Accept-Encoding': 'gzip, deflate, br, zstd',
+        #     'Accept-Language': 'en-US,en;q=0.9',
+        #     'Connection': 'keep-alive',
+        #     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
+        # }
 
-        return response
+        # proxy_urls = self.create_proxy_request_items()
+        # response = requests.get(URL, headers=headers, proxies=proxy_urls, timeout=5)
+        
+        # return response
+        # END formerly working section
 
-    def grab_content_from_ads_list(self):
+        # this may be dumb, but I am gonna try to switch in playwright here
+        # oxylabs suggests using the async version, but that could break my
+        # threads. Im gonna try the async here first and get rid of the
+        # threading.  Fortunatley, I am in new branch, so if I break everything
+        # I will just abandon this branch and make a new one.
+        # https://oxylabs.io/blog/playwright-web-scraping -> demo
+        async with async_playwright() as v_browser:
+            browser_type = "chromium"
+            browser = await v_browser[browser_type].launch(
+                headless = False,
+                proxy = {
+                    "server": "https://pr.oxylabs.io:7777",
+                    "username": self.proxy_username,
+                    "password": self.proxy_pass
+                    }
+                )
+            ad_page = await browser.new_page()
+            await ad_page.goto("https://ip.oxylabs.io/")
+            await ad_page.wait_for_timeout(3000)
+            await browser.close()
+            return ad_page
+        
+    async def grab_content_from_ads_list(self):
         """Loops through the ads_list and pulls the resulting webpage from
         each, then updates the final_ad_pages list"""
 
+        '''Everything below here was working before I added playwright
         with ThreadPoolExecutor(self.max_thread_count) as executor:
             # Ok, so the real only limit is gonna be what my computer can handle
             # so I think Im gonna leave max_thread_count at 50 and use that
@@ -95,7 +127,7 @@ class Detector:
                     thread.result()
                 except Exception as e:
                     print(f"Exception {e}")
-                          
+        '''                  
         # Everything Below here was working before making multi threaded
         # for ad in self.ads_list: 
         #     if (ad != "No Ads Returned"):
@@ -104,6 +136,10 @@ class Detector:
         #             self.final_ad_pages.append(
         #                 response
         #            )
+
+        task = asyncio.create_task(self.send_request_via_proxy("fakeURL"))
+        result = await task
+        return result
 
     def get_data_from_url_response(self, URL):
         """Appends a dict with useful items from the proxy response to the
@@ -137,6 +173,7 @@ class Detector:
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
+        asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
         
@@ -146,20 +183,20 @@ class Detector:
         #     print(f"Key: {key}\t\t\tValue: {value}")
 
         # first I need to build the list
-        self.get_ads_list("2026 Best SUV", 10)
+        # self.get_ads_list("2026 Best SUV", 10)
         # then I need to pull a response from each item
-        self.grab_content_from_ads_list()
+        # self.grab_content_from_ads_list()
         # then print the results
-        for item in self.final_ad_pages:
-            print(f"\tOriginal: {item['FinalURL']}")
-            print(f"\tDomain: {item['Domain']}")
+        # for item in self.final_ad_pages:
+            # print(f"\tOriginal: {item['FinalURL']}")
+            # print(f"\tDomain: {item['Domain']}")
 
         # Creating a file so I can test the Classifier wihtout using up all my
         # api calls, since I am saving objects, looks like I need to 'pickle'.
         # Going to use that, got info from python docs
         # https://docs.python.org/3/library/pickle.html#examples
-        with open("./output/sample_final_ad_list.pickle", "wb") as sample_file:
-            pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
+        # with open("./output/sample_final_ad_list.pickle", "wb") as sample_file:
+        #     pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
 
 
 class Classifier:
