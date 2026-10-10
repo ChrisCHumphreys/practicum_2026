@@ -253,4 +253,12 @@ Sep 1 at 10:32am
 - [[https://pythonguides.com/find-duplicates-in-a-python-list/][PythonGuides.com - List Duplicates]]
 **** Singed up for API key at VirusTotal for use in classifier. 
 - So I only get 4 requests per minute with this api key, but if I use the corporate account from work I can get up to 100k lookups per minute.  Gonna inquire about that on Monday.
-**** 
+**** Signed up for a cloudflare account.
+- Ok, this one works pretty well, I put in a url from a previous scan  and it seems to have worked just fine.
+- The main issues is that it is very slow, at least via the website, API may be quicker.
+- If not quicker, Im thinking maybe I do the initial scan with VT, and then any that are potentially malicious I run through CloudFlare radar for a more thorough check.
+- Oh, interesting, at this link there is an option to do bulk URL scans, they have less priority and may take a bit longer, but htis sounds good.
+  - https://developers.cloudflare.com/api/resources/url_scanner/subresources/scans/methods/bulk_create/
+  - This may work, but I am limited to 5000 scans per month, and only 1 scan per 10 seconds, so Im gonna have to be targeted with these things.
+**** Ok, I was brainstorming with the AI about wether I was missing a bunch by using only the requests library and not using a library with a real browser like playwright. Although it is going to be a pain I think Im gonna go that route after all.
+- Gonna set this up today ideally, that leaves me all day tomorrow and all of next week to finish the oracles.
