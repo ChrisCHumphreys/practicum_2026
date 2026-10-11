@@ -246,22 +246,26 @@ Sep 1 at 10:32am
 **** Week 6 Day 7
 ***** Today working on progress reprot 3.  This one needs to have my intial paper draft
 *** Week 7 Tracking
-**** Super busy week so had to wait till today to start. Confident I can take care of what I need to this weekend though.
-**** Today is gonna be trying to get a few more of these oracle hooked up.
-**** Gonna start with VT which is really for using for file downloads, but I am thinking that might be somewhat rare.
-**** One thing I need to do as well, and I think I will do first is check for and remove duplicate URL's from the list
+**** Day 6
+***** Super busy week so had to wait till today to start. Confident I can take care of what I need to this weekend though.
+***** Today is gonna be trying to get a few more of these oracle hooked up.
+***** Gonna start with VT which is really for using for file downloads, but I am thinking that might be somewhat rare.
+***** One thing I need to do as well, and I think I will do first is check for and remove duplicate URL's from the list
 - [[https://pythonguides.com/find-duplicates-in-a-python-list/][PythonGuides.com - List Duplicates]]
-**** Singed up for API key at VirusTotal for use in classifier. 
+***** Singed up for API key at VirusTotal for use in classifier. 
 - So I only get 4 requests per minute with this api key, but if I use the corporate account from work I can get up to 100k lookups per minute.  Gonna inquire about that on Monday.
-**** Signed up for a cloudflare account.
+***** Signed up for a cloudflare account.
 - Ok, this one works pretty well, I put in a url from a previous scan  and it seems to have worked just fine.
 - The main issues is that it is very slow, at least via the website, API may be quicker.
 - If not quicker, Im thinking maybe I do the initial scan with VT, and then any that are potentially malicious I run through CloudFlare radar for a more thorough check.
 - Oh, interesting, at this link there is an option to do bulk URL scans, they have less priority and may take a bit longer, but htis sounds good.
   - https://developers.cloudflare.com/api/resources/url_scanner/subresources/scans/methods/bulk_create/
   - This may work, but I am limited to 5000 scans per month, and only 1 scan per 10 seconds, so Im gonna have to be targeted with these things.
-**** Ok, I was brainstorming with the AI about wether I was missing a bunch by using only the requests library and not using a library with a real browser like playwright. Although it is going to be a pain I think Im gonna go that route after all.
+***** Ok, I was brainstorming with the AI about wether I was missing a bunch by using only the requests library and not using a library with a real browser like playwright. Although it is going to be a pain I think Im gonna go that route after all.
 - Gonna set this up today ideally, that leaves me all day tomorrow and all of next week to finish the oracles.
   - [[https://playwright.dev/python/docs/intro][Playwright Docs]]
   - [[https://oxylabs.io/blog/playwright-web-scraping][OxyLabs Playwright Documentation]] :: This is great! Im using oxylabs so this should help immensly.
   - [[https://oxylabs.io/resources/integrations/playwright][OxyLabs Proxy Playwrigth information]]
+**** Day 7
+***** Got the async stuff running yesterday, today Im hoping to get is set to limit the max number of concurrent requests, as I am going to have a large list
+***** 
