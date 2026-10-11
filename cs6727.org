@@ -270,4 +270,5 @@ Sep 1 at 10:32am
   - [[https://playwright.dev/python/docs/library][Playwright Docs]] :: Thread info at very bottom of page
 **** Day 7
 ***** Got the async stuff running yesterday, today Im hoping to get is set to limit the max number of concurrent requests, as I am going to have a large list
-***** 
+***** Ok, so I have everyhting working as far as using playwright async to pull urls.  The only time it does not work is when I call google ads.  I just came across a very interesting for of playwright called playwright-stealth, and i think it may be just what I need.
+- https://www.hrekov.com/blog/detect-google-adsense-playwright

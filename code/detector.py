@@ -7,6 +7,7 @@ import re
 import pickle
 import asyncio
 from playwright.async_api import async_playwright
+from playwright_stealth import Stealth
 
 
 # Used the requests library docs a lot for this
@@ -36,7 +37,7 @@ class Detector:
         self.final_ad_pages = []
         self.lock = threading.Lock()
         self.max_thread_count = 50
-        self.semaphore = asyncio.Semaphore(50)
+        self.semaphore = asyncio.Semaphore(3)
 
     def load_sample_ad_list(self):
         """Just a way to load a saved ad list so I dont burn out my api"""
@@ -166,27 +167,34 @@ class Detector:
         # return result
         # Much of the below develop with assistance from
         # https://jonathansoma.com/everything/scraping/parallel-playwright/
-        playwright = await async_playwright().start()
-        browser = await playwright.chromium.launch(
-            headless = False,
-            proxy = {
-                "server": "http://pr.oxylabs.io:7777",
-                "username": self.proxy_username,
-                "password": self.proxy_pass
+        # Stealth additions from
+        # https://pypi.org/project/playwright-stealth/
+        # playwright = await async_playwright().start()
+        # Stealth didn't fix, but will be useful so Im gonna keep it.
+        # I found this and think it may be my issue
+        # https://dev.to/roamproxy/playwright-an-authenticated-proxy-pagegotohttpswwwgooglecom-hangs-and-its-an-http2-24f9#:~:text=In%20the%20run%20that%20hangs%2C%20the%20order,with%20net%20error%20%2D3%20%2C%20ERR_ABORTED%20.
+        async with Stealth().use_async(async_playwright()) as p:
+            browser = await p.chromium.launch(
+                headless = False,
+                proxy = {
+                    "server": "http://pr.oxylabs.io:7777",
+                    "username": f"customer-{self.proxy_username}-cc-US-city-miami",
+                    "password": self.proxy_pass
                 },
+                args=["--disable-features=AcceptCHFrame"],
             )
 
-        tasks = [self.send_request_via_proxy(browser, url) for url in self.ads_list]
+            tasks = [self.send_request_via_proxy(browser, url) for url in self.ads_list]
 
-        for task in asyncio.as_completed(tasks):
-            try:
-                title = await task
-                print(f"Title: {title}")
-            except Exception as e:
-                print(f"Exception -> {e}")
+            for task in asyncio.as_completed(tasks):
+                try:
+                    title = await task
+                    print(f"Title: {title}")
+                except Exception as e:
+                    print(f"Exception -> {e}")
 
-        await browser.close()
-        await playwright.stop()
+            await browser.close()
+            # await playwright.stop()
         
 
     def get_data_from_url_response(self, URL):
@@ -223,6 +231,7 @@ class Detector:
 
         self.load_sample_ad_list()
         # self.ads_list = ['https://ip.oxylabs.io']
+        # self.ads_list = ['https://www.yahoo.com', 'https://www.reddit.com','https://www.msn.com']
         asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
