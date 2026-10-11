@@ -266,6 +266,8 @@ Sep 1 at 10:32am
   - [[https://playwright.dev/python/docs/intro][Playwright Docs]]
   - [[https://oxylabs.io/blog/playwright-web-scraping][OxyLabs Playwright Documentation]] :: This is great! Im using oxylabs so this should help immensly.
   - [[https://oxylabs.io/resources/integrations/playwright][OxyLabs Proxy Playwrigth information]]
+- And playwright is not thread-safe as documented here
+  - [[https://playwright.dev/python/docs/library][Playwright Docs]] :: Thread info at very bottom of page
 **** Day 7
 ***** Got the async stuff running yesterday, today Im hoping to get is set to limit the max number of concurrent requests, as I am going to have a large list
 ***** 

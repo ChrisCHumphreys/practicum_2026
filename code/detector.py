@@ -20,6 +20,9 @@ from playwright.async_api import async_playwright
 # https://docs.python.org/3/library/re.html
 # Playwright tutorail from oxylabs
 # https://oxylabs.io/blog/playwright-web-scraping
+# becuase I only want like 10 or so of these to run concurrently, I think I
+# need to use a semaphore
+# https://docs.python.org/3/library/asyncio-sync.html#asyncio.Semaphore
 
 class Detector:
     """Detector Class is used to detect the actual ad pages after the collector
@@ -33,6 +36,12 @@ class Detector:
         self.final_ad_pages = []
         self.lock = threading.Lock()
         self.max_thread_count = 50
+        self.semaphore = asyncio.Semaphore(50)
+
+    def load_sample_ad_list(self):
+        """Just a way to load a saved ad list so I dont burn out my api"""
+        with open("./output/sample_detector_ad_list.txt", "r") as ad_file:
+            self.ads_list = ad_file.read().strip().split("', '")
         
     def get_ads_list(self, query, results_count):
         """This will create a Collector object and pull grab the returned ads"""
@@ -59,7 +68,7 @@ class Detector:
 
         return proxies
 
-    async def send_request_via_proxy(self, URL):
+    async def send_request_via_proxy(self, browser, URL):
         """Takes in a URL and sends an http request to the URL via residential
         proxy"""
 
@@ -89,21 +98,28 @@ class Detector:
         # threading.  Fortunatley, I am in new branch, so if I break everything
         # I will just abandon this branch and make a new one.
         # https://oxylabs.io/blog/playwright-web-scraping -> demo
-        async with async_playwright() as v_browser:
-            browser_type = "chromium"
-            browser = await v_browser[browser_type].launch(
-                headless = False,
-                proxy = {
-                    "server": "https://pr.oxylabs.io:7777",
-                    "username": self.proxy_username,
-                    "password": self.proxy_pass
-                    }
-                )
-            ad_page = await browser.new_page()
-            await ad_page.goto("https://ip.oxylabs.io/")
-            await ad_page.wait_for_timeout(3000)
-            await browser.close()
-            return ad_page
+        # OK, this blog is basically exactly what I need
+        # https://jonathansoma.com/everything/scraping/parallel-playwright/
+
+        async with self.semaphore:
+            async with await browser.new_page() as page:
+                await page.goto(URL)
+                return await page.title()
+
+                
+            # browser = await v_browser[browser_type].launch(
+            #     headless = False,
+            #     proxy = {
+            #         "server": "https://pr.oxylabs.io:7777",
+            #         "username": self.proxy_username,
+            #         "password": self.proxy_pass
+            #         }
+            #     )
+            # ad_page = await browser.new_page()
+            # await ad_page.goto("https://ip.oxylabs.io/")
+            # await ad_page.wait_for_timeout(3000)
+            # await browser.close()
+            # return ad_page
         
     async def grab_content_from_ads_list(self):
         """Loops through the ads_list and pulls the resulting webpage from
@@ -137,9 +153,33 @@ class Detector:
         #                 response
         #            )
 
-        task = asyncio.create_task(self.send_request_via_proxy("fakeURL"))
-        result = await task
-        return result
+        # task = asyncio.create_task(self.send_request_via_proxy("fakeURL"))
+        # result = await task
+        # return result
+        # Much of the below develop with assistance from
+        # https://jonathansoma.com/everything/scraping/parallel-playwright/
+        playwright = await async_playwright().start()
+        browser = await playwright.chromium.launch(
+            headless = False,
+            proxy = {
+                "server": "https://pr.oxylabs.io:7777",
+                "username": self.proxy_username,
+                "password": self.proxy_pass
+                }
+            )
+
+        tasks = [self.send_request_via_proxy(browser, url) for url in self.ads_list]
+
+        for task in asyncio.as_completed(tasks):
+            try:
+                title = await task
+                print(f"Title: {title}")
+            except Exception as e:
+                print(f"Exception -> {e}")
+
+        await browser.close()
+        await playwright.stop()
+        
 
     def get_data_from_url_response(self, URL):
         """Appends a dict with useful items from the proxy response to the
