@@ -102,10 +102,18 @@ class Detector:
         # https://jonathansoma.com/everything/scraping/parallel-playwright/
 
         async with self.semaphore:
-            async with await browser.new_page() as page:
-                await page.goto(URL)
-                return await page.title()
-
+            context = await browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+                extra_http_headers={
+                    'Accept': '*/*',
+                    'Accept-Encoding': 'gzip, deflate, br, zstd',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Connection': 'keep-alive'}
+            )
+            async with await context.new_page() as page:
+                await page.goto(URL, timeout=30000)
+                title = await page.title()
+                return title
                 
             # browser = await v_browser[browser_type].launch(
             #     headless = False,
@@ -162,10 +170,10 @@ class Detector:
         browser = await playwright.chromium.launch(
             headless = False,
             proxy = {
-                "server": "https://pr.oxylabs.io:7777",
+                "server": "http://pr.oxylabs.io:7777",
                 "username": self.proxy_username,
                 "password": self.proxy_pass
-                }
+                },
             )
 
         tasks = [self.send_request_via_proxy(browser, url) for url in self.ads_list]
@@ -213,6 +221,8 @@ class Detector:
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
+        self.load_sample_ad_list()
+        # self.ads_list = ['https://ip.oxylabs.io']
         asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
