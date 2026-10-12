@@ -101,6 +101,8 @@ class Detector:
         # https://oxylabs.io/blog/playwright-web-scraping -> demo
         # OK, this blog is basically exactly what I need
         # https://jonathansoma.com/everything/scraping/parallel-playwright/
+        # this site was useful as well
+        # https://scrapingant.com/blog/block-requests-playwright
 
         async with self.semaphore:
             context = await browser.new_context(
@@ -112,6 +114,21 @@ class Detector:
                     'Connection': 'keep-alive'}
             )
             async with await context.new_page() as page:
+                # Here we want to remove images and video and things that use a
+                # lot of bandwidth
+                # https://playwright.dev/python/docs/api/class-page#page-route
+                # "**/*.{png,jpg,jpeg,webp,gif,svg,mp4,webm,ico,css,otf,ttf,woff,woff2}",
+                # await page.route(
+                #     "**/*.{png,jpg,jpeg,webp,gif}",
+                #     lambda route: route.abort()
+                # )
+                # https://playwright.dev/python/docs/network
+                # Abort based on the request type
+                await page.route(
+                    "**/*",
+                    lambda route: route.abort()
+                    if route.request.resource_type in ["image", "stylesheet", "media", "font"]
+                    else route.continue_())
                 await page.goto(URL, timeout=30000)
                 title = await page.title()
                 return title
@@ -229,9 +246,9 @@ class Detector:
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
-        self.load_sample_ad_list()
+        # self.load_sample_ad_list()
         # self.ads_list = ['https://ip.oxylabs.io']
-        # self.ads_list = ['https://www.yahoo.com', 'https://www.reddit.com','https://www.msn.com']
+        self.ads_list = ['https://www.msn.com']
         asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
