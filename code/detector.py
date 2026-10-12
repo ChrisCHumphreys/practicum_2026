@@ -129,7 +129,10 @@ class Detector:
                     lambda route: route.abort()
                     if route.request.resource_type in ["image", "stylesheet", "media", "font"]
                     else route.continue_())
-                await page.goto(URL, timeout=30000)
+                await page.goto(
+                    URL,
+                    timeout=30000,
+                    wait_until="domcontentloaded")
                 title = await page.title()
                 return title
                 
@@ -248,7 +251,7 @@ class Detector:
 
         # self.load_sample_ad_list()
         # self.ads_list = ['https://ip.oxylabs.io']
-        self.ads_list = ['https://www.msn.com']
+        self.ads_list = ['https://www.msn.com', 'https://www.yahoo.com', 'https://www.reddit.com']
         asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
