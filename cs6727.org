@@ -276,3 +276,6 @@ Sep 1 at 10:32am
 **** Day 1
 ***** Ok, playwright async is working, and it completes the max number of attempts I put in.  I also have implemented playwright-stealth.  Now the big hurdle I want to solve today is getting it to pull the websites, but without pulling the images and videos and stuff.  That way my api usage should be cut down dramatically
 ***** I got the playwright stuff working and only pulling minimal bandwith!  Now I am gonna update to make it fill in the list I was using before.
+**** Day 2
+***** Good progress yesterday, all the playwright stuff is working and only pulls text.
+***** Today goal is to rebuild the data structure I was using before switching to playwright.
