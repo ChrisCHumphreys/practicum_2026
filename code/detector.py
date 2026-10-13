@@ -37,7 +37,7 @@ class Detector:
         self.final_ad_pages = []
         self.lock = threading.Lock()
         self.max_thread_count = 50
-        self.semaphore = asyncio.Semaphore(3)
+        self.semaphore = asyncio.Semaphore(50)
 
     def load_sample_ad_list(self):
         """Just a way to load a saved ad list so I dont burn out my api"""
@@ -106,6 +106,7 @@ class Detector:
 
         async with self.semaphore:
             context = await browser.new_context(
+                viewport={"width": 1920, "height": 1080},
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
                 extra_http_headers={
                     'Accept': '*/*',
@@ -129,12 +130,23 @@ class Detector:
                     lambda route: route.abort()
                     if route.request.resource_type in ["image", "stylesheet", "media", "font"]
                     else route.continue_())
-                await page.goto(
+                response = await page.goto(
                     URL,
                     timeout=30000,
                     wait_until="domcontentloaded")
                 title = await page.title()
-                return title
+                OriginalURL = URL
+                ResponseHeaders = await response.all_headers()
+                RequestHeaders = response.request.headers
+                FinalURL = response.url
+                text = await response.text()
+
+                return {"OriginalURL" : OriginalURL,
+                        "ResponseHeaders" : ResponseHeaders,
+                        "RequestHeaders" : RequestHeaders,
+                        "FinalURL" : FinalURL,
+                        "Text" : text
+                        }
                 
             # browser = await v_browser[browser_type].launch(
             #     headless = False,
@@ -208,8 +220,9 @@ class Detector:
 
             for task in asyncio.as_completed(tasks):
                 try:
-                    title = await task
-                    print(f"Title: {title}")
+                    result = await task
+                    # print(f"Title: {title}")
+                    self.final_ad_pages.append(result)
                 except Exception as e:
                     print(f"Exception -> {e}")
 
@@ -249,9 +262,9 @@ class Detector:
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
-        # self.load_sample_ad_list()
+        self.load_sample_ad_list()
         # self.ads_list = ['https://ip.oxylabs.io']
-        self.ads_list = ['https://www.msn.com', 'https://www.yahoo.com', 'https://www.reddit.com']
+        # self.ads_list = ['https://www.msn.com', 'https://www.yahoo.com', 'https://www.reddit.com']
         asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
