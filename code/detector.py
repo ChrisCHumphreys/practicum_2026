@@ -142,7 +142,15 @@ class Detector:
                     print(f"Exception -> {e}")
 
             await browser.close()
-           
+
+    def pull_domains_from_final_ad_list(self):
+        """Converts the final url to domain only and adds to final_ad_list"""
+
+        for ad in self.final_ad_pages:
+             ad["Domain"] = re.findall(r'^http[s]?://([^/\s]*)', ad["FinalURL"])
+             ad["DomainIsMalicious"] = "unknown"
+        
+        
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
