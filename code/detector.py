@@ -142,36 +142,7 @@ class Detector:
                     print(f"Exception -> {e}")
 
             await browser.close()
-        
-    def get_data_from_url_response(self, URL):
-        """Appends a dict with useful items from the proxy response to the
-           final_ad_pages list"""
-        # For reference if I need to add fields later
-        # https://docs.python-requests.org/en/latest/api/#requests.Response
-
-        response = self.send_request_via_proxy(URL)
-
-        ad_response_info = {}
-
-        ad_response_info["OriginalURL"] = URL
-        ad_response_info["ResponseHeaders"] = response.headers
-        ad_response_info["RequestHeaders"] = response.request.headers
-        ad_response_info["RedirectURL"] = response.history[-1].url
-        ad_response_info["FinalURL"] = response.url
-        ad_response_info["Text"] = response.text
-        ad_response_info["Domain"] = re.findall(r'^http[s]?://([^/\s]*)', response.url)[0]
-        ad_response_info["DomainIsMalicious"] = False
-
-        # note if the urls match - Need to URL decode the original
-        if ad_response_info["FinalURL"] not in requests.utils.unquote(ad_response_info["OriginalURL"]):
-            ad_response_info["URLSMatch"] = False
-        else:
-            ad_response_info["URLSMatch"] = True        
-
-        with self.lock:
-            self.final_ad_pages.append(ad_response_info)
-        # return ad_response_info
-   
+           
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
