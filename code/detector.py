@@ -9,7 +9,6 @@ import asyncio
 from playwright.async_api import async_playwright
 from playwright_stealth import Stealth
 
-
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
 # Learned aobut the url requests unqute option on stack overflow
@@ -49,49 +48,16 @@ class Detector:
         c = Collector()
         c.pull_ads_in_bulk(query, results_count)
 
-        # print(c.ads_list)
-        
         for item in c.ads_list:
             if item != "No Ads Returned":
                 for ad in item:
                     self.ads_list.append(ad["data_rw"])
         
-        # self.ads_list = c.ads_list
-        # print(f"self.ads_list: {self.ads_list}")
-
-    def create_proxy_request_items(self):
-        """Function to create the pieces of the URL that will be used for the
-        proxy request"""
-
-        proxy_entry_base = f"http://customer-{self.proxy_username}-cc-US-city-miami:{self.proxy_pass}@pr.oxylabs.io:7777"
-        proxies = {'http' :  proxy_entry_base,
-                   'https' : proxy_entry_base}
-
-        return proxies
-
     async def send_request_via_proxy(self, browser, URL):
         """Takes in a URL and sends an http request to the URL via residential
         proxy"""
-
-        # I am trying here to match the headers of a normal browser
-        # these were mostly just copy and pasted from my firefox browser
-        # I got the user-agent from https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome
-
-        # Everything between here and the END was working up until I switched it
-        # with playwright
-        # headers = {
-        #     'Accept': '*/*',
-        #     'Accept-Encoding': 'gzip, deflate, br, zstd',
-        #     'Accept-Language': 'en-US,en;q=0.9',
-        #     'Connection': 'keep-alive',
-        #     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
-        # }
-
-        # proxy_urls = self.create_proxy_request_items()
-        # response = requests.get(URL, headers=headers, proxies=proxy_urls, timeout=5)
         
-        # return response
-        # END formerly working section
+        # I got the user-agent from https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome
 
         # this may be dumb, but I am gonna try to switch in playwright here
         # oxylabs suggests using the async version, but that could break my
@@ -118,11 +84,6 @@ class Detector:
                 # Here we want to remove images and video and things that use a
                 # lot of bandwidth
                 # https://playwright.dev/python/docs/api/class-page#page-route
-                # "**/*.{png,jpg,jpeg,webp,gif,svg,mp4,webm,ico,css,otf,ttf,woff,woff2}",
-                # await page.route(
-                #     "**/*.{png,jpg,jpeg,webp,gif}",
-                #     lambda route: route.abort()
-                # )
                 # https://playwright.dev/python/docs/network
                 # Abort based on the request type
                 await page.route(
@@ -148,55 +109,10 @@ class Detector:
                         "Text" : text
                         }
                 
-            # browser = await v_browser[browser_type].launch(
-            #     headless = False,
-            #     proxy = {
-            #         "server": "https://pr.oxylabs.io:7777",
-            #         "username": self.proxy_username,
-            #         "password": self.proxy_pass
-            #         }
-            #     )
-            # ad_page = await browser.new_page()
-            # await ad_page.goto("https://ip.oxylabs.io/")
-            # await ad_page.wait_for_timeout(3000)
-            # await browser.close()
-            # return ad_page
-        
     async def grab_content_from_ads_list(self):
         """Loops through the ads_list and pulls the resulting webpage from
-        each, then updates the final_ad_pages list"""
-
-        '''Everything below here was working before I added playwright
-        with ThreadPoolExecutor(self.max_thread_count) as executor:
-            # Ok, so the real only limit is gonna be what my computer can handle
-            # so I think Im gonna leave max_thread_count at 50 and use that
-            # as the number of threads to fire.
-
-            futures = []
-            for ad in self.ads_list:
-                futures.append(executor.submit(
-                    self.get_data_from_url_response, ad))
-
-            # below taken largely from python docs
-            # https://docs.python.org/3/library/concurrent.futures.html
-            for thread in futures:
-                try:
-                    thread.result()
-                except Exception as e:
-                    print(f"Exception {e}")
-        '''                  
-        # Everything Below here was working before making multi threaded
-        # for ad in self.ads_list: 
-        #     if (ad != "No Ads Returned"):
-        #         response = self.get_data_from_url_response(ad)
-        #         with self.lock:
-        #             self.final_ad_pages.append(
-        #                 response
-        #            )
-
-        # task = asyncio.create_task(self.send_request_via_proxy("fakeURL"))
-        # result = await task
-        # return result
+        each ad item, then updates the final_ad_pages list"""
+               
         # Much of the below develop with assistance from
         # https://jonathansoma.com/everything/scraping/parallel-playwright/
         # Stealth additions from
@@ -221,15 +137,12 @@ class Detector:
             for task in asyncio.as_completed(tasks):
                 try:
                     result = await task
-                    # print(f"Title: {title}")
                     self.final_ad_pages.append(result)
                 except Exception as e:
                     print(f"Exception -> {e}")
 
             await browser.close()
-            # await playwright.stop()
         
-
     def get_data_from_url_response(self, URL):
         """Appends a dict with useful items from the proxy response to the
            final_ad_pages list"""
