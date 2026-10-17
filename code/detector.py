@@ -48,6 +48,9 @@ class Detector:
         c = Collector()
         c.pull_ads_in_bulk(query, results_count)
 
+        # for debugging only
+        print(c.ads_list)
+
         for item in c.ads_list:
             if item != "No Ads Returned":
                 for ad in item:
@@ -106,7 +109,8 @@ class Detector:
                         "ResponseHeaders" : ResponseHeaders,
                         "RequestHeaders" : RequestHeaders,
                         "FinalURL" : FinalURL,
-                        "Text" : text
+                        "Text" : text,
+                        "URLIsMalicious" : "Unknown"
                         }
                 
     async def grab_content_from_ads_list(self):
@@ -126,7 +130,7 @@ class Detector:
                 headless = False,
                 proxy = {
                     "server": "http://pr.oxylabs.io:7777",
-                    "username": f"customer-{self.proxy_username}-cc-US-city-miami",
+                    "username": f"customer-{self.proxy_username}-cc-US-st-us_tennessee",
                     "password": self.proxy_pass
                 },
                 args=["--disable-features=AcceptCHFrame"],
@@ -154,10 +158,10 @@ class Detector:
     def test_function(self):
         """Just a function to save time for myself in testing"""
 
-        self.load_sample_ad_list()
+        # self.load_sample_ad_list()
         # self.ads_list = ['https://ip.oxylabs.io']
         # self.ads_list = ['https://www.msn.com', 'https://www.yahoo.com', 'https://www.reddit.com']
-        asyncio.run(self.grab_content_from_ads_list())
+        # asyncio.run(self.grab_content_from_ads_list())
         # URL1 = "https://ip.oxylabs.io/location"
         # URL2 = "https://www.showmyip.com"
         
@@ -179,8 +183,8 @@ class Detector:
         # api calls, since I am saving objects, looks like I need to 'pickle'.
         # Going to use that, got info from python docs
         # https://docs.python.org/3/library/pickle.html#examples
-        # with open("./output/sample_final_ad_list.pickle", "wb") as sample_file:
-        #     pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
+        with open("./output/sample_final_ad_list.pickle", "wb") as sample_file:
+            pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
 
 
 class Classifier:
@@ -192,6 +196,7 @@ class Classifier:
     
     def __init__(self):
         self.sample_final_ad_pages = []
+        self.creds = dotenv_values('.env')
         self.vt_api_key = self.creds["VT_API_KEY"]
 
     def build_final_page_list_from_pickle(self):
@@ -215,6 +220,17 @@ class Classifier:
             domain_file.write(requests.get(url2).text)
             domain_file.write(requests.get(url3).text)
 
+    def build_malicious_url_list(self):
+        """Like the domian list, this will pull from URLHaus the "malicious url" list which I will compare against."""
+
+        # URLHaus malicious URL list
+        url = ("https://urlhaus-api.abuse.ch/v2/files/exports/" 
+        + self.creds["URL_HAUS_API_KEY"] 
+        + "/urls_full.txt")
+
+        with open("./indicators/urls.txt", 'w') as url_file:
+            url_file.write(requests.get(url).text)
+        
     def mark_malicious_domains_in_ads_list(self, detector_ad_list):
         """Accepts a 'final_ad_pages' list from a detector object and searches
         the known malicious domains list to identify any matches"""
@@ -232,10 +248,33 @@ class Classifier:
             print(f"ad['Domain']: {ad['Domain']}")
             print(f"ad['DomainIsMalicious']: {ad['DomainIsMalicious']}")
 
+    def mark_malicious_urls_in_ads_list(self, detector_ad_list):
+        """Accepts a 'final_ad_pages' list from a detector object and searches
+        the known malicious urls list to identify any matches"""
+
+        # Open the url list - Remember it needs to be created first
+        with open("./indicators/urls.txt", "r") as url_file:
+            malicious_urls = url_file.read()
+
+        for ad in detector_ad_list:
+            if ad["FinalURL"] in malicious_urls:
+                ad["URLIsMalicious"] = True
+
+        # like above, printing for testing
+        for ad in detector_ad_list:
+            print(f"ad['FinalURL']: {ad['FinalURL']}")
+            print(f"ad['URLIsMalicious']: {ad['URLIsMalicious']}")
+
     def virus_total_assesment(self):
         """This will define how I submit URLS to the VT Oracle"""
         # Holding here pending approval to use the work VT API for this. I think
         # it will be fine but want to get permission first.
+
+    def test_classifier(self):
+        """Just like my other test function.  Saves time as I debug"""
+        
+        c.build_final_page_list_from_pickle()
+        
         
                 
         

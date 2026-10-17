@@ -279,3 +279,9 @@ Sep 1 at 10:32am
 **** Day 2
 ***** Good progress yesterday, all the playwright stuff is working and only pulls text.
 ***** Today goal is to rebuild the data structure I was using before switching to playwright.
+***** All done!  Im fully back in business, now I just need to add the Oracles!
+**** Day 6
+***** I am working on getting my work to allow me to use their account for VT, but until I hear from them, I am gonna use URLHaus.
+****** Not sure if I need to say explicitly, but this idea was from AI in discussion of options.
+***** Made a URLHaus account and generated an API key
+***** Ok, well URLHause has a URL list I can donwload in the same way I donwnload domain list, so Im gonna set up the pulling of that to use

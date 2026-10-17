@@ -54,7 +54,7 @@ class Collector:
         payload = {
             'source' : 'google_ads',
             'query' : query,
-            'geo_location' : 'Miami, Florida, United States',
+            'geo_location' : 'Tennessee, United States',
             'parse' : True,
             'user_agent_type' : 'desktop'
         }
