@@ -9,6 +9,7 @@ indicators/
 
 # no need to keep my pickle file cause it is easily generated
 sample_final_ad_list.pickle
+*.pickle
 
 # Created by https://gitignore.org
 # Python.gitignore
