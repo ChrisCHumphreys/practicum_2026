@@ -109,6 +109,10 @@ class Detector:
                 ResponseHeaders = await response.all_headers()
                 RequestHeaders = response.request.headers
                 FinalURL = response.url
+                if (await response.security_details())["validFrom"]:
+                    SSLValidFrom = (await response.security_details())["validFrom"]
+                else:
+                    SSLValidFrom = "unknown"
                 text = await response.text()
 
                 return {"OriginalURL" : OriginalURL,
@@ -116,7 +120,8 @@ class Detector:
                         "RequestHeaders" : RequestHeaders,
                         "FinalURL" : FinalURL,
                         "Text" : text,
-                        "URLIsMalicious" : "Unknown"
+                        "URLIsMalicious" : "Unknown",
+                        "SSLValidFrom" : SSLValidFrom
                         }
                 
     async def grab_content_from_ads_list(self):
@@ -191,9 +196,11 @@ class Detector:
         # api calls, since I am saving objects, looks like I need to 'pickle'.
         # Going to use that, got info from python docs
         # https://docs.python.org/3/library/pickle.html#examples
-        with open("./output/2026_suv_ad_list.pickle", "wb") as sample_file:
-            pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
+        # with open("./output/2026_suv_ad_list.pickle", "wb") as sample_file:
+        #     pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
 
+        with open("./output/2026_suv_ad_list.pickle", "rb") as pickle_file:
+            d.ads_list = pickle.load(pickle_file)
 
 class Classifier:
     """Takes over the attempted classification of ads once they have been
