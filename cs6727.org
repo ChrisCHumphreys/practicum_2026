@@ -285,3 +285,6 @@ Sep 1 at 10:32am
 ****** Not sure if I need to say explicitly, but this idea was from AI in discussion of options.
 ***** Made a URLHaus account and generated an API key
 ***** Ok, well URLHause has a URL list I can donwload in the same way I donwnload domain list, so Im gonna set up the pulling of that to use
+***** Got the list set up to pull on demand, also was able to get at least a single ad to save last night.
+**** Day 7
+***** Early morning now so I have plenty of time.  Gonna start with a quick pull of some ads to see if I can get a new saved list with my new fields.

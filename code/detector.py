@@ -38,9 +38,9 @@ class Detector:
         self.max_thread_count = 50
         self.semaphore = asyncio.Semaphore(50)
 
-    def load_sample_ad_list(self):
+    def load_sample_ad_list(self, ad_list_file):
         """Just a way to load a saved ad list so I dont burn out my api"""
-        with open("./output/sample_detector_ad_list.txt", "r") as ad_file:
+        with open("./output/" + ad_list_file, "r") as ad_file:
             self.ads_list = ad_file.read().strip().split("', '")
         
     def get_ads_list(self, query, results_count):
@@ -55,6 +55,12 @@ class Detector:
             if item != "No Ads Returned":
                 for ad in item:
                     self.ads_list.append(ad["data_rw"])
+
+    def de_google_urls(self):
+        """Goes through final ad list and makes a CleanURL field that holds the URL without the google params"""
+        for ad in self.final_ad_pages:
+             ad["CleanURL"] = re.findall(r'(^http[s]?:\/\/[^\s\?]*)', ad["FinalURL"])[0]
+         
         
     async def send_request_via_proxy(self, browser, URL):
         """Takes in a URL and sends an http request to the URL via residential
@@ -96,7 +102,7 @@ class Detector:
                     else route.continue_())
                 response = await page.goto(
                     URL,
-                    timeout=30000,
+                    timeout=60000, # Initially was using 30k, but dropped a lot
                     wait_until="domcontentloaded")
                 title = await page.title()
                 OriginalURL = URL
@@ -115,7 +121,9 @@ class Detector:
                 
     async def grab_content_from_ads_list(self):
         """Loops through the ads_list and pulls the resulting webpage from
-        each ad item, then updates the final_ad_pages list"""
+        each ad item, then updates the final_ad_pages list. Remember that the
+        Domain and URL fields are not added unless those functions are explcitly
+        called."""
                
         # Much of the below develop with assistance from
         # https://jonathansoma.com/everything/scraping/parallel-playwright/
@@ -127,7 +135,7 @@ class Detector:
         # https://dev.to/roamproxy/playwright-an-authenticated-proxy-pagegotohttpswwwgooglecom-hangs-and-its-an-http2-24f9#:~:text=In%20the%20run%20that%20hangs%2C%20the%20order,with%20net%20error%20%2D3%20%2C%20ERR_ABORTED%20.
         async with Stealth().use_async(async_playwright()) as p:
             browser = await p.chromium.launch(
-                headless = False,
+                headless = True,
                 proxy = {
                     "server": "http://pr.oxylabs.io:7777",
                     "username": f"customer-{self.proxy_username}-cc-US-st-us_tennessee",
@@ -151,7 +159,7 @@ class Detector:
         """Converts the final url to domain only and adds to final_ad_list"""
 
         for ad in self.final_ad_pages:
-             ad["Domain"] = re.findall(r'^http[s]?://([^/\s]*)', ad["FinalURL"])
+             ad["Domain"] = re.findall(r'^http[s]?://([^/\s]*)', ad["FinalURL"])[0]
              ad["DomainIsMalicious"] = "unknown"
         
         
@@ -183,7 +191,7 @@ class Detector:
         # api calls, since I am saving objects, looks like I need to 'pickle'.
         # Going to use that, got info from python docs
         # https://docs.python.org/3/library/pickle.html#examples
-        with open("./output/sample_final_ad_list.pickle", "wb") as sample_file:
+        with open("./output/2026_suv_ad_list.pickle", "wb") as sample_file:
             pickle.dump(self.final_ad_pages, sample_file, pickle.HIGHEST_PROTOCOL)
 
 
@@ -199,11 +207,11 @@ class Classifier:
         self.creds = dotenv_values('.env')
         self.vt_api_key = self.creds["VT_API_KEY"]
 
-    def build_final_page_list_from_pickle(self):
+    def build_final_page_list_from_pickle(self, pickle_file):
         """For testing I am pickling the ad list so I dont have to re-run it
         each time. This is how I rebuild the list from that pickle"""
 
-        with open("./output/sample_final_ad_list.pickle", "rb") as pickle_file:
+        with open("./output/" + pickle_file, "rb") as pickle_file:
             self.sample_final_ad_pages = pickle.load(pickle_file)
 
     def build_malicious_domain_list(self):
@@ -257,12 +265,12 @@ class Classifier:
             malicious_urls = url_file.read()
 
         for ad in detector_ad_list:
-            if ad["FinalURL"] in malicious_urls:
+            if ad["CleanURL"] in malicious_urls:
                 ad["URLIsMalicious"] = True
 
         # like above, printing for testing
         for ad in detector_ad_list:
-            print(f"ad['FinalURL']: {ad['FinalURL']}")
+            print(f"ad['CleanURL']: {ad['CleanURL']}")
             print(f"ad['URLIsMalicious']: {ad['URLIsMalicious']}")
 
     def virus_total_assesment(self):
@@ -273,7 +281,9 @@ class Classifier:
     def test_classifier(self):
         """Just like my other test function.  Saves time as I debug"""
         
-        c.build_final_page_list_from_pickle()
+        c.build_final_page_list_from_pickle("2026_suv_final_ad_list.pickle")
+        
+        
         
         
                 
