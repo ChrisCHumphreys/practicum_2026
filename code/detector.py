@@ -8,6 +8,7 @@ import pickle
 import asyncio
 from playwright.async_api import async_playwright
 from playwright_stealth import Stealth
+from datetime import datetime
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
@@ -279,6 +280,20 @@ class Classifier:
         for ad in detector_ad_list:
             print(f"ad['CleanURL']: {ad['CleanURL']}")
             print(f"ad['URLIsMalicious']: {ad['URLIsMalicious']}")
+
+    def mark_malicious_ssl_times_in_ads_list(self, detector_ad_list):
+        """Accepts a 'final_ad_pages' list from a detector object and calculates
+        how long the ssl cert has been active.  Any < 24 hours will mark."""
+
+        now = time.time()
+        
+        for ad in detector_ad_list:
+            if (ad["SSLValidFrom"] != "unknown"):
+                # 24 hours is 86,400 seconds
+                if (now - ad["SSLValidFrom"]) < 86400:
+                    ad["SSLShortDuration"] = True
+                else:
+                    ad["SSLShortDuration"] = False
 
     def virus_total_assesment(self):
         """This will define how I submit URLS to the VT Oracle"""
