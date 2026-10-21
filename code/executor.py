@@ -27,4 +27,6 @@ if __name__ == "__main__":
     if args.domain_update:
         c = Classifier()
         c.build_malicious_domain_list()
-    
+    elif args.url_update:
+        c = Classifier()
+        c.build_malicious_url_list()
