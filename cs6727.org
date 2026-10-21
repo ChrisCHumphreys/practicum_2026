@@ -288,3 +288,8 @@ Sep 1 at 10:32am
 ***** Got the list set up to pull on demand, also was able to get at least a single ad to save last night.
 **** Day 7
 ***** Early morning now so I have plenty of time.  Gonna start with a quick pull of some ads to see if I can get a new saved list with my new fields.
+***** Got all 3 Oracles up and running (SSL Timestamp, Domain List, URL List)
+***** Now writing up progress report and evaluation
+*** Week 9
+**** Day 3
+***** Ok, I am gonna write the wrapper script today that will just run the whole thing and then start testing tomorrow hopefully.
