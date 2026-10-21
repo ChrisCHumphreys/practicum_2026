@@ -9,6 +9,7 @@ import asyncio
 from playwright.async_api import async_playwright
 from playwright_stealth import Stealth
 from datetime import datetime
+import time
 
 # Used the requests library docs a lot for this
 # https://docs.python-requests.org/en/latest/user/advanced/
@@ -50,7 +51,7 @@ class Detector:
         c.pull_ads_in_bulk(query, results_count)
 
         # for debugging only
-        print(c.ads_list)
+        # print(c.ads_list)
 
         for item in c.ads_list:
             if item != "No Ads Returned":
@@ -144,7 +145,7 @@ class Detector:
                 headless = True,
                 proxy = {
                     "server": "http://pr.oxylabs.io:7777",
-                    "username": f"customer-{self.proxy_username}-cc-US-st-us_tennessee",
+                    "username": f"customer-{self.proxy_username}-cc-US-st-us_ohio",
                     "password": self.proxy_pass
                 },
                 args=["--disable-features=AcceptCHFrame"],
