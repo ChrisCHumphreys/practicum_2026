@@ -25,5 +25,6 @@ if __name__ == "__main__":
     args = runParser()
 
     if args.domain_update:
-        print("It worked!")
+        c = Classifier()
+        c.build_malicious_domain_list()
     
