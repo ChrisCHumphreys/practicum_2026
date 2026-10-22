@@ -293,3 +293,8 @@ Sep 1 at 10:32am
 *** Week 9
 **** Day 3
 ***** Ok, I am gonna write the wrapper script today that will just run the whole thing and then start testing tomorrow hopefully.
+***** Wrapper is done and confirmed working! I need to update my location and do a real run tomorrow, but so far its looking good!
+***** Note, also need it to output the counts nicely as well
+**** Day 4
+***** Step 1, lets do a test run of 100 and see if we get an ad!
+***** Success! Works completely!
