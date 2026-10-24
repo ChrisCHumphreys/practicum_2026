@@ -298,3 +298,8 @@ Sep 1 at 10:32am
 **** Day 4
 ***** Step 1, lets do a test run of 100 and see if we get an ad!
 ***** Success! Works completely!
+**** Day 6
+***** Alright, well I think Im ready to do my first run, but I realized I probably dont need to pull the whole text of the webpage since im not doign the clickfix stuff.
+****** Gonna look into that real quick and then adjust code as necessary.
+****** Well, unfortunatley that is not gonna work as it wont pull the js to handle those types of redirects.  Gonna hope that the playwright blocking Im currently doing is gonna  be sufficient.
+***** Now that that is resolved, im gonna make a catcher for my results that will spit them out in a nice saveable way.
