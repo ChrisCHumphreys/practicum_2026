@@ -303,3 +303,27 @@ Sep 1 at 10:32am
 ****** Gonna look into that real quick and then adjust code as necessary.
 ****** Well, unfortunatley that is not gonna work as it wont pull the js to handle those types of redirects.  Gonna hope that the playwright blocking Im currently doing is gonna  be sufficient.
 ***** Now that that is resolved, im gonna make a catcher for my results that will spit them out in a nice saveable way.
+****** Output function written.  
+***** Now that I know I need to get like 150 requests done for each query Im gonna do a few test runs today to see how much of my api access it burns and how many bugs I uncover.
+** Misc. Resources
+*** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
+|--------------------+------------------|
+| Qualifier Keywords | Content Keywords |
+| ------------------ | ---------------- |
+| Free               | Movies           |
+| Download           | Ebook            |
+| Watch              | Pdf              |
+| Stream             | Music            |
+| Hack               | Mp3              |
+|                    | Wallpaper        |
+|                    | Fonts            |
+|                    | News             |
+|                    | Sports           |
+|                    | Highlights       |
+|                    | Software         |
+|                    | Freeware         |
+|                    | Cracks           |
+|                    | Password         |
+- Total of 70 Combinations
+- My goal is to get ~10k searches, so that breaks down to
+  - That works out 10 ~150 queries of each combo.

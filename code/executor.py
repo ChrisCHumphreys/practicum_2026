@@ -40,6 +40,40 @@ def execute_query(query, count):
 
     return c.sample_final_ad_pages
 
+def format_resuts(classified_ad_page_list):
+    """Takes in a fully evaluated ad list and outputs results in a readable useful format"""
+
+    totalAds = len(classified_ad_page_list)
+    totalNonMaliciousAds = 0
+    totalMaliciousAds = 0
+
+    for ad in classified_ad_page_list:
+        if ad["DomainIsMalicious"]:
+            totalMaliciousAds += 1
+            print(f"Malicious Domain: {ad['FinalURL']}")
+        elif ad["URLIsMalicious"]:
+            totalMaliciousAds += 1
+            print(f"Malicious URL: {ad['FinalURL']}")
+        elif ad["SSLShortDuration"]:
+            totalMaliciousAds += 1
+            print(f"Short SSL Duration: {ad['FinalURL']}")
+        else:
+            totalNonMaliciousAds += 1
+
+    # Formatting line
+    print("")
+
+    # Print total from run
+    print(f"Total Ad Count: {totalAds}")
+    print(f"Non-Malicious Ad Count: {totalNonMaliciousAds}")
+    print(f"Malicious Ad Count: {totalMaliciousAds}")
+
+def run_assesment(query, count):
+    """this function is for running an assesment via the interpreter rather than via the command line. For my acutal usage I plan on running the assements in this manner."""
+
+    format_results(execute_query(query, count))
+        
+
 if __name__ == "__main__":
     """This is really just a wrapper to allow for easy execution"""
 
