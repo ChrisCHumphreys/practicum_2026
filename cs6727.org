@@ -307,6 +307,7 @@ Sep 1 at 10:32am
 ***** Now that I know I need to get like 150 requests done for each query Im gonna do a few test runs today to see how much of my api access it burns and how many bugs I uncover.
 ***** Well, Oxylabs is down for some reason, so I cant see any of my usage stats which I really need for these tests. Gonna pivot to reviewing my peers videos and then Ill do the test tomorrow.
 **** Day 7
+***** Time is 3:45 PM local time, running first tests
 ***** Oxylabs is back up!  Gonna do my first test run of 150 queries for "Free Sports" and see what I get.
 ****** Well, it ran, but didn't pull a single ad.
 - Total Ad Count: 0
@@ -341,6 +342,81 @@ Sep 1 at 10:32am
   Malicious Ad Count: 4
   #+end_src
 - Ok, I think I fixed it. made it actually check if value is "True", not just check for value
+****** Next up gonna run Free Ebook
+- Got 6 ads, no malicious
+  #+begin_src
+  Total Ad Count: 6
+  Non-Malicious Ad Count: 6 
+  Malicious Ad Count: 0
+  #+end_src
+****** "Free Pdf" -> 150
+- 2 ads, non-malicious
+  #+begin_src
+  ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+  ad['URLIsMalicious']: Unknown
+  ad['CleanURL']: https://www.ashampoo.com/en-us/pdf-free
+  ad['URLIsMalicious']: Unknown
+  ad['Domain']: pdfexpert.com
+  ad['DomainIsMalicious']: unknown
+  ad['Domain']: www.ashampoo.com
+  ad['DomainIsMalicious']: unknown
+  
+  Total Ad Count: 2
+  Non-Malicious Ad Count: 2
+  Malicious Ad Count: 0
+  #+end_src
+****** "Free Music" -> 150
+- Not a single ad
+  #+begin_src
+  Total Ad Count: 0
+  Non-Malicious Ad Count: 0
+  Malicious Ad Count: 0
+  #+end_sc
+****** "Free Wallpaper" -> 150
+ - No results
+****** Updating location to "California" to see if it makes me get more hits
+****** "Free Fonts" -> 150
+- No results even with the location change
+****** "Free News" -> 150
+- No results
+****** "Free Sports" -> 150
+- No results
+****** "Free Highlights" -> 150
+- No results
+****** "Free Software" -> 150
+#+begin_src
+ad['CleanURL']: https://www.microsoft.com/en-in/store/top-free/apps/pc
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.microsoft.com/en-ng/store/top-free/apps/pc
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.microsoft.com/en-in/store/top-free/apps/pc
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.microsoft.com/en-ng/store/top-free/apps/pc
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.microsoft.com/en-in/store/top-free/apps/pc
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.microsoft.com/en-ng/store/top-free/apps/pc
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.microsoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.microsoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.microsoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.microsoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.microsoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.microsoft.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 6
+Non-Malicious Ad Count: 6
+Malicious Ad Count: 0
+#+end_src
+****** "Free Freeware" -> 150
+- No results
+***** Alright, its pretty apparent that I am not getting an overwhelming number of ads, this will be trivial to automate.  My initial concern was that I was going to go past my Oxylabs quotas if I automated this, but is not valid.  Gonna script this and run all at once.
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|

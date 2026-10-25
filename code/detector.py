@@ -145,7 +145,7 @@ class Detector:
                 headless = True,
                 proxy = {
                     "server": "http://pr.oxylabs.io:7777",
-                    "username": f"customer-{self.proxy_username}-cc-US-st-us_ohio",
+                    "username": f"customer-{self.proxy_username}-cc-US-st-us_california",
                     "password": self.proxy_pass
                 },
                 args=["--disable-features=AcceptCHFrame"],
