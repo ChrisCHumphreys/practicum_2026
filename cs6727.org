@@ -305,6 +305,42 @@ Sep 1 at 10:32am
 ***** Now that that is resolved, im gonna make a catcher for my results that will spit them out in a nice saveable way.
 ****** Output function written.  
 ***** Now that I know I need to get like 150 requests done for each query Im gonna do a few test runs today to see how much of my api access it burns and how many bugs I uncover.
+***** Well, Oxylabs is down for some reason, so I cant see any of my usage stats which I really need for these tests. Gonna pivot to reviewing my peers videos and then Ill do the test tomorrow.
+**** Day 7
+***** Oxylabs is back up!  Gonna do my first test run of 150 queries for "Free Sports" and see what I get.
+****** Well, it ran, but didn't pull a single ad.
+- Total Ad Count: 0
+- Non-Malicious Ad Count: 0
+- Malicious Ad Count: 0
+****** Gonna try Free Moves 150 times now.
+- hmmm, may have an issue here.  sayts these domains are malicious, but I dont think they are.
+  #+begin_src
+  ad['CleanURL']: https://www.mrcpl.org/browse/streaming-and-downloads/
+  ad['URLIsMalicious']: Unknown
+  ad['CleanURL']: https://athome.fandango.com/content/browse/free
+  ad['URLIsMalicious']: Unknown
+  ad['CleanURL']: https://watch.redeemtv.com/category/documentary
+  ad['URLIsMalicious']: Unknown
+  ad['CleanURL']: https://pluto.tv/us/home/
+  ad['URLIsMalicious']: Unknown
+  ad['Domain']: www.mrcpl.org
+  ad['DomainIsMalicious']: unknown
+  ad['Domain']: athome.fandango.com
+  ad['DomainIsMalicious']: unknown
+  ad['Domain']: watch.redeemtv.com
+  ad['DomainIsMalicious']: unknown
+  ad['Domain']: pluto.tv
+  ad['DomainIsMalicious']: unknown
+  Malicious Domain: https://www.mrcpl.org/browse/streaming-and-downloads/?gad_source=1&gad_campaignid=21095637992&gbraid=0AAAAAqwRi5Ngc2aLmEF4Q_vLofVz4A6iR&gclid=EAIaIQobChMInMGhqYTWlwMVspJLBR0PmABzEAMYASAAEgJgCPD_BwE
+  Malicious Domain: https://athome.fandango.com/content/browse/free?cmp=PMARK_BAU_AVOD~Google~Search~AVOD&gclsrc=aw.ds&gad_source=1&gad_campaignid=23055344146&gbraid=0AAAAADP6Oo9W5CF7SZPpR_YyOBLUl3C7K&gclid=EAIaIQobChMIs8eMnYTWlwMVJFBIAB0bsBACEAMYASAAEgJ6dfD_BwE
+  Malicious Domain: https://watch.redeemtv.com/category/documentary?vv_link=GoogleGrant&gad_source=1&gad_campaignid=11254471352&gbraid=0AAAAADtHpqiW4FF1vxouX9FRToZN20jb1&gclid=EAIaIQobChMInMGhqYTWlwMVspJLBR0PmABzEAMYAiAAEgJkuPD_BwE
+  Malicious Domain: https://pluto.tv/us/home/?utm_source=google&utm_medium=paidsearch&utm_campaign=20200525135&utm_term=free%20movies&utm_creative=707697685155&device=c&campaign=Search_Non_Brand_High_Priority_E&gad_source=1&gad_campaignid=20200525135&gclid=EAIaIQobChMInMGhqYTWlwMVspJLBR0PmABzEAAYASAAEgKzbPD_BwE
+  
+  Total Ad Count: 4
+  Non-Malicious Ad Count: 0
+  Malicious Ad Count: 4
+  #+end_src
+- Ok, I think I fixed it. made it actually check if value is "True", not just check for value
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|

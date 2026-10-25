@@ -40,7 +40,7 @@ def execute_query(query, count):
 
     return c.sample_final_ad_pages
 
-def format_resuts(classified_ad_page_list):
+def format_results(classified_ad_page_list):
     """Takes in a fully evaluated ad list and outputs results in a readable useful format"""
 
     totalAds = len(classified_ad_page_list)
@@ -48,13 +48,13 @@ def format_resuts(classified_ad_page_list):
     totalMaliciousAds = 0
 
     for ad in classified_ad_page_list:
-        if ad["DomainIsMalicious"]:
+        if ad["DomainIsMalicious"] == True:
             totalMaliciousAds += 1
             print(f"Malicious Domain: {ad['FinalURL']}")
-        elif ad["URLIsMalicious"]:
+        elif ad["URLIsMalicious"] == True:
             totalMaliciousAds += 1
             print(f"Malicious URL: {ad['FinalURL']}")
-        elif ad["SSLShortDuration"]:
+        elif ad["SSLShortDuration"] == True:
             totalMaliciousAds += 1
             print(f"Short SSL Duration: {ad['FinalURL']}")
         else:
