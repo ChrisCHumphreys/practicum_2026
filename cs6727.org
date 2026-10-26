@@ -421,6 +421,7 @@ Malicious Ad Count: 0
 **** Day 1
 ***** Alright, gonna write this to just hit every search at once to save time.
 ***** That will be todays project, along with the first rull run
+***** Code is now written to do all the terms without having to do it manually.  About to pull updated domain and url lists, and then Im gonna let it fly!
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|
