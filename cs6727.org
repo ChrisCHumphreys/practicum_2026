@@ -417,6 +417,10 @@ Malicious Ad Count: 0
 ****** "Free Freeware" -> 150
 - No results
 ***** Alright, its pretty apparent that I am not getting an overwhelming number of ads, this will be trivial to automate.  My initial concern was that I was going to go past my Oxylabs quotas if I automated this, but is not valid.  Gonna script this and run all at once.
+*** Week 10
+**** Day 1
+***** Alright, gonna write this to just hit every search at once to save time.
+***** That will be todays project, along with the first rull run
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|
