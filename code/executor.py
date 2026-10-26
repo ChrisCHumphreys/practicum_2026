@@ -73,6 +73,26 @@ def run_assesment(query, count):
 
     format_results(execute_query(query, count))
         
+def run_queries_from_earlier_work():
+    """This automates running all the queries from the paper 'Automated
+    Collection an dAnalysis of Malware Disseminated via online Advertising'"""
+
+    qualifiers = ["Free", "Download", "Watch", "Stream", "Hack"]
+    content = ["Movies", "Ebook", "Pdf", "Music", "Mp3", "Wallpaper", "Fonts",
+               "News", "Sports", "Highlights", "Software", "Freeware",
+               "Cracks", "Password"]
+    # qualifiers = ["Free"]
+    # content = ["Download", "Watch"]
+    combo_list = []
+
+    for term in qualifiers:
+        for item in content:
+            combo_list.append(term + " " + item)
+
+    for item in combo_list:
+        print(f"Running Query: {item} - 150x")
+        format_results(execute_query(item, 150))
+        print("---------------------------------------\n")
 
 if __name__ == "__main__":
     """This is really just a wrapper to allow for easy execution"""
