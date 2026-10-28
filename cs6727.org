@@ -431,6 +431,15 @@ Malicious Ad Count: 0
 **** Day 3
 ***** Well, the issue now is the lack of ads, gonna run over the new terms 150 times each and see if I get anything more.
 ***** Ok, very successful, got a lot more ads than previous terms. 
+***** gonna spend a bit of time trying to find better search terms.
+****** [[https://racro.github.io/papers/adlens.pdf][Adlens: Efficient Detection of Deceptive Software Ads]] :: Seems like this one could be very useful.
+******* Interesting and useful, but Im not seeing any queries
+***** I am gonna run both of these ads against Indian locations to see if that makes a difference.
+****** Well, it was enlightening if nothing else, got back way fewer ads than without.
+***** Gonna go back to using California for location, but htis time gonna use 25 AI generated terms.
+- [[https://gemini.google.com/app/34f29fc3f8e5b309][Chat link]]  :: generating the terms
+  - "download putty", "winscp free download", "advanced ip scanner download", "filezilla client download", "notepad++ download", "windirstat download", "obs studio download", "rufus bootable usb download", "anydesk download", "teamviewer free download", "cisco anyconnect vpn download", "zoom workplace desktop app", "slack desktop app download", "microsoft teams download", "phantom wallet chrome extension", "metamask extension download", "ledger live desktop download", "exodus wallet download", "winrar free download", "7-zip download", "vlc media player download", "freecad download", "blender 3d download", "wireshark download", "postman api client download" 
+- [[https://dl.acm.org/doi/pdf/10.1145/2382196.2382267][Knowing Your Enemy: Understanding and Detecting Malicious Web Advertising]] :: this one I saw before, but noting again cuase it has a bunch of good info
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|

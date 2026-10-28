@@ -146,6 +146,7 @@ class Detector:
                 proxy = {
                     "server": "http://pr.oxylabs.io:7777",
                     "username": f"customer-{self.proxy_username}-cc-US-st-us_california",
+                    # "username": f"customer-{self.proxy_username}-cc-IN",
                     "password": self.proxy_pass
                 },
                 args=["--disable-features=AcceptCHFrame"],

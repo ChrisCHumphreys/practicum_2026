@@ -84,7 +84,10 @@ def run_queries_from_earlier_work():
     
     # combo_list = []
     
-    combo_list = ["nft", "cloud computing services", "malware",  "app development", "cryptocurrency", "web design", "web development", "resume building", "infographic maker", "job search sites", "job search", "internship search", "online news", "academic poster template", "video editing software", "photo editing software", "color correction software", "photoshop software", "augmented reality software", "artificial intelligence software", "adobe software"]
+    # combo_list = ["nft", "cloud computing services", "malware",  "app development", "cryptocurrency", "web design", "web development", "resume building", "infographic maker", "job search sites", "job search", "internship search", "online news", "academic poster template", "video editing software", "photo editing software", "color correction software", "photoshop software", "augmented reality software", "artificial intelligence software", "adobe software"]
+
+    # ai generated combo list
+    combo_list = ["download putty", "winscp free download", "advanced ip scanner download", "filezilla client download", "notepad++ download", "windirstat download", "obs studio download", "rufus bootable usb download", "anydesk download", "teamviewer free download", "cisco anyconnect vpn download", "zoom workplace desktop app", "slack desktop app download", "microsoft teams download", "phantom wallet chrome extension", "metamask extension download", "ledger live desktop download", "exodus wallet download", "winrar free download", "7-zip download", "vlc media player download", "freecad download", "blender 3d download", "wireshark download", "postman api client download"]
     
     # for term in qualifiers:
     #     for item in content:

@@ -55,6 +55,7 @@ class Collector:
             'source' : 'google_ads',
             'query' : query,
             'geo_location' : 'California, United States',
+            # 'geo_location' : 'IN',
             'parse' : True,
             'user_agent_type' : 'desktop'
         }
