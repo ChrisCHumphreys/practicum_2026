@@ -77,17 +77,18 @@ def run_queries_from_earlier_work():
     """This automates running all the queries from the paper 'Automated
     Collection an dAnalysis of Malware Disseminated via online Advertising'"""
 
-    qualifiers = ["Free", "Download", "Watch", "Stream", "Hack"]
-    content = ["Movies", "Ebook", "Pdf", "Music", "Mp3", "Wallpaper", "Fonts",
-               "News", "Sports", "Highlights", "Software", "Freeware",
-               "Cracks", "Password"]
-    # qualifiers = ["Free"]
-    # content = ["Download", "Watch"]
-    combo_list = []
-
-    for term in qualifiers:
-        for item in content:
-            combo_list.append(term + " " + item)
+    # qualifiers = ["Free", "Download", "Watch", "Stream", "Hack"]
+    # content = ["Movies", "Ebook", "Pdf", "Music", "Mp3", "Wallpaper", "Fonts",
+    #            "News", "Sports", "Highlights", "Software", "Freeware",
+    #            "Cracks", "Password"]
+    
+    # combo_list = []
+    
+    combo_list = ["nft", "cloud computing services", "malware",  "app development", "cryptocurrency", "web design", "web development", "resume building", "infographic maker", "job search sites", "job search", "internship search", "online news", "academic poster template", "video editing software", "photo editing software", "color correction software", "photoshop software", "augmented reality software", "artificial intelligence software", "adobe software"]
+    
+    # for term in qualifiers:
+    #     for item in content:
+    #         combo_list.append(term + " " + item)
 
     for item in combo_list:
         print(f"Running Query: {item} - 150x")

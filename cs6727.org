@@ -430,6 +430,7 @@ Malicious Ad Count: 0
   - And has good writeup I can contrast with my technique.
 **** Day 3
 ***** Well, the issue now is the lack of ads, gonna run over the new terms 150 times each and see if I get anything more.
+***** Ok, very successful, got a lot more ads than previous terms. 
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|

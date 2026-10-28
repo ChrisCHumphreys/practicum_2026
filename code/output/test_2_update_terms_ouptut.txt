@@ -1,0 +1,752 @@
+Python 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+warning: can't use pyrepl: (5, "terminal doesn't have the required clear capability"); TERM=dumb
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> 
+>>> run_queries_from_earlier_work()
+Running Query: nft - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: cloud computing services - 150x
+ad['CleanURL']: https://www.unityit.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epam.com/services/cloud
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.unityit.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epam.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: malware - 150x
+ad['CleanURL']: https://www.malwarebytes.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.malwarebytes.com/landing-page/products-and-plans-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.malwarebytes.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.malwarebytes.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.malwarebytes.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.malwarebytes.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.malwarebytes.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.malwarebytes.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.malwarebytes.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.malwarebytes.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.malwarebytes.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.malwarebytes.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 6
+Non-Malicious Ad Count: 6
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: app development - 150x
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://seattlesoftwaredevelopers.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://emerline.com/custom-application-development-services-emerline-united-states
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webisoft.com/lp/app-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://seattlesoftwaredevelopers.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://emerline.com/custom-application-development-services-emerline-united-states
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://appliedimagination.com/service/mobile-apps-3
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.cubix.co/lp/app/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://emerline.com/custom-application-development-services-emerline-united-states
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://alliedtechnologies.org/local-developers/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-app-security/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://emerline.com/custom-application-development-services-emerline-united-states
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://alliedtechnologies.org/local-developers/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webisoft.com/lp/app-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-api-protection/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-app-security/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://seattlesoftwaredevelopers.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-app-security/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://zyventra.ai/lp/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webisoft.com/lp/app-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pegasusone.com/lp/hire-software-engineers/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-app-security/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-app-security/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.fiverr.com/categories/programming-tech/mobile-app-services
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://zyventra.ai/lp/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://orases.com/services/app-development/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.appdome.com/mobile-app-security/request-a-demo/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.retrocubelabs.com/lp/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.netkinetix.com/landing/custom-software-development-for-business/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: seattlesoftwaredevelopers.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: emerline.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webisoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: seattlesoftwaredevelopers.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: emerline.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: appliedimagination.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.cubix.co
+ad['DomainIsMalicious']: unknown
+ad['Domain']: emerline.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: alliedtechnologies.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: emerline.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: alliedtechnologies.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webisoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: seattlesoftwaredevelopers.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: zyventra.ai
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webisoft.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pegasusone.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.fiverr.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: zyventra.ai
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: orases.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.appdome.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.retrocubelabs.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.netkinetix.com
+ad['DomainIsMalicious']: unknown
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI7c6xoKXdlwMVljrUAR1ktR7KEAMYAiAAEgJHQPD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI85T2jaXdlwMV8oBaBR3ZhhY1EAMYAiAAEgJnEPD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI4aO0maXdlwMVBr0DAB0rLBrgEAMYAiAAEgJ-zPD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMIgcmFkaXdlwMVQx6tBh1IQiSYEAMYAiAAEgKyr_D_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMIlu7goaXdlwMVdqZaBR3EexnoEAMYAiAAEgLPK_D_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI3qGioaXdlwMVZyvUAR26yDOjEAMYAiAAEgI7UPD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI27XXm6XdlwMVrAutBh3mOQKYEAAYAiAAEgINS_D_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI27XXm6XdlwMVrAutBh3mOQKYEAMYAiAAEgKgLfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMInoHImqXdlwMVFKNaBR3TkBtZEAMYAiAAEgKL7PD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI6oCEmqXdlwMVX29_AB2lhg3MEAMYAiAAEgJGbfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI85T2jaXdlwMV8oBaBR3ZhhY1EAAYAiAAEgKmnPD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI6oCEmqXdlwMVX29_AB2lhg3MEAAYAiAAEgI5FvD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI4aO0maXdlwMVBr0DAB0rLBrgEAAYAiAAEgLZqfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMItbOVg6XdlwMV96NaBR3_tQBlEAMYASAAEgKVJfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMIl9Kem6XdlwMV-mlHAR3WfTa5EAMYAiAAEgKaJfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMIl9Kem6XdlwMV-mlHAR3WfTa5EAAYAiAAEgKL2fD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMInoHImqXdlwMVFKNaBR3TkBtZEAAYAiAAEgJxu_D_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMIgcmFkaXdlwMVQx6tBh1IQiSYEAAYASAAEgJl1PD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI7c6xoKXdlwMVljrUAR1ktR7KEAAYAiAAEgIdTfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMIlu7goaXdlwMVdqZaBR3EexnoEAAYASAAEgIlofD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI3qGioaXdlwMVZyvUAR26yDOjEAAYAiAAEgLSbfD_BwE
+Short SSL Duration: https://orases.com/services/app-development/?keyword=app%20developer&utm_term=app%20developer&utm_campaign=Services+//+App+Development&utm_source=adwords&utm_medium=ppc&utm_id=22803758117&hsa_acc=4492069865&hsa_cam=22803758117&hsa_grp=181945807585&hsa_ad=764484570410&hsa_src=g&hsa_tgt=kwd-134868097&hsa_kw=app%20developer&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22803758117&gbraid=0AAAAADrbrRYQ2idwe1gTTN7fYCasewOHG&gclid=EAIaIQobChMI_J3WnqXdlwMVuLIDAB2ZezPoEAAYAyAAEgJQ6vD_BwE
+
+Total Ad Count: 73
+Non-Malicious Ad Count: 51
+Malicious Ad Count: 22
+---------------------------------------
+
+Running Query: cryptocurrency - 150x
+ad['CleanURL']: https://www.sofi.com/crypto/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sofi.com/crypto/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sofi.com/crypto/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sofi.com/crypto/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.sofi.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sofi.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sofi.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sofi.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: web design - 150x
+ad['CleanURL']: https://webdesignmaisters.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesignavalon.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesigntorque.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://prowebbuilderllc.com/lp5/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://websitedesignhouse.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.toptal.com/developers/hire-web-developers
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://innovativewebdevelopment.com/lp6/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.toptal.com/developers/hire-web-developers
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://ewebdesignpro.com/lp/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://prowebbuilderllc.com/lp5/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://ewebdesignpro.com/lp/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesigntorque.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesignquicker.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesigntorque.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesignavalon.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.digitalsilk.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://websitedesigngrid.com/website-design-services/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://clutch.co/directory/mobile-application-developers
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://innovativewebdevelopment.com/lp6/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://webdesignmaisters.com/lp2/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://websitedesigngrid.com/website-design-services/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://websitedesigngrid.com/website-design-services/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.fiverr.com/categories/programming-tech/website-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.digitalsilk.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.fiverr.com/categories/programming-tech/website-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.digitalsilk.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: webdesignmaisters.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesignavalon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesigntorque.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: prowebbuilderllc.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: websitedesignhouse.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.toptal.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: innovativewebdevelopment.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.toptal.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: ewebdesignpro.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: prowebbuilderllc.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: ewebdesignpro.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesigntorque.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesignquicker.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesigntorque.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesignavalon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.digitalsilk.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: websitedesigngrid.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: clutch.co
+ad['DomainIsMalicious']: unknown
+ad['Domain']: innovativewebdevelopment.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: webdesignmaisters.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: websitedesigngrid.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: websitedesigngrid.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.fiverr.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.digitalsilk.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.fiverr.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.digitalsilk.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 26
+Non-Malicious Ad Count: 26
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: web development - 150x
+ad['CleanURL']: https://www.fiverr.com/categories/programming-tech/website-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://websitesusa.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.fiverr.com/categories/programming-tech/website-development
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.fiverr.com/categories/programming-tech/website-development
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.fiverr.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: websitesusa.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.fiverr.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.fiverr.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: resume building - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: infographic maker - 150x
+ad['CleanURL']: https://venngage.com/features/infographic-maker
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://venngage.com/features/infographic-maker
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://lucid.co/lucidchart/landing/infographic-maker
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://lucid.co/lucidchart/landing/infographic-maker
+ad['URLIsMalicious']: Unknown
+ad['Domain']: venngage.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: venngage.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: lucid.co
+ad['DomainIsMalicious']: unknown
+ad['Domain']: lucid.co
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: job search sites - 150x
+Exception -> Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.google.com/aclk?sa=L&ai=DChsSEwiUqM2jp92XAxXqNtQBHf41DDAYACICCAIQARoCb2E&co=1&ase=2&gclid=EAIaIQobChMIlKjNo6fdlwMV6jbUAR3-NQwwEAMYASAAEgJKh_D_BwE&cid=CAASuwHkaLJdKMfTgOHa3RmCNxZf7xUvsuBUnLlvoBj0vC2PVpdXkllnRp3NEaiRgvsGIyLCQy0Q2lAieAo-CGng0eoGz95n02aed2DwInJulgoFap0uOZXeSJoIWQWJoRQNYISNzRmh9WQQHUFN_zrN6_Ou2e3U7FelS5Hy0TDFxtJMiMa5JLjdME5A3_ytql9eG9ypqizn3NDuhKi8cvKUzEebVSzxfKhzWLauR1C8kPjL56-gEbeJ91iprqRy&cce=2&category=acrcp_v1_32&sig=AOD64_2jLNXSA7Jy9jZkLhUWtMwRqrIojQ&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiUqM2jp92XAxXqNtQBHf41DDAYACICCAIQARoCb2E&co=1&ase=2&gclid=EAIaIQobChMIlKjNo6fdlwMV6jbUAR3-NQwwEAMYASAAEgJKh_D_BwE&cid=CAASuwHkaLJdKMfTgOHa3RmCNxZf7xUvsuBUnLlvoBj0vC2PVpdXkllnRp3NEaiRgvsGIyLCQy0Q2lAieAo-CGng0eoGz95n02aed2DwInJulgoFap0uOZXeSJoIWQWJoRQNYISNzRmh9WQQHUFN_zrN6_Ou2e3U7FelS5Hy0TDFxtJMiMa5JLjdME5A3_ytql9eG9ypqizn3NDuhKi8cvKUzEebVSzxfKhzWLauR1C8kPjL56-gEbeJ91iprqRy&cce=2&category=acrcp_v1_32&sig=AOD64_2jLNXSA7Jy9jZkLhUWtMwRqrIojQ&q&nis=4&adurl", waiting until "domcontentloaded"
+
+ad['CleanURL']: https://www.ziprecruiter.com/Search-Jobs-Near-Me
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ziprecruiter.com/Search-Jobs-Near-Me
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.monster.com/jobs/search
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.jobs2careers.com/search/results
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.indeed.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.glassdoor.com/index.htm
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.indeed.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.ziprecruiter.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ziprecruiter.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.monster.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.jobs2careers.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.indeed.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.glassdoor.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.indeed.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 7
+Non-Malicious Ad Count: 7
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: job search - 150x
+ad['CleanURL']: https://www.randstadusa.com/job-seeker/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ziprecruiter.com/Search-Jobs-Near-Me
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.randstadusa.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ziprecruiter.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: internship search - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: online news - 150x
+ad['CleanURL']: https://www.motherjones.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.motherjones.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: academic poster template - 150x
+ad['CleanURL']: https://www.adobe.com/express/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: video editing software - 150x
+ad['CleanURL']: https://www.nchsoftware.com/videopad/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://creatorstudio.apple.com/info/try
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://creatorstudio.apple.com/info/try
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://creatorstudio.apple.com/info/try
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://creatorstudio.apple.com/info/try
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://creatorstudio.apple.com/info/try
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://creatorstudio.apple.com/info/try
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.nchsoftware.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: creatorstudio.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: creatorstudio.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: creatorstudio.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: creatorstudio.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: creatorstudio.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: creatorstudio.apple.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 7
+Non-Malicious Ad Count: 7
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: photo editing software - 150x
+ad['CleanURL']: https://skylum.com/chk/luminar-st
+ad['URLIsMalicious']: Unknown
+ad['Domain']: skylum.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: color correction software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: photoshop software - 150x
+ad['CleanURL']: https://www.adobe.com/products/photoshop/landpa.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/photoshop/landpa.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/photoshop/landpa.html
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 3
+Non-Malicious Ad Count: 3
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: augmented reality software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: artificial intelligence software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: adobe software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> 
