@@ -1,0 +1,211 @@
+Python 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+warning: can't use pyrepl: (5, "terminal doesn't have the required clear capability"); TERM=dumb
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> run_queries_from_earlier_work()
+Running Query: download putty - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: winscp free download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: advanced ip scanner download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: filezilla client download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: notepad++ download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: windirstat download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: obs studio download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: rufus bootable usb download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: anydesk download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: teamviewer free download - 150x
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 3
+Non-Malicious Ad Count: 3
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: cisco anyconnect vpn download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: zoom workplace desktop app - 150x
+ad['CleanURL']: https://www.zebra.com/us/en/software/workcloud-solutions/workcloud-enterprise-collaboration-suite.html
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.zebra.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: slack desktop app download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: microsoft teams download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: phantom wallet chrome extension - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: metamask extension download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: ledger live desktop download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: exodus wallet download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: winrar free download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: 7-zip download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: vlc media player download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: freecad download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: blender 3d download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: wireshark download - 150x
+ad['CleanURL']: https://www.google.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.google.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.google.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.google.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: postman api client download - 150x
+ad['CleanURL']: https://www.usebruno.com/compare/bruno-vs-postman
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.usebruno.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+>>> 
