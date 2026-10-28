@@ -422,6 +422,14 @@ Malicious Ad Count: 0
 ***** Alright, gonna write this to just hit every search at once to save time.
 ***** That will be todays project, along with the first rull run
 ***** Code is now written to do all the terms without having to do it manually.  About to pull updated domain and url lists, and then Im gonna let it fly!
+***** Started first run at 4:15 pm.
+***** I think the issue I am going to face is the terms from that earlier paper are just not great at finding ads. Gonna spend some time today looking up newer terms.
+***** Not sure how I missed this paper, but it seems very useful
+- [[https://ieeexplore.ieee.org/document/10099325][Data Science Analysis of Malicious Advertisements and Threat Detection Automation for Cybersecurity Progress]]
+- This one also has a really good list of terms I could use that is more up to date.
+  - And has good writeup I can contrast with my technique.
+**** Day 3
+***** Well, the issue now is the lack of ads, gonna run over the new terms 150 times each and see if I get anything more.
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|
@@ -444,3 +452,5 @@ Malicious Ad Count: 0
 - Total of 70 Combinations
 - My goal is to get ~10k searches, so that breaks down to
   - That works out 10 ~150 queries of each combo.
+*** [[https://ieeexplore.ieee.org/document/10099325][Data Science Analysis of Malicious Advertisements and Threat Detection Automation for Cybersecurity Progress]]
+- “nft”, “cloud computing services,” “malware, ” “app development”, “cryptocurrency,” “web design”, “web development,” “resume building,” “infographic maker,” “job search sites, ” “job search,” “internship search”, “online news,” “academic poster template,” “video editing software,” “photo editing software,” “color correction software,” “photoshop software,” “augmented reality software,” “artificial intelligence software,” and “adobe software.”

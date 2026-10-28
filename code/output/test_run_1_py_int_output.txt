@@ -1,0 +1,908 @@
+Python 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+warning: can't use pyrepl: (5, "terminal doesn't have the required clear capability"); TERM=dumb
+>>> 
+>>> 
+>>> run_queries_from_earlier_work()
+Free Movies
+Free Ebook
+Free Pdf
+Free Music
+Free Mp3
+Free Wallpaper
+Free Fonts
+Free News
+Free Sports
+Free Highlights
+Free Software
+Free Freeware
+Free Cracks
+Free Password
+Download Movies
+Download Ebook
+Download Pdf
+Download Music
+Download Mp3
+Download Wallpaper
+Download Fonts
+Download News
+Download Sports
+Download Highlights
+Download Software
+Download Freeware
+Download Cracks
+Download Password
+Watch Movies
+Watch Ebook
+Watch Pdf
+Watch Music
+Watch Mp3
+Watch Wallpaper
+Watch Fonts
+Watch News
+Watch Sports
+Watch Highlights
+Watch Software
+Watch Freeware
+Watch Cracks
+Watch Password
+Stream Movies
+Stream Ebook
+Stream Pdf
+Stream Music
+Stream Mp3
+Stream Wallpaper
+Stream Fonts
+Stream News
+Stream Sports
+Stream Highlights
+Stream Software
+Stream Freeware
+Stream Cracks
+Stream Password
+Hack Movies
+Hack Ebook
+Hack Pdf
+Hack Music
+Hack Mp3
+Hack Wallpaper
+Hack Fonts
+Hack News
+Hack Sports
+Hack Highlights
+Hack Software
+Hack Freeware
+Hack Cracks
+Hack Password
+>>> 
+>>> run_queries_from_earlier_work()
+Running Query: Free Movies - 150x
+Running Query: Free Ebook - 150x
+Running Query: Free Pdf - 150x
+Running Query: Free Music - 150x
+Running Query: Free Mp3 - 150x
+Running Query: Free Wallpaper - 150x
+Running Query: Free Fonts - 150x
+Running Query: Free News - 150x
+Running Query: Free Sports - 150x
+Running Query: Free Highlights - 150x
+Running Query: Free Software - 150x
+Running Query: Free Freeware - 150x
+Running Query: Free Cracks - 150x
+Running Query: Free Password - 150x
+Running Query: Download Movies - 150x
+Running Query: Download Ebook - 150x
+Running Query: Download Pdf - 150x
+Running Query: Download Music - 150x
+Running Query: Download Mp3 - 150x
+Running Query: Download Wallpaper - 150x
+Running Query: Download Fonts - 150x
+Running Query: Download News - 150x
+Running Query: Download Sports - 150x
+Running Query: Download Highlights - 150x
+Running Query: Download Software - 150x
+Running Query: Download Freeware - 150x
+Running Query: Download Cracks - 150x
+Running Query: Download Password - 150x
+Running Query: Watch Movies - 150x
+Running Query: Watch Ebook - 150x
+Running Query: Watch Pdf - 150x
+Running Query: Watch Music - 150x
+Running Query: Watch Mp3 - 150x
+Running Query: Watch Wallpaper - 150x
+Running Query: Watch Fonts - 150x
+Running Query: Watch News - 150x
+Running Query: Watch Sports - 150x
+Running Query: Watch Highlights - 150x
+Running Query: Watch Software - 150x
+Running Query: Watch Freeware - 150x
+Running Query: Watch Cracks - 150x
+Running Query: Watch Password - 150x
+Running Query: Stream Movies - 150x
+Running Query: Stream Ebook - 150x
+Running Query: Stream Pdf - 150x
+Running Query: Stream Music - 150x
+Running Query: Stream Mp3 - 150x
+Running Query: Stream Wallpaper - 150x
+Running Query: Stream Fonts - 150x
+Running Query: Stream News - 150x
+Running Query: Stream Sports - 150x
+Running Query: Stream Highlights - 150x
+Running Query: Stream Software - 150x
+Running Query: Stream Freeware - 150x
+Running Query: Stream Cracks - 150x
+Running Query: Stream Password - 150x
+Running Query: Hack Movies - 150x
+Running Query: Hack Ebook - 150x
+Running Query: Hack Pdf - 150x
+Running Query: Hack Music - 150x
+Running Query: Hack Mp3 - 150x
+Running Query: Hack Wallpaper - 150x
+Running Query: Hack Fonts - 150x
+Running Query: Hack News - 150x
+Running Query: Hack Sports - 150x
+Running Query: Hack Highlights - 150x
+Running Query: Hack Software - 150x
+Running Query: Hack Freeware - 150x
+Running Query: Hack Cracks - 150x
+Running Query: Hack Password - 150x
+>>> 
+>>> run_queries_from_earlier_work()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    run_queries_from_earlier_work()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/chris/Documents/cs6727_Practicum/code/executor.py", line 88, in run_queries_from_earlier_work
+    for item in content:
+                ^^^^^^^
+NameError: name 'content' is not defined
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> run_queries_from_earlier_work()
+Running Query: Free Download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+
+Running Query: Free Watch - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+
+>>> c = Classifier()
+>>> c.build_malicious_domain_list()
+>>> c.build_malicious_url_list()\
+... 
+>>> run_queries_from_earlier_work()
+Running Query: Free Download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+
+Running Query: Free Watch - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> run_queries_from_earlier_work()
+Running Query: Free Movies - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Ebook - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Music - 150x
+ad['CleanURL']: https://www.jango.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.jango.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.jango.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.jango.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Fonts - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Sports - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Movies - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Ebook - 150x
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://etextbookmall.com/product/principles-of-american-journalism-an-introduction-2nd-edition-original-pdf/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://etextbookmall.com/product/principles-of-american-journalism-an-introduction-2nd-edition-original-pdf/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://etextbookmall.com/product/principles-of-american-journalism-an-introduction-2nd-edition-original-pdf/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: etextbookmall.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: etextbookmall.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: etextbookmall.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Pdf - 150x
+ad['CleanURL']: https://www.foxit.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfexpert.com/lp-free-buy-now-1
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.foxit.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfexpert.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 9
+Non-Malicious Ad Count: 9
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Music - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Wallpaper - 150x
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+ad['CleanURL']: https://www.shutterstock.com/category/miscellaneous/backgrounds
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.montereybayaquarium.org/animals-the-ocean/wallpaper
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.shutterstock.com/category/miscellaneous/backgrounds
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.montereybayaquarium.org/animals-the-ocean/wallpaper
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.shutterstock.com/category/miscellaneous/backgrounds
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.montereybayaquarium.org/animals-the-ocean/wallpaper
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.shutterstock.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.montereybayaquarium.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.shutterstock.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.montereybayaquarium.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.shutterstock.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.montereybayaquarium.org
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 6
+Non-Malicious Ad Count: 6
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Fonts - 150x
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.homelessfonts.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.homelessfonts.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.homelessfonts.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.homelessfonts.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 13
+Non-Malicious Ad Count: 13
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Sports - 150x
+ad['CleanURL']: https://apps.apple.com/us/app/apple-sports/id6446788829
+ad['URLIsMalicious']: Unknown
+ad['Domain']: apps.apple.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Movies - 150x
+ad['CleanURL']: https://www.amazon.com/gp/video/storefront/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Ebook - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Music - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Fonts - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Sports - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Movies - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Ebook - 150x
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 14
+Non-Malicious Ad Count: 14
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Music - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Fonts - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Sports - 150x
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiru7Hj39iXAxUASEgAHXyCGr4YACICCAIQABoCY2U&ae=2&co=1&ase=2&gclid=EAIaIQobChMIq7ux49_YlwMVAEhIAB18ghq-EAMYASAAEgLs3vD_BwE&cid=CAASugHkaL5HxU9KrJNAyRlmcDuSPOMPdPNXfUS-jfiPvEqxXgs5OjgYAUEIL6Ksn57jRRkb5otXeQAYI5vhYqErcnNxU5KH4ey4Gg8E94cr0TbjFBRUbhX0AUFTfptzDj31qThryVHNbFXguJ8TNN-XQanxq8OF9OcP1_0fmVXt0rHFvFOE2lt4U8BUzl7HGDTfSgxikxu8OB_5cgGWjr9olkN1wfohcx2Kj6tM01nUcqjgcb-kGyRsPh20_mA&cce=2&category=acrcp_v1_71&sig=AOD64_1BWGuqtzXZ82dRebQQmrF1Q9eW7Q&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiru7Hj39iXAxUASEgAHXyCGr4YACICCAIQABoCY2U&ae=2&co=1&ase=2&gclid=EAIaIQobChMIq7ux49_YlwMVAEhIAB18ghq-EAMYASAAEgLs3vD_BwE&cid=CAASugHkaL5HxU9KrJNAyRlmcDuSPOMPdPNXfUS-jfiPvEqxXgs5OjgYAUEIL6Ksn57jRRkb5otXeQAYI5vhYqErcnNxU5KH4ey4Gg8E94cr0TbjFBRUbhX0AUFTfptzDj31qThryVHNbFXguJ8TNN-XQanxq8OF9OcP1_0fmVXt0rHFvFOE2lt4U8BUzl7HGDTfSgxikxu8OB_5cgGWjr9olkN1wfohcx2Kj6tM01nUcqjgcb-kGyRsPh20_mA&cce=2&category=acrcp_v1_71&sig=AOD64_1BWGuqtzXZ82dRebQQmrF1Q9eW7Q&q&nis=4&adurl", waiting until "domcontentloaded"
+
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Movies - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Ebook - 150x
+ad['CleanURL']: https://etextbookmall.com/product/hands-on-ethical-hacking-and-network-defense-3rd-edition-original-pdf/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: etextbookmall.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Music - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Fonts - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Sports - 150x
+ad['CleanURL']: https://www.simulatedsportshub.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.simulatedsportshub.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+>>> 
