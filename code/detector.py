@@ -123,7 +123,8 @@ class Detector:
                         "FinalURL" : FinalURL,
                         "Text" : text,
                         "URLIsMalicious" : "Unknown",
-                        "SSLValidFrom" : SSLValidFrom
+                        "SSLValidFrom" : SSLValidFrom,
+                        "ClickFixStrings" : False
                         }
                 
     async def grab_content_from_ads_list(self):
@@ -296,6 +297,16 @@ class Classifier:
                     ad["SSLShortDuration"] = True
                 else:
                     ad["SSLShortDuration"] = False
+
+    def mark_potential_clickfix(self, detector_ad_list):
+        """Looks for signs of clickfix related strings and updates list if found"""
+        # https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+        # Site above is where I found the clipboard strings.
+
+        for ad in detector_ad_list:
+            if ("document.execCommand('copy')" in detector_ad_list["text"]) OR
+            ("navigator.clipboard.writeText" in detector_ad_list["text"]):
+                detector_ad_list["ClickFixString"] = True
 
     def virus_total_assesment(self):
         """This will define how I submit URLS to the VT Oracle"""

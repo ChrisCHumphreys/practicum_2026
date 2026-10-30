@@ -37,6 +37,7 @@ def execute_query(query, count):
     c.mark_malicious_urls_in_ads_list(c.sample_final_ad_pages)
     c.mark_malicious_domains_in_ads_list(c.sample_final_ad_pages)
     c.mark_malicious_ssl_times_in_ads_list(c.sample_final_ad_pages)
+    c.mark_potential_clickfix(c.sample_final_ad_pages)
 
     return c.sample_final_ad_pages
 
@@ -57,6 +58,9 @@ def format_results(classified_ad_page_list):
         elif ad["SSLShortDuration"] == True:
             totalMaliciousAds += 1
             print(f"Short SSL Duration: {ad['FinalURL']}")
+        elif ad["ClickFixString"] == True:
+            print(f"Click fix String Present")
+            totalMaliciousAds += 1
         else:
             totalNonMaliciousAds += 1
 
