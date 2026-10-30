@@ -59,7 +59,7 @@ def format_results(classified_ad_page_list):
             totalMaliciousAds += 1
             print(f"Short SSL Duration: {ad['FinalURL']}")
         elif ad["ClickFixString"] == True:
-            print(f"Click fix String Present")
+            print(f"Click fix String Present: {ad['FinalURL'}")
             totalMaliciousAds += 1
         else:
             totalNonMaliciousAds += 1
@@ -91,7 +91,10 @@ def run_queries_from_earlier_work():
     # combo_list = ["nft", "cloud computing services", "malware",  "app development", "cryptocurrency", "web design", "web development", "resume building", "infographic maker", "job search sites", "job search", "internship search", "online news", "academic poster template", "video editing software", "photo editing software", "color correction software", "photoshop software", "augmented reality software", "artificial intelligence software", "adobe software"]
 
     # ai generated combo list
-    combo_list = ["download putty", "winscp free download", "advanced ip scanner download", "filezilla client download", "notepad++ download", "windirstat download", "obs studio download", "rufus bootable usb download", "anydesk download", "teamviewer free download", "cisco anyconnect vpn download", "zoom workplace desktop app", "slack desktop app download", "microsoft teams download", "phantom wallet chrome extension", "metamask extension download", "ledger live desktop download", "exodus wallet download", "winrar free download", "7-zip download", "vlc media player download", "freecad download", "blender 3d download", "wireshark download", "postman api client download"]
+    # combo_list = ["download putty", "winscp free download", "advanced ip scanner download", "filezilla client download", "notepad++ download", "windirstat download", "obs studio download", "rufus bootable usb download", "anydesk download", "teamviewer free download", "cisco anyconnect vpn download", "zoom workplace desktop app", "slack desktop app download", "microsoft teams download", "phantom wallet chrome extension", "metamask extension download", "ledger live desktop download", "exodus wallet download", "winrar free download", "7-zip download", "vlc media player download", "freecad download", "blender 3d download", "wireshark download", "postman api client download"]
+
+    # just a quick test
+    combo_list = ["Free Ebooks", "Learn to code"]
     
     # for term in qualifiers:
     #     for item in content:
@@ -99,7 +102,7 @@ def run_queries_from_earlier_work():
 
     for item in combo_list:
         print(f"Running Query: {item} - 150x")
-        format_results(execute_query(item, 150))
+        format_results(execute_query(item, 25))
         print("---------------------------------------\n")
 
 if __name__ == "__main__":

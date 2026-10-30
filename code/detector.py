@@ -304,8 +304,8 @@ class Classifier:
         # Site above is where I found the clipboard strings.
 
         for ad in detector_ad_list:
-            if ("document.execCommand('copy')" in detector_ad_list["text"]) OR
-            ("navigator.clipboard.writeText" in detector_ad_list["text"]):
+            if (("document.execCommand('copy')" in detector_ad_list["text"]) or
+                ("navigator.clipboard.writeText" in detector_ad_list["text"])):
                 detector_ad_list["ClickFixString"] = True
 
     def virus_total_assesment(self):
