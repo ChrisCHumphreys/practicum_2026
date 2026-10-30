@@ -441,6 +441,9 @@ Malicious Ad Count: 0
   - "download putty", "winscp free download", "advanced ip scanner download", "filezilla client download", "notepad++ download", "windirstat download", "obs studio download", "rufus bootable usb download", "anydesk download", "teamviewer free download", "cisco anyconnect vpn download", "zoom workplace desktop app", "slack desktop app download", "microsoft teams download", "phantom wallet chrome extension", "metamask extension download", "ledger live desktop download", "exodus wallet download", "winrar free download", "7-zip download", "vlc media player download", "freecad download", "blender 3d download", "wireshark download", "postman api client download" 
 - [[https://dl.acm.org/doi/pdf/10.1145/2382196.2382267][Knowing Your Enemy: Understanding and Detecting Malicious Web Advertising]] :: this one I saw before, but noting again cuase it has a bunch of good info
 ****** Well that was a bust, lol.  Still got really very few ads at all.
+**** Day 5
+***** Well, not getting many ads, but I still have some time, so im gonna add on the clickfix oracle after all.
+****** Also, gonna create a new branch for htis just to be safe.
 ** Misc. Resources
 *** [[https://ieeexplore.ieee.org/document/7345447][Automated Collection and Analysis of Malware Disseminated via Online Advertising]]
 |--------------------+------------------|
@@ -465,3 +468,4 @@ Malicious Ad Count: 0
   - That works out 10 ~150 queries of each combo.
 *** [[https://ieeexplore.ieee.org/document/10099325][Data Science Analysis of Malicious Advertisements and Threat Detection Automation for Cybersecurity Progress]]
 - “nft”, “cloud computing services,” “malware, ” “app development”, “cryptocurrency,” “web design”, “web development,” “resume building,” “infographic maker,” “job search sites, ” “job search,” “internship search”, “online news,” “academic poster template,” “video editing software,” “photo editing software,” “color correction software,” “photoshop software,” “augmented reality software,” “artificial intelligence software,” and “adobe software.”
+  
