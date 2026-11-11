@@ -124,7 +124,7 @@ class Detector:
                         "Text" : text,
                         "URLIsMalicious" : "Unknown",
                         "SSLValidFrom" : SSLValidFrom,
-                        "ClickFixStrings" : False
+                        "ClickFixString" : False
                         }
                 
     async def grab_content_from_ads_list(self):
@@ -304,9 +304,9 @@ class Classifier:
         # Site above is where I found the clipboard strings.
 
         for ad in detector_ad_list:
-            if (("document.execCommand('copy')" in detector_ad_list["text"]) or
-                ("navigator.clipboard.writeText" in detector_ad_list["text"])):
-                detector_ad_list["ClickFixString"] = True
+            if (("document.execCommand('copy')" in ad["Text"]) or
+                ("navigator.clipboard.writeText" in ad ["Text"])):
+                ad["ClickFixString"] = True
 
     def virus_total_assesment(self):
         """This will define how I submit URLS to the VT Oracle"""

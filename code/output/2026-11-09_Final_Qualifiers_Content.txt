@@ -1,0 +1,2021 @@
+Python 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+warning: can't use pyrepl: (5, "terminal doesn't have the required clear capability"); TERM=dumb
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> run_queries_from_earlier_work()
+Running Query: Free Movies - 150x
+ad['CleanURL']: https://pluto.tv/us/home/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pluto.tv/us/home/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: pluto.tv
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pluto.tv
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Ebook - 150x
+ad['CleanURL']: https://hopeofanation.org/offers/free-ebook
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.meditateinwestlake.org/free-ebook
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://aveit.org.au/free
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.meditateinwestlake.org/free-ebook
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.meditateinwestlake.org/free-ebook
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.meditateinwestlake.org/free-ebook
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://ebooksforstudents.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://hopeofanation.org/offers/free-ebook
+ad['URLIsMalicious']: Unknown
+ad['Domain']: hopeofanation.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.meditateinwestlake.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: aveit.org.au
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.meditateinwestlake.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.meditateinwestlake.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.meditateinwestlake.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: ebooksforstudents.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: hopeofanation.org
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 8
+Non-Malicious Ad Count: 8
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Pdf - 150x
+ad['CleanURL']: https://pdfsimpli.com/pdf-converter/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.mergedpdf.com/lp/edit-pdf/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfsimpli.com/lp/pdf-to-edit/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfpro.com/lp5
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfhint.com/lp/pdf-converter/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://edit-pdf.pdffiller.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.mergedpdf.com/lp/edit-pdf/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/sign-pdf
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://files-editor.com/upload/sign
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://openpdf.com/lp/edit-pdf.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfhint.com/lp/pdf-converter/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfhint.com/lp/pdf-converter/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://openpdf.com/lp/edit-pdf.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/sign-pdf
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfhint.com/lp/pdf-converter/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://openpdf.com/lp/edit-pdf.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.mergedpdf.com/lp/edit-pdf/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfhint.com/lp/pdf-converter/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfpro.com/lp8
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdfsimpli.com/lp/pdf-to-edit/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://pdf.net/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: pdfsimpli.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.mergedpdf.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfsimpli.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfpro.com
+ad['DomainIsMalicious']: True
+ad['Domain']: pdfhint.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: edit-pdf.pdffiller.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.mergedpdf.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: files-editor.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: openpdf.com
+ad['DomainIsMalicious']: True
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfhint.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfhint.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: openpdf.com
+ad['DomainIsMalicious']: True
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfhint.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: openpdf.com
+ad['DomainIsMalicious']: True
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.mergedpdf.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfhint.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdfpro.com
+ad['DomainIsMalicious']: True
+ad['Domain']: pdfsimpli.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: pdf.net
+ad['DomainIsMalicious']: unknown
+Malicious Domain: https://pdfpro.com/lp5?utm_source=google&utm_medium=ppc&utm_content=AD1&utm_campaign=USA-S-Branded_PDF-Pro&gad_source=1&gad_campaignid=22133810288&gbraid=0AAAAADpc1u_olawBRb6dRmNfRl-Hm9kRG&gclid=EAIaIQobChMImqe88dj7lwMVNRBoAR240R7gEAAYAyAAEgINFfD_BwE
+Malicious Domain: https://openpdf.com/lp/edit-pdf.html?account=678-774-5919&campaignid=23743194407&adgroupid=200000735006&keyword=free%20pdf%20editor%20no%20sign%20up&gclid=EAIaIQobChMI49jU8dj7lwMVHyNECB1APi24EAAYAyAAEgL3fvD_BwE&source=g&matchtype=p&location=9031844&caid=846852869&gad_source=1&gad_campaignid=23743194407&gbraid=0AAAAAoRIeI2yh3Gh-BKygE_H5SltsTvKD
+Malicious Domain: https://openpdf.com/lp/edit-pdf.html?account=678-774-5919&campaignid=23743194407&adgroupid=201466012456&keyword=&gclid=EAIaIQobChMIpaWBmNn7lwMVYDdECB2BtTC7EAAYBCAAEgI5IvD_BwE&source=g&matchtype=a&location=9031844&caid=846852869&gad_source=1&gad_campaignid=23743194407&gbraid=0AAAAAoRIeI2yh3Gh-BKygE_H5SltsTvKD
+Malicious Domain: https://openpdf.com/lp/edit-pdf.html?account=678-774-5919&campaignid=23743194407&adgroupid=200000735006&keyword=free%20pdf%20editor%20no%20sign%20up&gclid=EAIaIQobChMI2YngiNn7lwMV1zBECB3anCQLEAAYBCAAEgKaofD_BwE&source=g&matchtype=p&location=9031844&caid=846852869&gad_source=1&gad_campaignid=23743194407&gbraid=0AAAAAoRIeI2yh3Gh-BKygE_H5SltsTvKD
+Malicious Domain: https://pdfpro.com/lp8?utm_source=google&utm_medium=ppc&utm_content=AD3&utm_campaign=USA-S-Editor_PDF-Editor-Mac&gad_source=1&gad_campaignid=17999839344&gbraid=0AAAAADpc1u9JcA3SBksYNHGlWzcHcLdv5&gclid=EAIaIQobChMIm-ecs9n7lwMVIrUDAB0jBRg7EAAYBCAAEgKMmvD_BwE
+
+Total Ad Count: 81
+Non-Malicious Ad Count: 76
+Malicious Ad Count: 5
+---------------------------------------
+
+Running Query: Free Music - 150x
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://artlist.io/royalty-free-music/search
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.jango.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://artlist.io/royalty-free-music/search
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.jango.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://artlist.io/royalty-free-music/search
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/royalty-free-music
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.songsforsaplings.com/listen/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.joltradio.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://artlist.io/royalty-free-music/search
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/license/royalty-free-music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.bluesmusicfan.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.songsforsaplings.com/listen/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.epidemicsound.com/music/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.joltradio.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://liferadio.ca/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: artlist.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.jango.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: artlist.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.jango.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: artlist.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.songsforsaplings.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.joltradio.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: artlist.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.bluesmusicfan.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.songsforsaplings.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.epidemicsound.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.joltradio.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: liferadio.ca
+ad['DomainIsMalicious']: unknown
+Short SSL Duration: https://liferadio.ca/?gad_source=1&gad_campaignid=12830493072&gbraid=0AAAAACXr7LLY7D3_tWw7h8ZuNzBon4Fxd&gclid=EAIaIQobChMIgsDCkdr7lwMVpobuAR1OQjaOEAMYAiAAEgJS-PD_BwE
+
+Total Ad Count: 31
+Non-Malicious Ad Count: 30
+Malicious Ad Count: 1
+---------------------------------------
+
+Running Query: Free Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Wallpaper - 150x
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+ad['CleanURL']: https://www.pinterest.com/search/pins/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://stock.adobe.com/discover/wallpaper
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pinterest.com/search/pins/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.yellowstone.org/wallpaper/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.pinterest.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: stock.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pinterest.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.yellowstone.org
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Fonts - 150x
+ad['CleanURL']: https://elements.envato.com/fonts/free+style
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts/free+style
+ad['URLIsMalicious']: Unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free News - 150x
+ad['CleanURL']: https://imprintnews.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://imprintnews.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.themarshallproject.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://oaklandvoices.us/category/news/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.independent.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.themarshallproject.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://commondefense.us/newsroom
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.social-current.org/news/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://join.ecori.org/newsletter
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://news.ideallya.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.themarshallproject.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://imprintnews.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://theamericanwatchdog.com/category/politics/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://capitalandmain.com/latest-news
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://news.ideallya.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://therealnews.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://znetwork.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://theanalysis.news/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://theanalysis.news/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://theanalysis.news/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: imprintnews.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: imprintnews.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.themarshallproject.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: oaklandvoices.us
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.independent.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.themarshallproject.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: commondefense.us
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.social-current.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: join.ecori.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: news.ideallya.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.themarshallproject.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: imprintnews.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: theamericanwatchdog.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: capitalandmain.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: news.ideallya.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: therealnews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: znetwork.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: theanalysis.news
+ad['DomainIsMalicious']: unknown
+ad['Domain']: theanalysis.news
+ad['DomainIsMalicious']: unknown
+ad['Domain']: theanalysis.news
+ad['DomainIsMalicious']: unknown
+Click fix String Present: https://theanalysis.news/?gad_source=1&gad_campaignid=21894685144&gbraid=0AAAAAqj5ijJkKwUlh8aODzHGsUM4CVb94&gclid=EAIaIQobChMIncWA4Nz7lwMVBKMDAB37zi0HEAMYAiAAEgLU-PD_BwE
+Click fix String Present: https://theanalysis.news/?gad_source=1&gad_campaignid=21894685144&gbraid=0AAAAAqj5ijJkKwUlh8aODzHGsUM4CVb94&gclid=EAIaIQobChMIxMfd5tz7lwMVcczCBB1CDgW-EAAYASAAEgLkc_D_BwE
+Click fix String Present: https://theanalysis.news/?gad_source=1&gad_campaignid=21894685144&gbraid=0AAAAAqj5ijJkKwUlh8aODzHGsUM4CVb94&gclid=EAIaIQobChMItZ2O59z7lwMVEB9ECB0L8B-9EAMYASAAEgLqK_D_BwE
+
+Total Ad Count: 28
+Non-Malicious Ad Count: 25
+Malicious Ad Count: 3
+---------------------------------------
+
+Running Query: Free Sports - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Highlights - 150x
+ad['CleanURL']: https://shop.highlights.com/free-printables-offer
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://shop.highlights.com/free-printables-offer
+ad['URLIsMalicious']: Unknown
+ad['Domain']: shop.highlights.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: shop.highlights.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Software - 150x
+ad['CleanURL']: https://www.nchsoftware.com/select/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.nchsoftware.com/select/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.nchsoftware.com/select/index.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.nchsoftware.com/select/index.html
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.nchsoftware.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.nchsoftware.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.nchsoftware.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.nchsoftware.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Free Password - 150x
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/features/password-generator
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/product/password-manager
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/features/password-generator
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/features/password-generator
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/personal
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/features/password-generator
+ad['URLIsMalicious']: Unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 13
+Non-Malicious Ad Count: 13
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Movies - 150x
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 3
+Non-Malicious Ad Count: 3
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Ebook - 150x
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://ebooksforstudents.org/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: ebooksforstudents.org
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Pdf - 150x
+Exception -> Page.goto: net::ERR_TIMED_OUT at https://www.google.com/aclk?sa=L&ai=DChsSEwiiy9_u4fuXAxUsXQ8CHXPaH34YACICCAIQARoCdGI&co=1&ase=2&gclid=EAIaIQobChMIosvf7uH7lwMVLF0PAh1z2h9-EAMYASAAEgI_pvD_BwE&category=acrcp_v1_33&sig=AOD64_0Z6mJzvPUsbLdWDyu8q3u-vh1jdA&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiiy9_u4fuXAxUsXQ8CHXPaH34YACICCAIQARoCdGI&co=1&ase=2&gclid=EAIaIQobChMIosvf7uH7lwMVLF0PAh1z2h9-EAMYASAAEgI_pvD_BwE&category=acrcp_v1_33&sig=AOD64_0Z6mJzvPUsbLdWDyu8q3u-vh1jdA&q&nis=4&adurl", waiting until "domcontentloaded"
+
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/seamlessly-edit-pdfs
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/seamlessly-edit-pdfs
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/your-alternative-to-expensive-pdf-editors
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://mobisystems.com/en-us/mobipdf/lp/seamlessly-edit-pdfs
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pdf-suite.com/web/en/dj/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://get.adobe.com/reader/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.foxit.com/shopping/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: mobisystems.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pdf-suite.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: get.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.foxit.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 50
+Non-Malicious Ad Count: 50
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Music - 150x
+ad['CleanURL']: https://www.qobuz.com/us-en/discover
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/music/unlimited
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/music/unlimited
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/music/unlimited
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/music/unlimited
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/music/unlimited
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.qobuz.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 6
+Non-Malicious Ad Count: 6
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Wallpaper - 150x
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+Exception -> Response.text: Protocol error (Network.getResponseBody): No resource with given identifier found
+Response body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.
+ad['CleanURL']: https://www.shutterstock.com/category/miscellaneous/backgrounds
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.shutterstock.com/category/miscellaneous/backgrounds
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.shutterstock.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.shutterstock.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Fonts - 150x
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/type.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 17
+Non-Malicious Ad Count: 17
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Sports - 150x
+ad['CleanURL']: https://plus.espn.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: plus.espn.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Download Password - 150x
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/product/password-manager
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/downloads/windows
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://us.cybernews.com/lp/best-password-managers-us/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.dashlane.com/lp/enterprise-password-manager
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/downloads/windows
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/downloads/windows
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/downloads/windows
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordpass.com/password-manager/special/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/business-security
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.keepersecurity.com/lp/best-team-password-manager/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/password-manager
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/password-manager
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/password-manager
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/business-security
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://1password.com/password-management
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.lastpass.com/password-manager
+ad['URLIsMalicious']: Unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: us.cybernews.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.dashlane.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.keepersecurity.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: 1password.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.lastpass.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 34
+Non-Malicious Ad Count: 34
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Movies - 150x
+ad['CleanURL']: https://tv.apple.com/us/show/bad-monkey/umc.cmc.2qoep59s6qukjonprttysfs8x
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/gp/video/storefront/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://tv.apple.com/us/show/nocturne/umc.cmc.4cfsq1juke72zutv5xp0pw3rj
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://tv.apple.com/us/show/bad-monkey/umc.cmc.2qoep59s6qukjonprttysfs8x
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/gp/video/storefront/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.fandango.com/disneys-hexed-2026-246251/movie-overview
+ad['URLIsMalicious']: Unknown
+ad['Domain']: tv.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: tv.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: tv.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.fandango.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 6
+Non-Malicious Ad Count: 6
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Ebook - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Music - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Mp3 - 150x
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.bhphotovideo.com/c/product/1862949-REG/samvix_smrtm_64_kosher_smarttime_64_mp3.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.bhphotovideo.com/c/product/1862949-REG/samvix_smrtm_64_kosher_smarttime_64_mp3.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.amazon.com/s/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.bhphotovideo.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.bhphotovideo.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 9
+Non-Malicious Ad Count: 9
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Fonts - 150x
+ad['CleanURL']: https://elements.envato.com/fonts/clock+font
+ad['URLIsMalicious']: Unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch News - 150x
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwjoqPmB7PuXAxVyWg8CHSwOFpUYACICCAIQABoCdGI&co=1&ase=2&gclid=EAIaIQobChMI6Kj5gez7lwMVcloPAh0sDhaVEAMYASAAEgJa8_D_BwE&category=acrcp_v1_37&sig=AOD64_0D5laRs5zlIvWqm-ItRsoIU5sbIA&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwjoqPmB7PuXAxVyWg8CHSwOFpUYACICCAIQABoCdGI&co=1&ase=2&gclid=EAIaIQobChMI6Kj5gez7lwMVcloPAh0sDhaVEAMYASAAEgJa8_D_BwE&category=acrcp_v1_37&sig=AOD64_0D5laRs5zlIvWqm-ItRsoIU5sbIA&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwib36CX7PuXAxWgsgMAHUcTFckYACICCAIQABoCb2E&co=1&ase=2&gclid=EAIaIQobChMIm9-gl-z7lwMVoLIDAB1HExXJEAMYASAAEgKnuPD_BwE&category=acrcp_v1_37&sig=AOD64_1TMgIgMmDcTJHkEQGUGqllif1gEQ&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwib36CX7PuXAxWgsgMAHUcTFckYACICCAIQABoCb2E&co=1&ase=2&gclid=EAIaIQobChMIm9-gl-z7lwMVoLIDAB1HExXJEAMYASAAEgKnuPD_BwE&category=acrcp_v1_37&sig=AOD64_1TMgIgMmDcTJHkEQGUGqllif1gEQ&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwipzoKD7PuXAxU9QG8EHZ3KFFwYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIqc6Cg-z7lwMVPUBvBB2dyhRcEAMYASAAEgJfyfD_BwE&category=acrcp_v1_37&sig=AOD64_1lw-vvaLZe3VVu03CaH1I1HpI6Ng&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwipzoKD7PuXAxU9QG8EHZ3KFFwYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIqc6Cg-z7lwMVPUBvBB2dyhRcEAMYASAAEgJfyfD_BwE&category=acrcp_v1_37&sig=AOD64_1lw-vvaLZe3VVu03CaH1I1HpI6Ng&q&nis=4&adurl", waiting until "domcontentloaded"
+
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Sports - 150x
+ad['CleanURL']: https://www.nfhsnetwork.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://plus.espn.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.nfhsnetwork.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.nfhsnetwork.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sling.com/sports/football/pro-football
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sling.com/programming/entertainment
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sling.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.nfhsnetwork.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.sling.com/programming/entertainment
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.nfhsnetwork.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: plus.espn.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.nfhsnetwork.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.nfhsnetwork.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sling.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sling.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sling.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.nfhsnetwork.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.sling.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 9
+Non-Malicious Ad Count: 9
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Watch Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Movies - 150x
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwi2luOd8fuXAxXqT28EHQMYOOQYACICCAIQARoCamY&co=1&ase=2&gclid=EAIaIQobChMItpbjnfH7lwMV6k9vBB0DGDjkEAMYAiAAEgIRn_D_BwE&category=acrcp_v1_37&sig=AOD64_0KSKZdWEO8hKqHu3vOp2k6EdGqJg&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwi2luOd8fuXAxXqT28EHQMYOOQYACICCAIQARoCamY&co=1&ase=2&gclid=EAIaIQobChMItpbjnfH7lwMV6k9vBB0DGDjkEAMYAiAAEgIRn_D_BwE&category=acrcp_v1_37&sig=AOD64_0KSKZdWEO8hKqHu3vOp2k6EdGqJg&q&nis=4&adurl", waiting until "domcontentloaded"
+
+ad['CleanURL']: https://www.matteroftimefilm.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://tv.apple.com/us/show/bad-monkey/umc.cmc.2qoep59s6qukjonprttysfs8x
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://tv.apple.com/us/show/bad-monkey/umc.cmc.2qoep59s6qukjonprttysfs8x
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.matteroftimefilm.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: tv.apple.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: tv.apple.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 3
+Non-Malicious Ad Count: 3
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Ebook - 150x
+ad['CleanURL']: https://www.amazon.com/kindle-dbs/hz/subscribe/ku
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.amazon.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Music - 150x
+ad['CleanURL']: https://offer.tidal.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://offer.tidal.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://offer.tidal.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://offer.tidal.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://offer.tidal.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: offer.tidal.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: offer.tidal.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: offer.tidal.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: offer.tidal.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: offer.tidal.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 5
+Non-Malicious Ad Count: 5
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Fonts - 150x
+ad['CleanURL']: https://elements.envato.com/fonts/stream
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts/stream
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://elements.envato.com/fonts/stream
+ad['URLIsMalicious']: Unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 3
+Non-Malicious Ad Count: 3
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream News - 150x
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiWmOy09fuXAxV7bX8AHem7IkkYACICCAIQABoCb2E&co=1&ase=2&gclid=EAIaIQobChMIlpjstPX7lwMVe21_AB3puyJJEAMYASAAEgIYxvD_BwE&category=acrcp_v1_37&sig=AOD64_3JRGn9Bj-VYYScrfYt2KfIhG31gQ&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiWmOy09fuXAxV7bX8AHem7IkkYACICCAIQABoCb2E&co=1&ase=2&gclid=EAIaIQobChMIlpjstPX7lwMVe21_AB3puyJJEAMYASAAEgIYxvD_BwE&category=acrcp_v1_37&sig=AOD64_3JRGn9Bj-VYYScrfYt2KfIhG31gQ&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiox8m79fuXAxWjH2gBHZ29IPsYACICCAEQABoCb2E&co=1&ase=2&gclid=EAIaIQobChMIqMfJu_X7lwMVox9oAR2dvSD7EAAYASAAEgKT2_D_BwE&category=acrcp_v1_37&sig=AOD64_02aXAkZenlFgoCf2zlx3VjBYrS9g&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiox8m79fuXAxWjH2gBHZ29IPsYACICCAEQABoCb2E&co=1&ase=2&gclid=EAIaIQobChMIqMfJu_X7lwMVox9oAR2dvSD7EAAYASAAEgKT2_D_BwE&category=acrcp_v1_37&sig=AOD64_02aXAkZenlFgoCf2zlx3VjBYrS9g&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiUjfij9fuXAxUbTG8EHWmMHcAYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIlI34o_X7lwMVG0xvBB1pjB3AEAMYASAAEgKfLvD_BwE&category=acrcp_v1_37&sig=AOD64_1H59LqBkWfgZErSNJuahGNJKlqDg&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiUjfij9fuXAxUbTG8EHWmMHcAYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIlI34o_X7lwMVG0xvBB1pjB3AEAMYASAAEgKfLvD_BwE&category=acrcp_v1_37&sig=AOD64_1H59LqBkWfgZErSNJuahGNJKlqDg&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiUhfy19fuXAxVJIYcDHToRLjgYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIlIX8tfX7lwMVSSGHAx06ES44EAMYASAAEgLDAfD_BwE&category=acrcp_v1_37&sig=AOD64_1s6w71UzKZlY9EDiUFdzOhIEe4xg&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiUhfy19fuXAxVJIYcDHToRLjgYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIlIX8tfX7lwMVSSGHAx06ES44EAMYASAAEgLDAfD_BwE&category=acrcp_v1_37&sig=AOD64_1s6w71UzKZlY9EDiUFdzOhIEe4xg&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiX5aqk9fuXAxV-ktYIHWwYA6AYACICCAIQABoCdGw&co=1&ase=2&gclid=EAIaIQobChMIl-WqpPX7lwMVfpLWCB1sGAOgEAMYASAAEgJRxPD_BwE&category=acrcp_v1_37&sig=AOD64_1qY80RXXbe6Md2YFN3uncTnRanEQ&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiX5aqk9fuXAxV-ktYIHWwYA6AYACICCAIQABoCdGw&co=1&ase=2&gclid=EAIaIQobChMIl-WqpPX7lwMVfpLWCB1sGAOgEAMYASAAEgJRxPD_BwE&category=acrcp_v1_37&sig=AOD64_1qY80RXXbe6Md2YFN3uncTnRanEQ&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwiB2Oaj9fuXAxWYAocDHRfGMrgYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIgdjmo_X7lwMVmAKHAx0XxjK4EAMYASAAEgJaFPD_BwE&category=acrcp_v1_37&sig=AOD64_0g4SiOYH4cMvCviLBdX5KqnKcasQ&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwiB2Oaj9fuXAxWYAocDHRfGMrgYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMIgdjmo_X7lwMVmAKHAx0XxjK4EAMYASAAEgJaFPD_BwE&category=acrcp_v1_37&sig=AOD64_0g4SiOYH4cMvCviLBdX5KqnKcasQ&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.google.com/aclk?sa=L&ai=DChsSEwjW1IO29fuXAxUsD4cDHRjAChUYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMI1tSDtvX7lwMVLA-HAx0YwAoVEAMYASAAEgI5QfD_BwE&category=acrcp_v1_37&sig=AOD64_0Pn3S37WxknkJpTSj_IqujZiSTyw&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwjW1IO29fuXAxUsD4cDHRjAChUYACICCAIQABoCamY&co=1&ase=2&gclid=EAIaIQobChMI1tSDtvX7lwMVLA-HAx0YwAoVEAMYASAAEgI5QfD_BwE&category=acrcp_v1_37&sig=AOD64_0Pn3S37WxknkJpTSj_IqujZiSTyw&q&nis=4&adurl", waiting until "domcontentloaded"
+
+ad['CleanURL']: https://www.democracynow.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.democracynow.org/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ms.now/membership
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.pbs.org/explore/news-and-public-affairs/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.democracynow.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.democracynow.org
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ms.now
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.pbs.org
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Sports - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Software - 150x
+ad['CleanURL']: https://restream.io/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/multistreaming
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/multistreaming
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/learn/what-is/streaming-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/learn/what-is/streaming-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/learn/what-is/streaming-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/learn/what-is/streaming-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/learn/what-is/streaming-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://restream.io/learn/what-is/streaming-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/sy
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/sy
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/sy
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/sy
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: restream.io
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 18
+Non-Malicious Ad Count: 18
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Stream Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Movies - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Ebook - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Pdf - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Music - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Mp3 - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Wallpaper - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Fonts - 150x
+ad['CleanURL']: https://elements.envato.com/fonts/hack
+ad['URLIsMalicious']: Unknown
+ad['Domain']: elements.envato.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack News - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Sports - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Highlights - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Software - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Freeware - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Cracks - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: Hack Password - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+>>> 

@@ -1,0 +1,575 @@
+Python 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+warning: can't use pyrepl: (5, "terminal doesn't have the required clear capability"); TERM=dumb
+>>> 
+<string>:4: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+<string>:8: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+>>> run_queries_from_earlier_work()
+Running Query: download putty - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: winscp free download - 150x
+ad['CleanURL']: https://winscp.en.softonic.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.cerberusftp.com/lp/ftp-server/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.winzip.com/en/pages/download/winzip-v1/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.paessler.com/lp/network-monitoring-tool
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.paessler.com/lp/network-monitoring-tool
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://wincsp.com/download/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ibm.com/products/aspera
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ibm.com/products/aspera
+ad['URLIsMalicious']: Unknown
+ad['Domain']: winscp.en.softonic.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.cerberusftp.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.winzip.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.paessler.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.paessler.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: wincsp.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ibm.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ibm.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 8
+Non-Malicious Ad Count: 8
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: advanced ip scanner download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: filezilla client download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: notepad++ download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: windirstat download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: obs studio download - 150x
+ad['CleanURL']: https://www.movavi.com/adv/obs-screen-recorder-download.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.movavi.com/adv/obs-screen-recorder-download.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.movavi.com/adv/obs-screen-recorder-download.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://streamyard.com/sy
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.movavi.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.movavi.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.movavi.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: streamyard.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 4
+Non-Malicious Ad Count: 4
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: rufus bootable usb download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: anydesk download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: teamviewer free download - 150x
+Exception -> Page.goto: net::ERR_TIMED_OUT at https://www.google.com/aclk?sa=L&ai=DChsSEwj6p6uynf6XAxUSswMAHd6UHhYYACICCAIQARoCb2E&co=1&ase=2&gclid=EAIaIQobChMI-qersp3-lwMVErMDAB3elB4WEAMYAiAAEgILE_D_BwE&category=acrcp_v1_32&sig=AOD64_2u9-OR7hQ-wf9mIngwlAaRKtWuDQ&q&nis=4&adurl
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&ai=DChsSEwj6p6uynf6XAxUSswMAHd6UHhYYACICCAIQARoCb2E&co=1&ase=2&gclid=EAIaIQobChMI-qersp3-lwMVErMDAB3elB4WEAMYAiAAEgILE_D_BwE&category=acrcp_v1_32&sig=AOD64_2u9-OR7hQ-wf9mIngwlAaRKtWuDQ&q&nis=4&adurl", waiting until "domcontentloaded"
+
+Exception -> Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwiKirq9nf6XAxVUC2gBHXL4BxIYACICCAEQARoCb2E&co=1&ase=2&gclid=EAIaIQobChMIioq6vZ3-lwMVVAtoAR1y-AcSEAAYASAAEgIqA_D_BwE&category=acrcp_v1_32&sig=AOD64_1cFLlY91EOhVnar5EI2Be4IhRdug&q&nis=4&adurl=https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/?utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dus%257Cb%257Cpr%257C22%257Csep%257Ctv-core-generic-sn%257Cnew%257Ct0%257C0%26utm_content%3DDownload%26utm_term%3Dteamviewer%2520free%2520download%26gad_source%3D1%26gad_campaignid%3D18214011806%26gbraid%3D0AAAAApuX7CXxupfsaQbfch7y3BaEkTR5u%26gclid%3DEAIaIQobChMIioq6vZ3-lwMVVAtoAR1y-AcSEAAYASAAEgIqA_D_BwE", waiting until "domcontentloaded"
+
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.remotedesktop.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.getapp.com/p/sem/remote-support-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://teamviewer.en.softonic.com/download
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.remotedesktop.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.getapp.com/p/sem/remote-support-software/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.remotedesktop.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.remotedesktop.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.logmein.com/products/resolve/trial/remote-access
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.remotedesktop.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.logmein.com/offers/remote-access
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.n-able.com/lp/rmm-trial
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.n-able.com/lp/rmm-trial
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.n-able.com/lp/rmm-trial
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.remotedesktop.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.teamviewer.com/en-us/campaign/free-download-and-licenses/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.n-able.com/lp/rmm-trial
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.logmein.com/products/resolve/trial/remote-access
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.logmein.com/products/resolve/trial/remote-access
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.n-able.com/lp/rmm-trial
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.screenconnect.com/teamviewer-alternative
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.logmein.com/products/resolve/trial/remote-access
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.remotedesktop.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.getapp.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: teamviewer.en.softonic.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.remotedesktop.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.getapp.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.remotedesktop.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.remotedesktop.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.logmein.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.remotedesktop.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.logmein.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.n-able.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.n-able.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.n-able.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.remotedesktop.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.teamviewer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.n-able.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.logmein.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.logmein.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.n-able.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.screenconnect.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.logmein.com
+ad['DomainIsMalicious']: unknown
+Short SSL Duration: https://www.remotedesktop.com/?gad_source=1&gad_campaignid=174274538&gbraid=0AAAAADm24y55gj3BiJCw6qZaIjFzwcnBL&gclid=EAIaIQobChMI_NiZwJ3-lwMVnltHAR247jVsEAMYAiAAEgIwDvD_BwE
+Short SSL Duration: https://www.remotedesktop.com/?gad_source=1&gad_campaignid=174274538&gbraid=0AAAAADm24y55gj3BiJCw6qZaIjFzwcnBL&gclid=EAIaIQobChMIioq6vZ3-lwMVVAtoAR1y-AcSEAAYAyAAEgI3PvD_BwE
+Short SSL Duration: https://www.remotedesktop.com/?gad_source=1&gad_campaignid=174274538&gbraid=0AAAAADm24y55gj3BiJCw6qZaIjFzwcnBL&gclid=EAIaIQobChMI05eftp3-lwMVaVhHAR0UyA0KEAMYASAAEgJlRvD_BwE
+Short SSL Duration: https://www.remotedesktop.com/?gad_source=1&gad_campaignid=174274538&gbraid=0AAAAADm24y55gj3BiJCw6qZaIjFzwcnBL&gclid=EAIaIQobChMIo9Pbvp3-lwMVSU7_AR297hW7EAAYBCAAEgKXLfD_BwE
+Short SSL Duration: https://www.remotedesktop.com/?gad_source=1&gad_campaignid=174274538&gbraid=0AAAAADm24y55gj3BiJCw6qZaIjFzwcnBL&gclid=EAIaIQobChMI-uzTy53-lwMV2BBoAR2GajNsEAMYAiAAEgIHf_D_BwE
+Short SSL Duration: https://www.remotedesktop.com/?gad_source=1&gad_campaignid=174274538&gbraid=0AAAAADm24y55gj3BiJCw6qZaIjFzwcnBL&gclid=EAIaIQobChMIioq6vZ3-lwMVVAtoAR1y-AcSEAMYAiAAEgKKlPD_BwE
+
+Total Ad Count: 65
+Non-Malicious Ad Count: 59
+Malicious Ad Count: 6
+---------------------------------------
+
+Running Query: cisco anyconnect vpn download - 150x
+ad['CleanURL']: https://nordlayer.com/special-business-vpn/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://nordlayer.com/special-business-vpn/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: nordlayer.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: nordlayer.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: zoom workplace desktop app - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: slack desktop app download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: microsoft teams download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: phantom wallet chrome extension - 150x
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: metamask extension download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: ledger live desktop download - 150x
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ledger.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.ledger.com/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ledger.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.ledger.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+Click fix String Present: https://www.ledger.com/?gad_source=1&gad_campaignid=24448053305&gbraid=0AAAAADd2vQYsMUA1CEkahhTj1-8hZVbDI&gclid=EAIaIQobChMI9avj-J7-lwMVHh6HAx1OXyNvEAAYASACEgLHpPD_BwE
+Click fix String Present: https://www.ledger.com/?gad_source=1&gad_campaignid=24448053305&gbraid=0AAAAADd2vQYsMUA1CEkahhTj1-8hZVbDI&gclid=EAIaIQobChMIjYjp8p7-lwMVnxVoAR24IgvNEAAYASACEgJB9vD_BwE
+
+Total Ad Count: 8
+Non-Malicious Ad Count: 6
+Malicious Ad Count: 2
+---------------------------------------
+
+Running Query: exodus wallet download - 150x
+ad['CleanURL']: https://play.google.com/store/apps/details
+ad['URLIsMalicious']: Unknown
+ad['Domain']: play.google.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: winrar free download - 150x
+ad['CleanURL']: https://www.winzip.com/en/pages/download/winzip-v1/
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.winzip.com/en/pages/download/winzip-v1/
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.winzip.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.winzip.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: 7-zip download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: vlc media player download - 150x
+ad['CleanURL']: https://www.capcut.com/resource/download-vlc-software
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.capcut.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 1
+Non-Malicious Ad Count: 1
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: freecad download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: blender 3d download - 150x
+ad['CleanURL']: https://www.adobe.com/products/substance3d/free-trial.html
+ad['URLIsMalicious']: Unknown
+ad['CleanURL']: https://www.adobe.com/products/substance3d-painter.html
+ad['URLIsMalicious']: Unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+ad['Domain']: www.adobe.com
+ad['DomainIsMalicious']: unknown
+
+Total Ad Count: 2
+Non-Malicious Ad Count: 2
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: wireshark download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+Running Query: postman api client download - 150x
+
+Total Ad Count: 0
+Non-Malicious Ad Count: 0
+Malicious Ad Count: 0
+---------------------------------------
+
+>>> 
