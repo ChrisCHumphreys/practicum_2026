@@ -1,0 +1,110 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{5}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Abrams(2026)]%
+        {abrams_2026_cluade_clickfix}
+\bibfield{author}{\bibinfo{person}{Lawrence Abrams}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Hackers abuse Google Ads, Bing redirects to push
+  Claude ClickFix attacks}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/}}.
+\newblock
+\newblock
+\shownote{BleepingComputer. Accessed: November 23, 2026}.
+
+
+\bibitem[Blancaflor et~al\mbox{.}(2024)]%
+        {blancaflor_2024_ai_chat}
+\bibfield{author}{\bibinfo{person}{Eric Blancaflor}, \bibinfo{person}{Jon
+  Eril~R. Aparize}, \bibinfo{person}{Joyous~M. Geronimo},
+  \bibinfo{person}{Ethan Joseph~S. Gonzales}, {and} \bibinfo{person}{Joyful~L.
+  Morilla}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Malvertising in AI-Powered Chat Platforms:
+  Utilizing Integrated Artificial Intelligence Solutions for Threat Detection
+  and Mitigation}. In \bibinfo{booktitle}{\emph{2024 8th International
+  Conference on Communications and Future Internet (ICCFI)}}.
+  \bibinfo{publisher}{IEEE}, \bibinfo{pages}{67--74}.
+\newblock
+\href{https://doi.org/10.1109/iccfi63302.2024.00018}{doi:\nolinkurl{10.1109/iccfi63302.2024.00018}}
+
+
+\bibitem[{Gadget Hacks}(2026)]%
+        {gadgethacks_adblockers_2026}
+\bibfield{author}{\bibinfo{person}{{Gadget Hacks}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Ad Blockers That Still Work in Chrome: 4
+  Ways to Block Ads}}.
+\newblock
+\urldef\tempurl%
+\url{https://android.gadgethacks.com/how-to/ad-blockers-that-still-work-in-chrome-4-ways-to-block-ads/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: 2026-09-06}.
+
+
+\bibitem[Huang et~al\mbox{.}(2020)]%
+        {huang_2020_bayesian_game}
+\bibfield{author}{\bibinfo{person}{Chin-Tser Huang},
+  \bibinfo{person}{Muhammad~N. Sakib}, \bibinfo{person}{Charles~A. Kamhoua},
+  \bibinfo{person}{Kevin~A. Kwiat}, {and} \bibinfo{person}{Laurent Njilla}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{A Bayesian Game Theoretic Approach for Inspecting
+  Web-Based Malvertising}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Dependable and Secure
+  Computing}} \bibinfo{volume}{17}, \bibinfo{number}{6} (\bibinfo{date}{Nov.}
+  \bibinfo{year}{2020}), \bibinfo{pages}{1257--1268}.
+\newblock
+\href{https://doi.org/10.1109/tdsc.2018.2866821}{doi:\nolinkurl{10.1109/tdsc.2018.2866821}}
+
+
+\bibitem[Kumari and Sharma(2024)]%
+        {kumari_2024_ml_classification}
+\bibfield{author}{\bibinfo{person}{Ankita Kumari} {and} \bibinfo{person}{Ishu
+  Sharma}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Mitigating Malvertising Threats: An Exploration of
+  Machine Learning Classification Algorithms for Effective Detection}. In
+  \bibinfo{booktitle}{\emph{2024 International Conference on Advancements in
+  Smart, Secure and Intelligent Computing (ASSIC)}}. \bibinfo{publisher}{IEEE},
+  \bibinfo{pages}{1--6}.
+\newblock
+\href{https://doi.org/10.1109/assic60049.2024.10508033}{doi:\nolinkurl{10.1109/assic60049.2024.10508033}}
+
+
+\end{thebibliography}
