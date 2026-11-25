@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -64,21 +64,6 @@
 \href{https://doi.org/10.1109/iccfi63302.2024.00018}{doi:\nolinkurl{10.1109/iccfi63302.2024.00018}}
 
 
-\bibitem[{Gadget Hacks}(2026)]%
-        {gadgethacks_adblockers_2026}
-\bibfield{author}{\bibinfo{person}{{Gadget Hacks}}.}
-  \bibinfo{year}{2026}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Ad Blockers That Still Work in Chrome: 4
-  Ways to Block Ads}}.
-\newblock
-\urldef\tempurl%
-\url{https://android.gadgethacks.com/how-to/ad-blockers-that-still-work-in-chrome-4-ways-to-block-ads/}
-\showURL{%
-\tempurl}
-\newblock
-\shownote{Accessed: 2026-09-06}.
-
-
 \bibitem[Huang et~al\mbox{.}(2020)]%
         {huang_2020_bayesian_game}
 \bibfield{author}{\bibinfo{person}{Chin-Tser Huang},
@@ -105,6 +90,43 @@
   \bibinfo{pages}{1--6}.
 \newblock
 \href{https://doi.org/10.1109/assic60049.2024.10508033}{doi:\nolinkurl{10.1109/assic60049.2024.10508033}}
+
+
+\bibitem[Peters(2016)]%
+        {peters_2016_gooogle_adwords}
+\bibfield{author}{\bibinfo{person}{Sara Peters}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Google Adwords Malvertising Campaign Targets Apple
+  Macs}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.darkreading.com/cyberattacks-data-breaches/google-adwords-malvertising-campaign-targets-apple-macs}}.
+\newblock
+\newblock
+\shownote{DarkReading. Accessed: November 25, 2026}.
+
+
+\bibitem[Picchi(2009)]%
+        {picchi_2009_malvertising}
+\bibfield{author}{\bibinfo{person}{Aimee Picchi}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{title}{Malvertising hits The New York Times}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20160421013533/http://www.dailyfinance.com/2009/09/14/malvertising-hits-the-new-york-times/}}.
+\newblock
+\newblock
+\shownote{Internet Archive. Accessed: November 25, 2006}.
+
+
+\bibitem[Sakib and Huang(2015)]%
+        {sakib_2015_automated_collection}
+\bibfield{author}{\bibinfo{person}{Muhammad~N. Sakib} {and}
+  \bibinfo{person}{Chin-Tser Huang}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Automated Collection and Analysis of Malware
+  Disseminated via Online Advertising}. In \bibinfo{booktitle}{\emph{2015 IEEE
+  Trustcom/BigDataSE/ISPA}}. \bibinfo{publisher}{IEEE},
+  \bibinfo{pages}{1411--1416}.
+\newblock
+\href{https://doi.org/10.1109/trustcom.2015.539}{doi:\nolinkurl{10.1109/trustcom.2015.539}}
 
 
 \end{thebibliography}
