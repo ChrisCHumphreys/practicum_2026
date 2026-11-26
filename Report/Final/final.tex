@@ -174,7 +174,7 @@
   manner with a focus on asynchronously pulling the website data that is needed
   for analysis, but nothing more.
   I was able to collect and analyze over 14,000 queries in a timeframe of less
-  than 6 hours, I did not identify any malicious advertisements.
+  than 6 hours, but I did not identify any malicious advertisements.
   This null result suggests that current malvertising cloaking techniques
   are robust, and also that more research is warranted.
   The tools developed in this research will give future analysts
@@ -290,57 +290,205 @@ Section~\ref{sec:related_work} will examine the existing literature on this
 topic. Section~\ref{sec:methodology} describes the architecture of the
 application and its tooling in detail.
 My findings are presented in Section~\ref{sec:results}, and Future Work and
-Conlcusions can be found in Sections~\ref{sec:future_work},
+Conlcusions can be found in Sections~\ref{sec:future_work}
 and \ref{sec:conclusion}.
 
 \section{Background}
 \label{sec:background}
-This will hold the background section.
+How adversaries use malicious ads -> use diagram inspired by
+\cite{sakib_2015_automated_collection}.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\columnwidth]{advertising_workflow.pdf}
+  \caption{Overview of the malvertising delivery workflow, adapted from Sakib
+    and Huang~\cite{sakib_2015_automated_collection}.}
+  \label{fig:ad_workflow}
+\end{figure}
+
+What is cloaking and how do adversaries hide from researchers?
+
+How to find ads to begin with: non-trivial.
+
+Why efficiency is so important.
+
+Why speed is so important.
+
 Lots of good info in the paper Automated Collection and Analysis of Malware
 \cite{sakib_2015_automated_collection}
 
-Resons why its hard to collect ads
-
 \section{Related Work}
 \label{sec:related_work}
+Just a couple paragraphs here with links to the articles I reviewed.
 
 \section{Methodology}
 \label{sec:methodology}
+My system design is largely based around 4 modules that create a pipeline
+of analysis steps that start with an inital query to a search engine, and result
+in an output that counts the number of advertisements with signs of
+malciousness.
 
-\subsection{Google Ads and SERP's}
+Cost/billing considerations
+- Each ad url only resolved once
+- tried to stay offline as much as possible
+- share how much it cost my to complete this work
 
-\subsection{Residential Proxies}
-
-\subsection{Query Selection process}
+Show malicious advertisement illustration again, this time with my own oracle
+additions.\cite{sakib_2015_automated_collection}
 
 \subsection{System Design}
+System Design here -> from presentation
+
+discuss overall workflow
 
 \subsubsection{Collector Object}
+Describe object goal -> collect Ad URLS
+- Good spot to review how ad urls work again
+
+How and why I dropped metadata and images to get faster response.
+
+Why I had to use a SERP and what that is.
+
+Talk about User-Agents and cloaking avoidance
+
+Discuss how multi-threaded aspect works
+
+Oxylabs API integration and costs
+- JSON response
+- Could be used with other API providers
+
+what data is returned and in what form
+- Ad Urls in a list
 
 \subsubsection{Detector Object}
+Describe ojbect goal -> resolve URLs to final landing pages
+
+How and why I dropped metadata and images to get faster response.
+- also lowered total costs
+
+Why I had to use residential proxies and what that is.
+
+Discuss playwright and playwright stealth and advantages over requests library.
+- Talk about what playwright can drop
+- Discuss JS redirects and how playwright can resolve.
+
+Asynchronous architecture and how that allows for multiple concurrent requests.
+
+Residential proxy API and costs
+- How responses look
+- Integrations with other API Providers
+
+What data is returned in what form
+- dict of ad info (describe fields)
+
+Advertising Diagram with Modules show
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\columnwidth]{advertising_workflow_modules.pdf}
+  \caption{Overview of the malvertising delivery workflow including collector
+    and detector modules, adapted from Sakib and
+    Huang~\cite{sakib_2015_automated_collection}.}
+  \label{fig:ad_workflow_modules}
+\end{figure}
 
 \subsubsection{Classifier Object}
+Describe Object goal -> assess using classifiers
+
+Discuss what data is returned and in what form
 
 \subsubsection{Oracles}
 \begin{itemize}
 \item Domain BlockList Oracle
+  What it is (detials like how many domains included)
+  Where I got it from
+  how often it is updated
+  How analysis is done
+  FP's -> what they look like and how they show the oracle works
 \item URLHaus Oracle
+  What it is (details like how many URLs included)
+  Where I got it from
+  - Mention that you need an accoutn at URLHaus
+  how often it is updated
+  How analysis is done
 \item SSL Oracle
+  What it is
+  Some sort of citation to use to justify that SSL certs are new in malvertising
+  How analysis is done
+  - Maybe worth mentioning UNIX timestamps from epoch
+  FP's what they look like and how they show the oracle works
 \item ClickFix Oracle
+  What it is and goals
+  How JS puts stuff into the clipboard
+  How analysis is done
+  FP's what they look like and how they show the oracle works
 \end{itemize}
+
+\subsection{Executor}
+Brief overview of additional functionality provided.
+
+Disucssion of CLI options
+
+Final Diagram of workflow
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\columnwidth]{workflow.pdf}
+  \caption{Overall workflow and module interaction.}
+  \label{fig:final_workflow}
+\end{figure}
+
+\subsection{Queries}
+Review the three query sources and justify each one.
+- If used in previous work, mention the older results
+Talk about expectations of each query set.
 
 \section{Results}
 \label{sec:results}
+Discuss how my expirement ran
+- date
+- time taken
+- number of queries executed
+- Interpreter and methods used
+
+Review what the output looks like (what form)
+include screenshot if it will be helpful.
 
 \subsection{Findings}
+No ads found :(
+- Cloacking
+- Short time frames malicious ads run
+- Query coverage
+
+summarize what was done (number of queires executes)
+
+Compare number of ads found across query sources
+- good spot for a bar graph to illustrate.
+
+Compare number of failed responses across the three query sets
+- another good spot for a graph
 
 \subsection{Comparisons to previous work}
+May not use this, we will see.  not sure if there is enough direct comparisons
+to warrant an entire subsection.
 
 \section{Future Work}
 \label{sec:future_work}
+Useage with other search engines
+
+Useage with otehr API providers
+
+New or different oracles, easy to add or remove, each is a method.
+- If cost and efficiency less important, could be useful to try more
+analytically expensive comparisons.
+
+Non-Search engine advertising analysis
+
+Better cloaking avoidance
+
+round the clock querying
 
 \section{Conclusion}
 \label{sec:conclusion}
+Summarize everything together.
 
 %%
 %% The next two lines define the bibliography style to be used, and
