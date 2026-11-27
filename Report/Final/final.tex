@@ -416,29 +416,101 @@ direction in which the data moves as it is processed and resolved.
 Each of these modules and the four oracles are examined in detail next.
 
 \subsubsection{Collector Object}
-Describe object goal -> collect Ad URLS
-- Good spot to review how ad urls work again
+The Collector module takes in a search engine query in the form of a string
+along with an integer value representing the number of times the query should
+be executed to generate results that may contain advertisements.
+It does this via calls to a SERP API.
+I used the offering from OxyLabs for this work, and used the vendor supplied
+configuration values that were purported in their documentation to generate the
+largest number of advertisements.
 
-How and why I dropped metadata and images to get faster response.
+At the time these URL's are collected, it is important to remember that these
+are not URL's that point to the final ad page, but instead point to the ad
+network infrasturcture. Figure~\ref{fig:ad_workflow_modules} shows which parts
+of the full ad resolution workflow are encompassed by the Collector object.
 
-Why I had to use a SERP and what that is.
+One major hinderance to any sort of reasearch that requires websites to be
+called in large volumes repeatedly is that this type of traffic is often
+monitored for and blocked by website owners.
+Search engine providers are no exception to this, and likely have even more
+stringent protections in place than most other websites.
+This can be a side effect of DDOS attack protections, an attempt to be
+responsible with bandwith, a direct effort to block research, an attempt to
+stop traffic by bots, or for any number of other reasons.
+Bypassing these protections requires a large number of unique and otherwise
+benign endpoints 
+and tooling that has the ability to bypass captchas and other bot prevention
+measures.
+These types of resources are expensive, and unfortunatley not feasible for most
+researchers to address directly.
+Rather, SERP providers are utilized to provide this service.
+The vendor is given the search query, and it will return the results page in a
+form chosen by the user.
+
+A key capability of the Collector module is that it executes the queries in a
+multi-threaded manner.
+This is necessary due to the variable amount of time each request takes.
+Some requests are blocked due to the issues mentioned above and fail very
+quickly, others complete but return no ads which happens faster than responses
+that complete successfully and return some number of ad URLs.
+Once these requests are sent, there is nothing to do locally other than wait,
+which is a waste of both time and resources. 
+
+My design allows for multiple requests to occur at once, each running in its own
+thread.
+The default is for 10 threads to run at once and was set at this value as this
+is the max number of concurrent connections allowed by my SERP provider.
+As one thread receives its response and completes, another replaces it in the
+queue, ensuring that as many threads are active as possible at all times.
+This value can be changed by the user to whatever amount is desired and/or is
+allowed by the provider.
+This setup ensures that each batch of queries runs as efficiently as possible.
+
+A key decision to be made here is what location will be used as the source of
+these requests.
+Geography can play a huge role in how many ads are presented to
+the user and can affect the likelyhood of finding ads at all.
+I chose California as the location presented as it is a large US State known to
+both for being a tech hub and for its relativley well off population.
+Both of which should make its citizens attractive to malicious actors.
+
+Once all queries have been executed, all of the final ad URL's are placed into
+a Python list.
+Each item in the list is a string representing the ad URL.
+This list of potentially malicious ad urls is then handed off
+to the Detector object for further examination and analysis.
+
+\subsubsection{Detector Object}
+The Detector is responsible for following any and all redirects leading to the
+final advertisement landing pages.
+Utilizing IP address from residential proxies, the Detector starts with the
+list of ad URL's generated
+by the collector object and resolves each one, concluding by pulling the full
+text of the final page along with some other metadata of value to some of the
+oracles.
+Most importantly, it does the above in a manner as close to that of a normal
+user as possible.
+Knowing that adversaries use cloaking to attempt to hide their activities, the
+Detector module utilizes a number of techniques to bypass this cloaking.
+The work of the detector module in the
+context of the advertising delivery workflow is illustrated on the bottom section of
+figure~\ref{fig:ad_workflow_modules}
+
+A key design decision in regards to the Detector module was that of blocking
+as many unneeded resources as possible.
+In practice, this means I block the downloading of images, media, stylesheets,
+and fonts, but I retain HTML and JavaScript.
+This results in substantially reduced bandwith utiliztion (which is how the
+residential proxy service is billed).
+This does result in a tradeoff, in that there are known cloaking techniques that
+utilize some of these items and could therefore be missed.
+I attempted to retain enough data in this design to make the module as effective
+as possible while staying within the lower usage tier of the Oxylabs proxy
+service.
 
 Talk about User-Agents and cloaking avoidance
 
-Discuss how multi-threaded aspect works
-
-Oxylabs API integration and costs
-- JSON response
-- Could be used with other API providers
-
-what data is returned and in what form
-- Ad Urls in a list
-
-\subsubsection{Detector Object}
-Describe ojbect goal -> resolve URLs to final landing pages
-
 How and why I dropped metadata and images to get faster response.
-- also lowered total costs
 
 Why I had to use residential proxies and what that is.
 
@@ -566,10 +638,14 @@ Summarize everything together.
 
 %%
 %% If your work has an appendix, this is the place to put it.
-%% \appendix
+\appendix
 
-%% \section{Research Methods}
-
+\section{Other Resources}
+\begin{itemize}
+\item Github Code Repository -
+  \url{https://github.com/ChrisCHumphreys/practicum_2026}
+  \item OxyLabs Site - \url{https://oxylabs.io/}
+\end{itemize}
 %% \subsection{Part One}
 
 %% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
