@@ -13,47 +13,49 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty address in blancaflor_2024_ai_chat
+Warning--empty publisher in invernizzi_2016_cloak
+Warning--empty address in invernizzi_2016_cloak
 Warning--empty address in kumari_2024_ml_classification
 Warning--empty address in sakib_2015_automated_collection
-You've used 7 entries,
+You've used 10 entries,
             6273 wiz_defined-function locations,
-            1563 strings with 20139 characters,
-and the built_in function-call counts, 7378 in all, are:
-= -- 881
-> -- 207
+            1580 strings with 20794 characters,
+and the built_in function-call counts, 10177 in all, are:
+= -- 1189
+> -- 296
 < -- 0
-+ -- 68
-- -- 79
-* -- 478
-:= -- 724
-add.period$ -- 38
-call.type$ -- 7
-change.case$ -- 45
-chr.to.int$ -- 7
-cite$ -- 10
-duplicate$ -- 683
-empty$ -- 478
-format.name$ -- 95
-if$ -- 1719
++ -- 95
+- -- 111
+* -- 660
+:= -- 1013
+add.period$ -- 55
+call.type$ -- 10
+change.case$ -- 65
+chr.to.int$ -- 10
+cite$ -- 15
+duplicate$ -- 948
+empty$ -- 664
+format.name$ -- 131
+if$ -- 2356
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 19
-newline$ -- 102
-num.names$ -- 49
-pop$ -- 247
+missing$ -- 24
+newline$ -- 130
+num.names$ -- 70
+pop$ -- 343
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 145
 quote$ -- 0
-skip$ -- 268
+skip$ -- 374
 stack$ -- 0
-substring$ -- 575
-swap$ -- 64
+substring$ -- 784
+swap$ -- 85
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 196
-warning$ -- 3
-while$ -- 53
+type$ -- 286
+warning$ -- 5
+while$ -- 72
 width$ -- 0
-write$ -- 178
-(There were 3 warnings)
+write$ -- 237
+(There were 5 warnings)

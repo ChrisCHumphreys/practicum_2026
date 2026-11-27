@@ -63,16 +63,14 @@
 %% \acmYear{2026}
 %% \acmDOI{XXXXXXX.XXXXXXX}
 %% These commands are for a PROCEEDINGS abstract or paper.
-%% \acmConference[Conference acronym 'XX]{Make sure to enter the correct
-%%  conference title from your rights confirmation email}{June 03--05,
-%%  2018}{Woodstock, NY}
+\acmConference[2026 GATech CyberSecurity Masters Practicum]
+              {2026 GATech CyberSecurity Masters Practicum}{2026}{Atlanta, GA}
 %%
 %%  Uncomment \acmBooktitle if the title of the proceedings is different
 %%  from ``Proceedings of ...''!
 %%
-%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-%%  June 03--05, 2018, Woodstock, NY}
-%% \acmISBN{978-1-4503-XXXX-X/2018/06}
+\acmBooktitle{2026 GATech CyberSecurity Masters Practicum}
+\acmISBN{}
 
 
 %%
@@ -284,7 +282,8 @@ Another goal of this work is to update and modernize the tools and techniques
 that have been neglected.
 
 This paper will detail a the workings and use of a Python application created to
-identify malicious advertisements presented on Google Search results pages.
+identify malicious advertisements presented on Google Search Engine Results
+Pages (SERP).
 In Section~\ref{sec:background} we review how these malicious ads work and
 Section~\ref{sec:related_work} will examine the existing literature on this
 topic. Section~\ref{sec:methodology} describes the architecture of the
@@ -295,8 +294,36 @@ and \ref{sec:conclusion}.
 
 \section{Background}
 \label{sec:background}
-How adversaries use malicious ads -> use diagram inspired by
-\cite{sakib_2015_automated_collection}.
+A threat actor's ultimate goal is access to the system of an unsuspecting
+victim.
+Abusing search engine result page advertising networks for intial access
+vectors that can both filter the potential victim pool to
+users who are most likely to match the attackers ideal target profile, and lend
+legitimacy by being presented to the victim in the context of an otherwise
+trusted web site is an effective way that threat actors gain an inital foothold.
+
+Malicious actors are able to  select the target profile of who the ads are being
+presented to, thereby narrowing the potential victim pool before the attack even
+begins.
+Items such as interests and habits, what a person is actively searching for and
+more can be selected by the adversary\cite{google_2026_ad_docs}, and the fact
+that these ads are seen on an otherwise trusted site like Google gives these
+malicious ads a false sense safety.
+These factors have been exploited in attacks that use malicious
+advertising as a part of the attack chain such as recent ClickFix campaigns~\cite{huntress_2026_evolving_clickfix}. 
+
+Cloaking is the term most commonly used to describe adversarial attempts to
+evade detection efforts.
+Invernizzi et al.~\cite{invernizzi_2016_cloak} note that cloaking relies on the
+fact that ``not every client observes the same content''.
+This fact is exploited to display benign content to researchers and law
+enforcement, but malicious websites to potential victims.
+
+Between the first query submission and the initial access of a victims's system
+a number of steps take place as illustrated in figure~\ref{fig:ad_workflow}.
+Each of these steps presents a unique challenges to researchers who working to
+study the issue of malvertising.
+
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\columnwidth]{advertising_workflow.pdf}
@@ -305,16 +332,35 @@ How adversaries use malicious ads -> use diagram inspired by
   \label{fig:ad_workflow}
 \end{figure}
 
-What is cloaking and how do adversaries hide from researchers?
+The first hurdle to collecting malicious advertisements is that of collecting
+any advertisements, malicious or not, to analyze.
+While in normal browsing it can seem as if every action taken results in a huge
+number of advertisements being presented.
+Study of the issue, and attempts to purposely generate advertisements on SERP's,
+demonstrate that this is not as
+straightforward as it may initially be thought.
+Many search engine queries in fact present no advertisements at all.
+The line in figure~\ref{fig:ad_workflow} labeled ``RESPONSE: ads'' is an
+empty response that contains no advertisements at all more often than not. 
 
-How to find ads to begin with: non-trivial.
+These initial ad URL's are not actually direct links to the products and
+services being advertised as is often assumed.
+Rather, these URLS first request the actual ad URL from Google (or whatever ad
+provider is supplying them).
+Behind the scenes the ad network provider is notified that an ad URL has been
+clicked, which they note for billing and tracking puproses, and then a vendor
+provded URL is returned.
+This is illustrated in the four lowermost arrows in
+figure~\ref{fig:ad_workflow}.
 
-Why efficiency is so important.
-
-Why speed is so important.
-
-Lots of good info in the paper Automated Collection and Analysis of Malware
-\cite{sakib_2015_automated_collection}
+One important consideration in this work is the efficiency of the total process.
+The vast majority of advertisements are legitimate so even putting aside
+cloaking and other known roadblocks, finding a malcious ad in a sea of
+legitimate ones is akin to searching for a needle in a haystack.
+One of the goals of this research is to find a way to quicky analyze the ads, or
+the haystack.
+Essentially, the more hay can be analyzed, the better chance of idenitfying the
+needle, or the haystack.
 
 \section{Related Work}
 \label{sec:related_work}
@@ -322,23 +368,52 @@ Just a couple paragraphs here with links to the articles I reviewed.
 
 \section{Methodology}
 \label{sec:methodology}
-My system design is largely based around 4 modules that create a pipeline
+This work is largely based around 4 modules that create a pipeline
 of analysis steps that start with an inital query to a search engine, and result
 in an output that counts the number of advertisements with signs of
 malciousness.
 
-Cost/billing considerations
-- Each ad url only resolved once
-- tried to stay offline as much as possible
-- share how much it cost my to complete this work
+The first of the four modules utilized in this workflow are the Executor, which
+is an orchestrator and provides high level methods and functionality.
+The Executor is the interface with which the user directly interacts.
+The Collector, as the name suggests, collects the intial ad URL's presented to
+the user on the SERP.
+Once these URL's have been collected, it is the Detector module that follows any
+redirects and pulls the final landing page.
+The Classifier then runs the collected web content against the four oracles, and
+returns final analysis to the Executor who then provides the information to the
+user.
 
-Show malicious advertisement illustration again, this time with my own oracle
-additions.\cite{sakib_2015_automated_collection}
+\paragraph{Cost and Billing Considerations}
+Implementation of resources that have monetary costs (SERP Provider API and
+Residential Proxy Access) has been done deliberately with a goal of minimizing
+costs as much as possible.
+Some of the steps taken to assist in this are as follows, each ad URL is
+resolved only once, anything that can be done offline or with free tools is done
+in that manner, and the number of resources pulled with each site is minimized
+as much as possible.  This last item was achieved through not pulling items
+like images, video, and other assets when the ad URLs are resolved.
+These results can be recreated by subscribing to the lowest usage tiers of
+Oxylabs SERP API and Residential Proxy offerings.
+A single month subscription to both of these services is currently less that one
+hundred US Dollars.
 
 \subsection{System Design}
-System Design here -> from presentation
 
-discuss overall workflow
+This system design was intentionally created to be able to bypass as
+many cloaking techniques as possible, while still running quicly and at a low
+cost, both monetarily and in terms of other resources.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\columnwidth]{workflow.pdf}
+  \caption{Overall workflow and module interaction.}
+  \label{fig:final_workflow}
+\end{figure}
+
+Figure~\ref{fig:final_workflow} shows how these pieces fit together and the
+direction in which the data moves as it is processed and resolved.
+Each of these modules and the four oracles are examined in detail next.
 
 \subsubsection{Collector Object}
 Describe object goal -> collect Ad URLS
@@ -427,14 +502,6 @@ Discuss what data is returned and in what form
 Brief overview of additional functionality provided.
 
 Disucssion of CLI options
-
-Final Diagram of workflow
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\columnwidth]{workflow.pdf}
-  \caption{Overall workflow and module interaction.}
-  \label{fig:final_workflow}
-\end{figure}
 
 \subsection{Queries}
 Review the three query sources and justify each one.
